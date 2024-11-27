@@ -30,4 +30,12 @@ function App({companyName}: {companyName: string}) {
   )
 }
 
+// More Information from videos:
+// https://www.youtube.com/watch?v=2b9M2Z7K5dA - Not sure what this is
+// https://www.youtube.com/watch?v=WgXU7XAZYmQ
+// https://www.youtube.com/watch?v=p5LIqg-oNbs
+// https://www.youtube.com/watch?v=bdqSEBSXBPk
+// https://www.youtube.com/watch?v=7d8XZ5gY7wM - Not sure what this is
+// https://www.youtube.com/watch?v=HHTHyz1FBNM
+
 export default App
