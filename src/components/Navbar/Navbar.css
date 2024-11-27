@@ -6,9 +6,10 @@
     justify-content: space-between;
   }
   
-  .navbar-logo {
+  .navbar-logo a {
     font-size: 1.5em;
     color: #fff;
+    text-decoration: none;
   }
   
   .navbar-links {

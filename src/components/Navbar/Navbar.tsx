@@ -5,7 +5,7 @@ import './Navbar.css'
 function Navbar({ logoText }: { logoText: string }) {
   return (
     <nav className="navbar">
-      <div className="navbar-logo">{logoText}</div>
+      <div className="navbar-logo"><Link to="/">{logoText}</Link></div>
       <ul className="navbar-links">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
