@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import About from './pages/About'
 import './App.css'
+import Contact from './pages/Contact'
 import Footer from './components/Footer/Footer'
 import Home from './pages/Home'
 import Navbar from './components/Navbar/Navbar'
@@ -20,6 +21,7 @@ function App({companyName}: {companyName: string}) {
         <Route path="/about" element={<About />}/>
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
