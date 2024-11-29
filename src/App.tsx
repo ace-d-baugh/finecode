@@ -12,21 +12,23 @@ import Resume from './pages/Resume'
 function App({companyName}: {companyName: string}) {
 
   return (
-  <div className="App">
-    <Navbar logoText = {companyName} />
-    <div className="Routes">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />}/>
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </div>
-    <Footer company = {companyName} />
-  </div>
+    <>
+      <div className="App">
+        <Navbar logoText = {companyName} />
+        <div className="Routes">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />}/>
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
+        <Footer company = {companyName} />
+      </div>
+    </>
   )
 }
 
