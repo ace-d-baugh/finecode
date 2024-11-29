@@ -1,20 +1,18 @@
-// components/Navbar/Navbar.tsx
 import { Link } from 'react-router-dom';
-import './Navbar.css'
+import Links from '../Links/Links';
+import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
+import './Navbar.css';
 
 function Navbar({ logoText }: { logoText: string }) {
-  return (
-    <nav className="navbar">
-      <div className="navbar-logo"><Link to="/">{logoText}</Link></div>
-      <ul className="navbar-links">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/portfolio">Portfolio</Link></li>
-        <li><Link to="/resume">Resum&eacute;</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-      </ul>
-    </nav>
-  );
-};
+	return (
+		<nav className="navbar">
+			<div className="navbar-logo">
+				<Link to="/">{logoText}</Link>
+			</div>
+			<Links />
+			<HamburgerMenu />
+		</nav>
+	);
+}
 
 export default Navbar;

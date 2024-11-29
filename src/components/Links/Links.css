@@ -1,0 +1,22 @@
+.navbar-links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+
+.navbar-links li {
+	margin-right: 20px;
+}
+
+.navbar-links a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Show the hamburger menu on smaller screens */
+@media (min-width: 769px) {
+	.navbar-links {
+		display: flex;
+	}
+}
