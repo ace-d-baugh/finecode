@@ -18,7 +18,6 @@ function App({companyName}: {companyName: string}) {
         <div className="Routes">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />}/>
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/resume" element={<Resume />} />
