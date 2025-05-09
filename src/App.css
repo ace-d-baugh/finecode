@@ -11,3 +11,19 @@
   .Routes {
     flex: 1; /* Take up remaining space */
   }
+
+  /* Body */
+body {
+	min-height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--background);
+}
+
+.primary {
+	color: var(--color-primary);
+}
+
+
+

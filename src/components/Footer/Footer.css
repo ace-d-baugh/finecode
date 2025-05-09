@@ -1,7 +1,29 @@
+/* Footer */
 .footer {
-    background-color: #333;
-    color: silver;
-    padding: 1em;
-    text-align: center;
-    border-radius: 1em 1em 0 0;
+	min-height: var(--footer-height);
+	background-color: var(--background);
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-links {
+	font-size: 1rem;
+}
+
+.footer-link a,
+a:hover,
+a:active,
+a:visited,
+a:focus,
+.copyright {
+	color: var(--color-primary);
+}
+
+.footer-link a:hover {
+	font-style: italic;
+	text-decoration: none;
+}
+
+.copyright {
+	font-size: 0.8rem;
 }
