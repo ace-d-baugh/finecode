@@ -1,0 +1,50 @@
+/* index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Poiret+One&display=swap');
+@import url("https://www.nerdfonts.com/assets/css/webfont.css");
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+/* Root element */
+:root {
+    scroll-behavior: smooth;
+    /* Variables */
+    --background: #000013;
+    --color-primary: #d0d3d2;
+    --color-accent: #32ddd0;
+    --metal-darker: #616161;
+    --metal-dark: #919191;
+    --metal: #d0d3d2;
+    --success: #32dd00;
+    --error: #dd0032;
+    --warning: #ffd333;
+    --font-primary: 'Poiret One', arial;
+    --font-emphasis: 'Limelight', cursive;
+    --header-height: 2rem;
+    --footer-height: 2.5rem;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px; /* Default font size */
+}
+
+/* Body */
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+}

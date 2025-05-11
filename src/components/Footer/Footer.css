@@ -1,30 +1,26 @@
 /* components/Footer/Footer.css */
 
 .footer {
+	display: flex;
 	min-height: var(--footer-height);
-	background-color: var(--background);
 	justify-content: center;
 	align-items: center;
+	font-size: .75rem;
 }
 
-.footer-links {
-	font-size: 1rem;
+ul.footer-links {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0 .25rem 0;
 }
 
-.footer-link a,
-a:hover,
-a:active,
-a:visited,
-a:focus,
-.copyright {
-	color: var(--color-primary);
-}
-
-.footer-link a:hover {
-	font-style: italic;
-	text-decoration: none;
-}
-
-.copyright {
-	font-size: 0.8rem;
+.footer-links li,
+.footer-link a i,
+.footer-link a span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 .25rem;
 }
