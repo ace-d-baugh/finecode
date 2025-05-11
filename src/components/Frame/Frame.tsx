@@ -5,7 +5,7 @@ import './Frame.css';
 
 function Frame({ children }: { children: React.ReactNode }) {
     return (
-        <div className="outline-container">
+        <div className="frame-container">
             <div className="row">
                 <div className="top-left"></div>
                 <div className="top-center"></div>
