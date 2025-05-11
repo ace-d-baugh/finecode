@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
-import Outline from '../Outline/Outline';
+import Frame from '../Frame/Frame';
 
 function Button({ text, link }: { text: string; link: string }) {
     return (
         <Link to={link}>
-            <Outline>{text}</Outline>
+            <Frame>{text}</Frame>
         </Link>
     );
 }
