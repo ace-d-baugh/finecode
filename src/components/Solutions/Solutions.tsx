@@ -1,7 +1,13 @@
+import Frame from "../Frame/Frame"
+
 function Solutions() {
     return (
-        <div>
-            <h1>Solutions</h1>
+        <div className="Solutions">
+            <Frame>
+                <div>
+                    <h1>Solutions</h1>
+                </div>
+            </Frame>
         </div>
     );
 }

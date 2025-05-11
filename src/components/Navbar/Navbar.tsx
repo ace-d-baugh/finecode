@@ -1,15 +1,18 @@
 import { Link } from 'react-router-dom';
-import Links from '../Links/Links';
+import Frame from '../Frame/Frame';
+import NavLinks from '../NavLinks/NavLinks';
 import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
 import './Navbar.css';
 
 function Navbar({ logoText }: { logoText: string }) {
 	return (
-		<nav className="navbar">
-			<div className="navbar-logo">
-				<Link to="/">{logoText}</Link>
-			</div>
-			<Links />
+		<nav className="Navbar">
+			<Frame>
+				<div className="navbar-logo">
+					<Link to="/">{logoText}</Link>
+				</div>
+			</Frame>
+			<NavLinks />
 			<HamburgerMenu />
 		</nav>
 	);

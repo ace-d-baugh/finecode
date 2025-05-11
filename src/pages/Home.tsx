@@ -4,16 +4,21 @@ import ShortBio from '../components/ShortBio/ShortBio';
 import Showcase from '../components/Showcase/Showcase';
 import Solutions from '../components/Solutions/Solutions';
 import Testimonials from '../components/Testimonials/Testimonials';
+import Frame from "../components/Frame/Frame";
 
 function Home() {
     return (
-        <div>
-            <Hero />
-            <Solutions />
-            <Benefits />
-            <Testimonials />
-            <Showcase />
-            <ShortBio />
+        <div className="Home">
+            <Frame>
+                <div>
+                    <Hero />
+                    <Solutions />
+                    <Benefits />
+                    <Testimonials />
+                    <Showcase />
+                    <ShortBio />
+                </div>
+            </Frame>
         </div>
     );
 }

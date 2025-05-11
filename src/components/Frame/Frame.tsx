@@ -1,4 +1,4 @@
-function Outline({ children }: { children: React.ReactNode }) {
+function Frame({ children }: { children: React.ReactNode }) {
     return (
         <div className="outline-container">
             <div className="row">
@@ -22,4 +22,4 @@ function Outline({ children }: { children: React.ReactNode }) {
     );
 }
 
-export default Outline;
+export default Frame;

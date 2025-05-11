@@ -1,7 +1,13 @@
+import Frame from "../components/Frame/Frame";
+
 function Portfolio() {
     return (
-        <div>
-            <h1>Portfolio</h1>
+        <div className="Portfolio">
+            <Frame>
+                <div>
+                    <h1>Portfolio</h1>
+                </div>
+            </Frame>
         </div>
     );
 }
