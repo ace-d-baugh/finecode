@@ -1,19 +1,16 @@
-import { Link } from 'react-router-dom';
+// components/Navbar/Navbar.tsx
 import Frame from '../Frame/Frame';
 import NavLinks from '../NavLinks/NavLinks';
 import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
 import './Navbar.css';
 
-function Navbar({ logoText }: { logoText: string }) {
+function Navbar() {
 	return (
 		<nav className="Navbar">
 			<Frame>
-				<div className="navbar-logo">
-					<Link to="/">{logoText}</Link>
-				</div>
+				<NavLinks />
+				<HamburgerMenu />
 			</Frame>
-			<NavLinks />
-			<HamburgerMenu />
 		</nav>
 	);
 }
