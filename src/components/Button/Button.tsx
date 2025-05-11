@@ -1,7 +1,12 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import Outline from '../Outline/Outline';
 
-function Button({ props }: any) {
-    return <Link to={props.link}><button>{props.text}</button></Link>;
+function Button({ text, link }: { text: string; link: string }) {
+    return (
+        <Link to={link}>
+            <Outline>{text}</Outline>
+        </Link>
+    );
 }
 
 export default Button
