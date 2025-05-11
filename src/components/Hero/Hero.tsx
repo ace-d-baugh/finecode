@@ -1,5 +1,8 @@
+// components/Hero/Hero.tsx
+
 import Frame from '../Frame/Frame'
 import Button from '../Button/Button'
+import './Hero.css'
 
 function Hero() {
     return (

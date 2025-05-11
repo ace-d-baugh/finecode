@@ -1,4 +1,7 @@
+// components/Testimonials/Testimonials.tsx
+
 import Frame from "../Frame/Frame"
+import './Testimonials.css'
 
 function Testimonials() {
     return (

@@ -1,4 +1,5 @@
 // components/Footer/Footer.tsx
+
 import Frame from '../Frame/Frame'
 import './Footer.css'
 

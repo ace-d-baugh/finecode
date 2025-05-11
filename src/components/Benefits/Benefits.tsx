@@ -1,4 +1,7 @@
+// components/Benefits/Benefits.tsx
+
 import Frame from "../Frame/Frame"
+import './Benefits.css'
 
 function Benefits() {
     return (

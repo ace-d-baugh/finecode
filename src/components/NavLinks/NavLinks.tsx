@@ -1,4 +1,5 @@
-// NavLinks.js
+// components/NavLinks/NavLinks.tsx
+
 import { Link } from 'react-router-dom';
 import './NavLinks.css';
 import Frame from "../Frame/Frame";

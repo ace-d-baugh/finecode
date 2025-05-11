@@ -1,3 +1,5 @@
+// components/HamburgerMenu/HamburgerMenu.tsx
+
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './HamburgerMenu.css';

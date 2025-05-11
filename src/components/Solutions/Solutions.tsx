@@ -1,4 +1,7 @@
+// components/Solutions/Solutions.tsx
+
 import Frame from "../Frame/Frame"
+import './Solutions.css'
 
 function Solutions() {
     return (

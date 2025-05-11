@@ -1,5 +1,7 @@
 // components/Logo/Logo.tsx
+
 import Frame from '../Frame/Frame';
+import './Logo.css'
 
 function Logo({ logoText }: { logoText: string }) {
 	return (

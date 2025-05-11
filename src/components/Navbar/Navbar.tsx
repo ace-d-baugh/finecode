@@ -1,4 +1,5 @@
 // components/Navbar/Navbar.tsx
+
 import Frame from '../Frame/Frame';
 import NavLinks from '../NavLinks/NavLinks';
 import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';

@@ -1,5 +1,8 @@
+// components/ShortBio/ShortBio.tsx
+
 import Button from "../Button/Button";
 import Frame from "../Frame/Frame";
+import './ShortBio.css'
 
 function ShortBio() {
     return (

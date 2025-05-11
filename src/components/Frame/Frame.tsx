@@ -1,3 +1,8 @@
+// components/Frame/Frame.tsx
+
+import React from 'react';
+import './Frame.css';
+
 function Frame({ children }: { children: React.ReactNode }) {
     return (
         <div className="outline-container">
