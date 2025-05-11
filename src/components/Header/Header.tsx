@@ -9,8 +9,10 @@ function Header({ logoText }: { logoText: string }) {
 	return (
 		<header className="Header">
 			<Frame>
-				<Logo logoText = {logoText} />
-                <Navbar />
+				<div className="header-elements">
+					<Logo logoText = {logoText} />
+                	<Navbar />
+				</div>
 			</Frame>
 		</header>
 	);

@@ -1,1 +1,5 @@
 /* components/Logo/Logo.css */
+
+.Logo h1{
+    font-family: var(--font-emphasis);
+}
