@@ -8,7 +8,7 @@ function Hero() {
     return (
         <div className="Hero">
             <Frame>
-                <div>
+                <div className="hero-content">
                     <h2>Elevate Your Digital Success</h2>
                     <p>Expert full-stack web solutions driving business growth and online success with Digital Elegance.</p>
                     <div className="hero-btn">

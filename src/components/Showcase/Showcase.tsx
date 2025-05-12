@@ -10,9 +10,11 @@ function Showcase() {
             <Frame>
                 <div>
                     <h1>Showcase</h1>
-                    <Card />
-                    <Card />
-                    <Card />
+                    <div className="row cards">
+                        <Card />
+                        <Card />
+                        <Card />
+                    </div>
                 </div>
             </Frame>
         </div>
