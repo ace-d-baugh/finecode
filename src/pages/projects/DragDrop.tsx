@@ -5,10 +5,6 @@ import './DragDrop.css'
 import projects from '../../data/projects.json'
 
 function DragDrop() {
-    projects.forEach(project => {
-        console.log(project.title)
-    })
-
     return (
         <div className="DragDrop">
             <Frame>

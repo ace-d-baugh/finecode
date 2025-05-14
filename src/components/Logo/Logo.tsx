@@ -1,13 +1,14 @@
 // components/Logo/Logo.tsx
 
 import Frame from '../Frame/Frame';
+import { Link } from 'react-router-dom';
 import './Logo.css'
 
 function Logo({ logoText }: { logoText: string }) {
 	return (
 		<div className="Logo">
 			<Frame>
-				<h1>{logoText}</h1>
+				<Link to="/"><h1>{logoText}</h1></Link>
 			</Frame>
 		</div>
 	);
