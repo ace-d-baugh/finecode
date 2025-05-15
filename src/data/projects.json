@@ -105,7 +105,10 @@
             "extraInfo": ""
         },
         "technologies": ["Angular", "Node.js", "Express", "SQL", "Bootstrap", "CSS"],
-        "imageUrls": ["https://example.com/images/ecommerce1.jpg", "https://example.com/images/ecommerce2.jpg"],
+        "imageUrls": [
+            "/src/images/bcrs.png",
+            "/src/images/bcrs.png"
+        ],
         "codeUrl": "https://github.com/ace-d-baugh/teams-stand-up-tracker",
         "liveUrl": "https://ace-d-baugh.github.io/teams-stand-up-tracker/",
         "type": "Front-End"
@@ -121,7 +124,10 @@
             "extraInfo": ""
         },
         "technologies": ["CSS", "Javascript"],
-        "imageUrls": ["https://example.com/images/ecommerce1.jpg", "https://example.com/images/ecommerce2.jpg"],
+        "imageUrls": [
+            "/src/images/bcrs.png",
+            "/src/images/bcrs.png"
+        ],
         "codeUrl": "https://github.com/ace-d-baugh/Animations",
         "liveUrl": "https://ace-d-baugh.github.io/Animations/",
         "type": "Front-End"

@@ -6,7 +6,7 @@ import Frame from "../Frame/Frame";
 
 function NavLinks() {
 	return (
-		<div className="NavLinks">
+		<div className="NavLinks-container">
 			<Frame className="all">
 				<ul className="navbar-links">
 					<li>
@@ -25,7 +25,7 @@ function NavLinks() {
 						</Link>
 					</li>
 					<li>
-						<Link to="/blog">
+						<Link to="https://medium.com/@ace.d.baugh" target="_blank">
 							<i className="nf nf-fa-book_journal_whills"> <span>Blog</span></i>
 						</Link>
 					</li>
