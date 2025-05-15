@@ -11,8 +11,8 @@
         },
         "technologies": ["Angular", "Node.js", "Express", "SQL", "Bootstrap", "CSS"],
         "imageUrls": [
-            "https://example.com/images/ecommerce1.jpg",
-            "https://example.com/images/ecommerce2.jpg"
+            "/src/images/bcrs.png",
+            "/src/images/bcrs.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/TA-Projects",
         "liveUrl": "https://ace-d-baugh.github.io/TA-Projects/",
@@ -30,8 +30,8 @@
         },
         "technologies": ["React", "Node.js", "Express", "MongoDB", "Bootstrap", "CSS"],
         "imageUrls": [
-            "https://example.com/images/ecommerce1.jpg",
-            "https://example.com/images/ecommerce2.jpg"
+            "/src/images/bcrs.png",
+            "/src/images/bcrs.png"
         ],
         "codeUrl": "https://github.com/acieffe/Udemy-YelpCamp",
         "liveUrl": "https://acieffe-yelp-camp.onrender.com/",
@@ -49,8 +49,8 @@
         },
         "technologies": ["React", "Node.js", "Express", "MongoDB", "Stripe", "Bootstrap", "CSS"],
         "imageUrls": [
-            "https://example.com/images/ecommerce1.jpg",
-            "https://example.com/images/ecommerce2.jpg"
+            "/src/images/bcrs.png",
+            "/src/images/bcrs.png"
             ],
         "codeUrl": "https://github.com/ace-d-baugh/ecommerce-platform",
         "liveUrl": "https://ecommerce-platform-demo.netlify.app",
@@ -67,7 +67,10 @@
             "extraInfo": "... ... ... ... ... ... ... ... ... ... ... ..."
         },
         "technologies": ["C#", "Bootstrap", "CSS"],
-        "imageUrls": ["https://example.com/images/ecommerce1.jpg", "https://example.com/images/ecommerce2.jpg"],
+        "imageUrls": [
+            "/src/images/bcrs.png",
+            "/src/images/bcrs.png"
+        ],
         "codeUrl": "https://github.com/ace-d-baugh/ContactPro",
         "liveUrl": "https://contact-pro-demo.netlify.app/",
         "type": "Full-Stack"
@@ -83,7 +86,10 @@
             "extraInfo": "Demo credentials: Usernames: 1007, 1008, 1009, 1010, 1011, 1012"
         },
         "technologies": ["React", "Node.js", "Express", "MongoDB", "Bootstrap", "CSS"],
-        "imageUrls": ["https://example.com/images/ecommerce1.jpg", "https://example.com/images/ecommerce2.jpg"],
+        "imageUrls": [
+            "/src/images/bcrs.png",
+            "/src/images/bcrs.png"
+        ],
         "codeUrl": "https://github.com/ace-d-baugh/nodebucket",
         "liveUrl": "https://baugh-nodebucket.onrender.com/",
         "type": "Full-Stack"
@@ -132,8 +138,8 @@
         },
         "technologies": ["React", "Bootstrap", "CSS", "Wordpress, woocommerce"],
         "imageUrls": [
-            "https://example.com/images/ecommerce1.jpg",
-            "https://example.com/images/ecommerce2.jpg"
+            "/src/images/bcrs.png",
+            "/src/images/bcrs.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/DigitalElegance",
         "liveUrl": "https://digitalelegance.com",
@@ -151,8 +157,8 @@
         },
         "technologies": ["Javascript", "CSS", "Photoshop"],
         "imageUrls": [
-            "https://example.com/images/ecommerce1.jpg",
-            "https://example.com/images/ecommerce2.jpg"
+            "/src/images/bcrs.png",
+            "/src/images/bcrs.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/lizvitation",
         "liveUrl": "https://ace-d-baugh.github.io/lizvitation/?n=Demo%20User&g=m",

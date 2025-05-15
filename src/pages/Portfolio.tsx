@@ -3,6 +3,7 @@
 import Button from "../components/Button/Button";
 import Frame from "../components/Frame/Frame";
 import Projects from '../data/projects.json';
+import Photo from "../components/Photo/Photo";
 import { Link } from "react-router-dom";
 
 interface LongDescription {
@@ -37,7 +38,7 @@ function Portfolio() {
                             </Link>
                             <p>{project.type}</p>                            
                             <p>{project.shortDescription}</p>
-                            <img src={project.imageUrls[0]} alt={project.title} />
+                            <Photo src={project.imageUrls[0]} width={200} height={200} alt={project.title} />
                             <p>{project.longDescription.issue}</p>
                             <Button text="More Details" link={`/project/${project.id}`} />
                             <p>&nbsp;</p>
