@@ -104,3 +104,147 @@
     --bottom-left-radius: 0 0 0 100%;
     --bottom-right-radius: 0 0 100% 0;
 }
+
+.header-frame {
+    --border-width: 0;
+    --top-left-radius: 0;
+    --top-right-radius: 0;
+    --bottom-left-radius: 0;
+    --bottom-right-radius: 0;
+    --top-center-pattern: none;
+    --left-center-pattern: none;
+    --right-center-pattern: none;
+    --bottom-center-pattern: none;
+    --top-center-pattern-size: 0;
+    --left-center-pattern-size: 0;
+    --right-center-pattern-size: 0;
+    --bottom-center-pattern-size: 0;
+}
+
+.logo-frame {
+    --border-width: 0;
+    --top-left-radius: 0;
+    --top-right-radius: 0;
+    --bottom-left-radius: 0;
+    --bottom-right-radius: 0;
+    --top-center-pattern: none;
+    --left-center-pattern: none;
+    --right-center-pattern: none;
+    --bottom-center-pattern: none;
+    --top-center-pattern-size: 0;
+    --left-center-pattern-size: 0;
+    --right-center-pattern-size: 0;
+    --bottom-center-pattern-size: 0;
+}
+
+.navbar-frame {
+    --border-width: 0;
+    --top-left-radius: 0;
+    --top-right-radius: 0;
+    --bottom-left-radius: 0;
+    --bottom-right-radius: 0;
+    --top-center-pattern: none;
+    --left-center-pattern: none;
+    --right-center-pattern: none;
+    --bottom-center-pattern: none;
+    --top-center-pattern-size: 0;
+    --left-center-pattern-size: 0;
+    --right-center-pattern-size: 0;
+    --bottom-center-pattern-size: 0;
+}
+
+.navlinks-frame {
+    --border-width: 0;
+    --top-left-radius: 0;
+    --top-right-radius: 0;
+    --bottom-left-radius: 0;
+    --bottom-right-radius: 0;
+    --top-center-pattern: none;
+    --left-center-pattern: none;
+    --right-center-pattern: none;
+    --bottom-center-pattern: none;
+    --top-center-pattern-size: 0;
+    --left-center-pattern-size: 0;
+    --right-center-pattern-size: 0;
+    --bottom-center-pattern-size: 0;
+}
+
+.page-frame {
+    --border-width: 0;
+    --top-left-radius: 0;
+    --top-right-radius: 0;
+    --bottom-left-radius: 0;
+    --bottom-right-radius: 0;
+    --top-center-pattern: none;
+    --left-center-pattern: none;
+    --right-center-pattern: none;
+    --bottom-center-pattern: none;
+    --top-center-pattern-size: 0;
+    --left-center-pattern-size: 0;
+    --right-center-pattern-size: 0;
+    --bottom-center-pattern-size: 0;
+}
+
+.hero-frame {
+    --border-width: 0;
+    --top-left-radius: 0;
+    --top-right-radius: 0;
+    --bottom-left-radius: 0;
+    --bottom-right-radius: 0;
+    --top-center-pattern: none;
+    --left-center-pattern: none;
+    --right-center-pattern: none;
+    --bottom-center-pattern: none;
+    --top-center-pattern-size: 0;
+    --left-center-pattern-size: 0;
+    --right-center-pattern-size: 0;
+    --bottom-center-pattern-size: 0;
+}
+
+.section-frame {
+    --border-width: 0;
+    --top-left-radius: 0;
+    --top-right-radius: 0;
+    --bottom-left-radius: 0;
+    --bottom-right-radius: 0;
+    --top-center-pattern: none;
+    --left-center-pattern: none;
+    --right-center-pattern: none;
+    --bottom-center-pattern: none;
+    --top-center-pattern-size: 0;
+    --left-center-pattern-size: 0;
+    --right-center-pattern-size: 0;
+    --bottom-center-pattern-size: 0;
+}
+
+.card-frame {
+    --border-width: 0;
+    --top-left-radius: 0;
+    --top-right-radius: 0;
+    --bottom-left-radius: 0;
+    --bottom-right-radius: 0;
+    --top-center-pattern: none;
+    --left-center-pattern: none;
+    --right-center-pattern: none;
+    --bottom-center-pattern: none;
+    --top-center-pattern-size: 0;
+    --left-center-pattern-size: 0;
+    --right-center-pattern-size: 0;
+    --bottom-center-pattern-size: 0;
+}
+
+.footer-frame {
+    --border-width: 0;
+    --top-left-radius: 0;
+    --top-right-radius: 0;
+    --bottom-left-radius: 0;
+    --bottom-right-radius: 0;
+    --top-center-pattern: none;
+    --left-center-pattern: none;
+    --right-center-pattern: none;
+    --bottom-center-pattern: none;
+    --top-center-pattern-size: 0;
+    --left-center-pattern-size: 0;
+    --right-center-pattern-size: 0;
+    --bottom-center-pattern-size: 0;
+}
