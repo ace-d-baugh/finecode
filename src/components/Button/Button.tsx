@@ -6,9 +6,11 @@ import './Button.css'
 
 function Button({ text, link }: { text: string; link: string }) {
     return (
-        <Link to={link}>
-            <Frame className="button">{text}</Frame>
-        </Link>
+        <div className="btn-container">
+            <Link to={link}>
+                <Frame className="button">{text}</Frame>
+            </Link>
+        </div>
     );
 }
 

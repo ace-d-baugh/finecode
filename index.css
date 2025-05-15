@@ -49,7 +49,3 @@ body {
     align-items: center;
     background-color: var(--background);
 }
-
-.row {
-    display: flex;
-}

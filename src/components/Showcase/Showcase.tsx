@@ -10,7 +10,7 @@ function Showcase() {
             <Frame className="all">
                 <div>
                     <h1>Showcase</h1>
-                    <div className="row cards">
+                    <div className="cards">
                         <Card />
                         <Card />
                         <Card />
