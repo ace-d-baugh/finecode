@@ -3,7 +3,7 @@ import Frame from "../components/Frame/Frame";
 function About() {
     return (
         <div className="About">
-            <Frame>
+            <Frame className="all">
                 <div>
                     <h1>About</h1>
                 </div>

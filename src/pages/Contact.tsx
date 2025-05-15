@@ -3,7 +3,7 @@ import Frame from "../components/Frame/Frame";
 function Contact() {
     return (
         <div className="Contact">
-            <Frame>
+            <Frame className="all">
                 <div>
                     <h1>Contact</h1>
                 </div>

@@ -1,5 +1,6 @@
 // pages/Portfolio.tsx
 
+import Button from "../components/Button/Button";
 import Frame from "../components/Frame/Frame";
 import Projects from '../data/projects.json';
 import { Link } from "react-router-dom";
@@ -26,19 +27,20 @@ interface Project {
 function Portfolio() {
     return (
         <div className="Portfolio">
-            <Frame>
+            <Frame className="all">
                 <div>
                     <h1>Portfolio | Case Studies</h1>
                     {Projects.map((project: Project) => (
                         <div key={project.id}>
-                            // link to the Project page and pass the project id as a parameter
                             <Link to={`/project/${project.id}`}>
                                 <h2>{project.title}</h2>
                             </Link>
+                            <p>{project.type}</p>                            
                             <p>{project.shortDescription}</p>
                             <img src={project.imageUrls[0]} alt={project.title} />
                             <p>{project.longDescription.issue}</p>
-                            <p>{project.type}</p>
+                            <Button text="More Details" link={`/project/${project.id}`} />
+                            <p>&nbsp;</p>
                         </div>
                     ))}
                 </div>

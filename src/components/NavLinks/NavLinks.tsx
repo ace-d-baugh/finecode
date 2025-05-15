@@ -7,7 +7,7 @@ import Frame from "../Frame/Frame";
 function NavLinks() {
 	return (
 		<div className="NavLinks">
-			<Frame>
+			<Frame className="all">
 				<ul className="navbar-links">
 					<li>
 						<Link to="/about">

@@ -8,7 +8,7 @@ import Navbar from '../Navbar/Navbar';
 function Header({ logoText }: { logoText: string }) {
 	return (
 		<header className="Header">
-			<Frame>
+			<Frame className="all">
 				<div className="header-elements">
 					<Logo logoText = {logoText} />
                 	<Navbar />

@@ -7,7 +7,7 @@ import './Footer.css'
 function Footer({ company }: { company: string }) {
     return (
         <footer className="footer">
-            <Frame>
+            <Frame className="all">
                 <ul className="footer-links">
                     <li>
 						<Link to="/about">About</Link>

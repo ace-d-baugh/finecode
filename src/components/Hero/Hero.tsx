@@ -7,7 +7,7 @@ import './Hero.css'
 function Hero() {
     return (
         <div className="Hero">
-            <Frame>
+            <Frame className="all">
                 <div className="hero-content">
                     <h2>Elevate Your Digital Success</h2>
                     <p>Expert full-stack web solutions driving business growth and online success with Digital Elegance.</p>

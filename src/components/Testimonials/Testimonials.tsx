@@ -6,7 +6,7 @@ import './Testimonials.css'
 function Testimonials() {
     return (
         <div className="Testimonials">
-            <Frame>
+            <Frame className="all">
                 <div>
                     <h1>Testimonials</h1>
                 </div>

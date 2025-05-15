@@ -7,7 +7,7 @@ import './Logo.css'
 function Logo({ logoText }: { logoText: string }) {
 	return (
 		<div className="Logo">
-			<Frame>
+			<Frame className="all">
 				<Link to="/"><h1>{logoText}</h1></Link>
 			</Frame>
 		</div>

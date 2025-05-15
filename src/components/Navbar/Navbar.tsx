@@ -8,7 +8,7 @@ import './Navbar.css';
 function Navbar() {
 	return (
 		<nav className="Navbar">
-			<Frame>
+			<Frame className="all">
 				<NavLinks />
 				<HamburgerMenu />
 			</Frame>

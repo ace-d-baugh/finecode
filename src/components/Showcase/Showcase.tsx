@@ -7,7 +7,7 @@ import './Showcase.css'
 function Showcase() {
     return (
         <div className="Showcase">
-            <Frame>
+            <Frame className="all">
                 <div>
                     <h1>Showcase</h1>
                     <div className="row cards">

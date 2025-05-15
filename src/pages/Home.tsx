@@ -9,7 +9,7 @@ import Frame from "../components/Frame/Frame";
 function Home() {
     return (
         <div className="Home">
-            <Frame>
+            <Frame className="all">
                 <div>
                     <Hero />
                     <Solutions />

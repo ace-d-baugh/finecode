@@ -7,7 +7,7 @@ import './Button.css'
 function Button({ text, link }: { text: string; link: string }) {
     return (
         <Link to={link}>
-            <Frame>{text}</Frame>
+            <Frame className="button">{text}</Frame>
         </Link>
     );
 }

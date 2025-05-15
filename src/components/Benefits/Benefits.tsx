@@ -6,7 +6,7 @@ import './Benefits.css'
 function Benefits() {
     return (
         <div className="Benefits">
-            <Frame>
+            <Frame className="all">
                 <div>
                     <h1>Benefits</h1>
                 </div>
