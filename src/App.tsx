@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 import Portfolio from './pages/Portfolio'
+import Project from './pages/Project'
 import Resume from './pages/Resume'
 
 function App({companyName}: {companyName: string}) {
@@ -24,6 +25,7 @@ function App({companyName}: {companyName: string}) {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/project/:projectId" element={<Project />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
@@ -33,10 +35,11 @@ function App({companyName}: {companyName: string}) {
   )
 }
 
+export default App
+
 // More Information from videos:
 // https://www.youtube.com/watch?v=WgXU7XAZYmQ
 // https://www.youtube.com/watch?v=p5LIqg-oNbs
 // https://www.youtube.com/watch?v=bdqSEBSXBPk
 // https://www.youtube.com/watch?v=HHTHyz1FBNM
 
-export default App

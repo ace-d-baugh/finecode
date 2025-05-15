@@ -1,7 +1,8 @@
 // pages/Portfolio.tsx
 
 import Frame from "../components/Frame/Frame";
-import projects from '../data/projects.json';
+import Projects from '../data/projects.json';
+import { Link } from "react-router-dom";
 
 interface LongDescription {
     issue: string;
@@ -28,9 +29,16 @@ function Portfolio() {
             <Frame>
                 <div>
                     <h1>Portfolio | Case Studies</h1>
-                    {projects.map((project: Project) => (
+                    {Projects.map((project: Project) => (
                         <div key={project.id}>
-                            <h2>{project.title}</h2>
+                            // link to the Project page and pass the project id as a parameter
+                            <Link to={`/project/${project.id}`}>
+                                <h2>{project.title}</h2>
+                            </Link>
+                            <p>{project.shortDescription}</p>
+                            <img src={project.imageUrls[0]} alt={project.title} />
+                            <p>{project.longDescription.issue}</p>
+                            <p>{project.type}</p>
                         </div>
                     ))}
                 </div>
