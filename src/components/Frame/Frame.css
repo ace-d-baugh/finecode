@@ -81,30 +81,6 @@
 
 /* STYLES */
 
-.button-maybe {
-    --border-width: 5px;
-    --top-left-radius: 100% 0 0 0;
-    --top-right-radius: 0 100% 0 0;
-    --bottom-left-radius: 0 0 0 100%;
-    --bottom-right-radius: 0 0 100% 0;
-    --top-center-pattern: url('top-center-pattern.svg');
-    --left-center-pattern: url('left-center-pattern.svg');
-    --right-center-pattern: url('right-center-pattern.svg');
-    --bottom-center-pattern: url('bottom-center-pattern.svg');
-    --top-center-pattern-size: 100% 100%;
-    --left-center-pattern-size: 100% 100%;
-    --right-center-pattern-size: 100% 100%;
-    --bottom-center-pattern-size: 100% 100%;
-}
-
-.button, .all {
-    --border-width: 5px;
-    --top-left-radius: 100% 0 0 0;
-    --top-right-radius: 0 100% 0 0;
-    --bottom-left-radius: 0 0 0 100%;
-    --bottom-right-radius: 0 0 100% 0;
-}
-
 .header-frame {
     --border-width: 0;
     --top-left-radius: 0;
@@ -233,6 +209,38 @@
     --bottom-center-pattern-size: 0;
 }
 
+.photo-frame {
+    --border-width: 0;
+    --top-left-radius: 0;
+    --top-right-radius: 0;
+    --bottom-left-radius: 0;
+    --bottom-right-radius: 0;
+    --top-center-pattern: none;
+    --left-center-pattern: none;
+    --right-center-pattern: none;
+    --bottom-center-pattern: none;
+    --top-center-pattern-size: 0;
+    --left-center-pattern-size: 0;
+    --right-center-pattern-size: 0;
+    --bottom-center-pattern-size: 0;
+}
+
+.button-frame {
+    --border-width: 0;
+    --top-left-radius: 0;
+    --top-right-radius: 0;
+    --bottom-left-radius: 0;
+    --bottom-right-radius: 0;
+    --top-center-pattern: none;
+    --left-center-pattern: none;
+    --right-center-pattern: none;
+    --bottom-center-pattern: none;
+    --top-center-pattern-size: 0;
+    --left-center-pattern-size: 0;
+    --right-center-pattern-size: 0;
+    --bottom-center-pattern-size: 0;
+}
+
 .footer-frame {
     --border-width: 0;
     --top-left-radius: 0;
@@ -247,4 +255,12 @@
     --left-center-pattern-size: 0;
     --right-center-pattern-size: 0;
     --bottom-center-pattern-size: 0;
+}
+
+.button, .all {
+    --border-width: 5px;
+    --top-left-radius: 100% 0 0 0;
+    --top-right-radius: 0 100% 0 0;
+    --bottom-left-radius: 0 0 0 100%;
+    --bottom-right-radius: 0 0 100% 0;
 }

@@ -8,7 +8,7 @@ function Button({ text, link }: { text: string; link: string }) {
     return (
         <div className="btn-container">
             <Link to={link}>
-                <Frame className="button">{text}</Frame>
+                <Frame className="button-frame all">{text}</Frame>
             </Link>
         </div>
     );
