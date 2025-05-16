@@ -1,5 +1,6 @@
 // components/Showcase/Showcase.tsx
 
+import { useEffect } from "react";
 import Frame from "../Frame/Frame"
 import Card from "../Card/Card"
 import './Showcase.css'
@@ -50,7 +51,6 @@ function Showcase() {
                                 <img
                                     key={`logo-${index}`}
                                     src={logo.src}
-                                    height="50px"
                                     alt={logo.alt}
                                 />
                             ))}
@@ -59,7 +59,14 @@ function Showcase() {
                                 <img
                                     key={`logo-duplicate-${index}`}
                                     src={logo.src}
-                                    height="50px"
+                                    alt={logo.alt}
+                                />
+                            ))}
+                            {/* Duplicate set of logos for seamless scroll */}
+                            {logos.map((logo, index) => (
+                                <img
+                                    key={`logo-duplicate-${index}`}
+                                    src={logo.src}
                                     alt={logo.alt}
                                 />
                             ))}

@@ -4,7 +4,6 @@
     position: relative;
     max-width: 1600px;
     width: 100%;
-    height: 150px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -29,7 +28,7 @@
 .logos img {
     margin: 0 20px;
     flex-shrink: 0;
-    height: 100px;
+    height: 50px;
 }
 
 /* Seamless scroll animation */
@@ -38,7 +37,7 @@
         transform: translateX(0%);
     }
     100% {
-        transform: translateX(calc(-150% + 170px));
+        transform: translateX(calc(-100% + 335px));
     }
 }
 
