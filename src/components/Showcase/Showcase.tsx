@@ -27,15 +27,53 @@ interface Project {
 
 
 function Showcase() {
+    // Define logos array for reusability
+    const logos = [
+        { src: "/src/images/disney.png", alt: "The Walt Disney Company" },
+        { src: "/src/images/carmike.png", alt: "Carmike Cinemas" },
+        { src: "/src/images/rfinity.png", alt: "RFinity" },
+        { src: "/src/images/schwans.png", alt: "Schwans" },
+        { src: "/src/images/blockbuster.png", alt: "Blockbuster" },
+        { src: "/src/images/misys.png", alt: "Misys" },
+        { src: "/src/images/magnus.png", alt: "First Magnus" },
+    ];
+
     return (
         <div className="Showcase">
             <Frame className="showcase-frame all">
                 <div>
                     <h1>Showcase</h1>
+                    <div className="featured">
+                        <div className="logos">
+                            {/* First set of logos */}
+                            {logos.map((logo, index) => (
+                                <img
+                                    key={`logo-${index}`}
+                                    src={logo.src}
+                                    height="50px"
+                                    alt={logo.alt}
+                                />
+                            ))}
+                            {/* Duplicate set of logos for seamless scroll */}
+                            {logos.map((logo, index) => (
+                                <img
+                                    key={`logo-duplicate-${index}`}
+                                    src={logo.src}
+                                    height="50px"
+                                    alt={logo.alt}
+                                />
+                            ))}
+                        </div>
+                    </div>
                     <div className="cards">
-                        {/* map the first 9 projects */}
                         {Projects.slice(0, 9).map((project: Project) => (
-                            <Card key={project.id} title={project.title} imageUrl={project.imageUrls[0]} alt={project.title} description={project.shortDescription} />
+                            <Card
+                                key={project.id}
+                                title={project.title}
+                                imageUrl={project.imageUrls[0]}
+                                alt={project.title}
+                                description={project.shortDescription}
+                            />
                         ))}
                     </div>
                 </div>
@@ -44,4 +82,4 @@ function Showcase() {
     );
 }
 
-export default Showcase
+export default Showcase;

@@ -5,9 +5,9 @@ import './Testimonials.css'
 
 function Testimonials() {
     return (
-        <div className="Testimonials">
-            <Frame className="all">
-                <div>
+        <div className="Testimonials-container">
+            <Frame className="testimonials-frame all">
+                <div className="testimonials">
                     <h1>Testimonials</h1>
                 </div>
             </Frame>
