@@ -37,6 +37,8 @@ function Showcase() {
         { src: "/src/images/blockbuster.png", alt: "Blockbuster" },
         { src: "/src/images/misys.png", alt: "Misys" },
         { src: "/src/images/magnus.png", alt: "First Magnus" },
+        { src: "/src/images/sears.png", alt: "Sears" },
+        { src: "/src/images/kbtoys.png", alt: "KB Toys" },
     ];
 
     return (
@@ -50,14 +52,6 @@ function Showcase() {
                             {logos.map((logo, index) => (
                                 <img
                                     key={`logo-${index}`}
-                                    src={logo.src}
-                                    alt={logo.alt}
-                                />
-                            ))}
-                            {/* Duplicate set of logos for seamless scroll */}
-                            {logos.map((logo, index) => (
-                                <img
-                                    key={`logo-duplicate-${index}`}
                                     src={logo.src}
                                     alt={logo.alt}
                                 />
