@@ -4,7 +4,7 @@ import Testimonials from '../../data/testimonials.json'
 import Frame from "../Frame/Frame"
 import './Testimonial.css'
 
-function Testimonial({ id}: { id: number}) {
+function Testimonial({ id }: { id: number }) {
     return (
         <div className="Testimonial">
             <Frame className="testimonial-frame all">
