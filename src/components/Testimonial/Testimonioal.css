@@ -1,0 +1,11 @@
+/* components/Testimonial/Testimonioal.css */
+
+.Testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-primary);
+    margin: 0 auto;
+}
