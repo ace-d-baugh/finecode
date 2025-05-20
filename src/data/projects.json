@@ -11,8 +11,8 @@
         },
         "technologies": ["Angular", "Node.js", "Express", "SQL", "Bootstrap", "CSS"],
         "imageUrls": [
-            "/src/images/bcrs.png",
-            "/src/images/bcrs.png"
+            "images/bcrs.png",
+            "images/bcrs.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/TA-Projects",
         "liveUrl": "https://ace-d-baugh.github.io/TA-Projects/",
@@ -30,8 +30,8 @@
         },
         "technologies": ["React", "Node.js", "Express", "MongoDB", "Bootstrap", "CSS"],
         "imageUrls": [
-            "/src/images/bcrs.png",
-            "/src/images/bcrs.png"
+            "images/bcrs.png",
+            "images/bcrs.png"
         ],
         "codeUrl": "https://github.com/acieffe/Udemy-YelpCamp",
         "liveUrl": "https://acieffe-yelp-camp.onrender.com/",
@@ -49,8 +49,8 @@
         },
         "technologies": ["React", "Node.js", "Express", "MongoDB", "Stripe", "Bootstrap", "CSS"],
         "imageUrls": [
-            "/src/images/bcrs.png",
-            "/src/images/bcrs.png"
+            "images/bcrs.png",
+            "images/bcrs.png"
             ],
         "codeUrl": "https://github.com/ace-d-baugh/ecommerce-platform",
         "liveUrl": "https://ecommerce-platform-demo.netlify.app",
@@ -68,8 +68,8 @@
         },
         "technologies": ["C#", "Bootstrap", "CSS"],
         "imageUrls": [
-            "/src/images/bcrs.png",
-            "/src/images/bcrs.png"
+            "images/bcrs.png",
+            "images/bcrs.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/ContactPro",
         "liveUrl": "https://contact-pro-demo.netlify.app/",
@@ -87,8 +87,8 @@
         },
         "technologies": ["React", "Node.js", "Express", "MongoDB", "Bootstrap", "CSS"],
         "imageUrls": [
-            "/src/images/bcrs.png",
-            "/src/images/bcrs.png"
+            "images/bcrs.png",
+            "images/bcrs.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/nodebucket",
         "liveUrl": "https://baugh-nodebucket.onrender.com/",
@@ -106,8 +106,8 @@
         },
         "technologies": ["Angular", "Node.js", "Express", "SQL", "Bootstrap", "CSS"],
         "imageUrls": [
-            "/src/images/bcrs.png",
-            "/src/images/bcrs.png"
+            "images/bcrs.png",
+            "images/bcrs.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/teams-stand-up-tracker",
         "liveUrl": "https://ace-d-baugh.github.io/teams-stand-up-tracker/",
@@ -125,8 +125,8 @@
         },
         "technologies": ["CSS", "Javascript"],
         "imageUrls": [
-            "/src/images/bcrs.png",
-            "/src/images/bcrs.png"
+            "images/bcrs.png",
+            "images/bcrs.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/Animations",
         "liveUrl": "https://ace-d-baugh.github.io/Animations/",
@@ -144,8 +144,8 @@
         },
         "technologies": ["React", "Bootstrap", "CSS", "Wordpress, woocommerce"],
         "imageUrls": [
-            "/src/images/bcrs.png",
-            "/src/images/bcrs.png"
+            "images/bcrs.png",
+            "images/bcrs.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/DigitalElegance",
         "liveUrl": "https://digitalelegance.com",
@@ -163,8 +163,8 @@
         },
         "technologies": ["Javascript", "CSS", "Photoshop"],
         "imageUrls": [
-            "/src/images/bcrs.png",
-            "/src/images/bcrs.png"
+            "images/bcrs.png",
+            "images/bcrs.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/lizvitation",
         "liveUrl": "https://ace-d-baugh.github.io/lizvitation/?n=Demo%20User&g=m",
