@@ -1,11 +1,11 @@
 // components/Showcase/Showcase.tsx
 
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import Frame from "../Frame/Frame"
 import Card from "../Card/Card"
 import './Showcase.css'
 import Projects from '../../data/projects.json'
-import LogoScroll from '../LogoScroll/LogoScroll'
+// import LogoScroll from '../LogoScroll/LogoScroll'
 
 
 interface LongDescription {
@@ -39,6 +39,7 @@ function Showcase() {
                         {Projects.slice(0, 9).map((project: Project) => (
                             <Card
                                 key={project.id}
+                                id={project.id}
                                 title={project.title}
                                 imageUrl={project.imageUrls[0]}
                                 alt={project.title}

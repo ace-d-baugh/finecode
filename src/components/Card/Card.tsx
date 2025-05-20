@@ -1,10 +1,11 @@
 // components/Card/Card.tsx
 
+import Button from '../Button/Button';
 import Frame from '../Frame/Frame'
 import Photo from '../Photo/Photo'
 import './Card.css'
 
-function Card({ key, title, imageUrl, alt, description }: { key: number, title: string, imageUrl: string, alt: string, description: string }) {
+function Card({ id, title, imageUrl, alt, description }: { id: number, title: string, imageUrl: string, alt: string, description: string }) {
     return (
         <div className="Card">
             <Frame className="card-frame all">
@@ -14,6 +15,7 @@ function Card({ key, title, imageUrl, alt, description }: { key: number, title: 
                     </Frame>
                     <Photo src={imageUrl} width={200} height={200} alt={alt} />
                     <p className='description'>{description}</p>
+                    <Button text="View Project" link={`/project/${id}`} />
                 </div>
             </Frame>
         </div>
