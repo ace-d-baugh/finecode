@@ -10,12 +10,14 @@ function Testimonials() {
             <Frame className="testimonials-frame all">
                 <div className="testimonials">
                     <h1>Testimonials</h1>
-                    <Testimonial id={0} />
-                    <Testimonial id={1} />
-                    <Testimonial id={2} />
-                    <Testimonial id={3} />
-                    <Testimonial id={4} />
-                    <Testimonial id={5} />
+                    <div className="testimonials-list">
+                        <Testimonial id={0} />
+                        <Testimonial id={1} />
+                        <Testimonial id={2} />
+                        <Testimonial id={3} />
+                        <Testimonial id={4} />
+                        <Testimonial id={5} />
+                    </div>
                 </div>
             </Frame>
         </div>

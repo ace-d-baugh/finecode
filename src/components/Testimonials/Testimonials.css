@@ -1,1 +1,8 @@
 /* components/Testimonials/Testimonials.css */
+
+.testimonials-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: 0 auto;
+}
