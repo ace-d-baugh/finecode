@@ -1,7 +1,7 @@
 // pages/Resume.tsx
 
 import Frame from "../components/Frame/Frame";
-import Certifications from "../components/Resume/Ceritifications/Certifications";
+
 import Education from "../components/Resume/Education/Education";
 import Experience from "../components/Resume/Experience/Experience";
 import Header from "../components/Resume/Header/Header";
@@ -20,7 +20,7 @@ function Resume() {
                     <Skills />
                     <Work />
                     <Education />
-                    <Certifications />
+                    
                     <Experience />
                     <Recognition />
                 </div>
