@@ -52,7 +52,7 @@
             "/src/assets/images/projects/bcrs.png",
             "/src/assets/images/projects/bcrs.png"
             ],
-        "codeUrl": "https://github.com/ace-d-baugh/ecommerce-platform",
+        "codeUrl": "https://github.com/ace-d-baugh/gryffindor-bcrs",
         "liveUrl": "https://ecommerce-platform-demo.netlify.app",
         "type": "Full-Stack"
     },
@@ -168,6 +168,329 @@
         ],
         "codeUrl": "https://github.com/ace-d-baugh/lizvitation",
         "liveUrl": "https://ace-d-baugh.github.io/lizvitation/?n=Demo%20User&g=m",
+        "type": "Front-End"
+    },
+    {
+        "id": 10,
+        "title": "Loan_App",
+        "shortDescription": "Useful app for calculating monthly payments for a loan.",
+        "longDescription": {
+            "issue": "Needed a useful app for calculating monthly payments for a loan.",
+            "solution": "Built a Typescript Angular-based frontend for a loan calculator. I designed the look and feel of the website, and tested the application.",
+            "lessonsLearned": "Learned Typescript, Angular, and CSS. Also flexed my skills using generative AI",
+            "extraInfo": ""
+        },
+        "technologies": ["TypeScript", "Angular", "CSS"],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/loan-app",
+        "liveUrl": "https://ace-d-baugh.github.io/loan-app",
+        "type": "Front-End"
+    },
+    {
+        "id": 11,
+        "title": "In-n-Out Books",
+        "shortDescription": "This project utilizes a Book database API to view information about books and authors.",
+        "longDescription": {
+            "issue": "Instead of finding and hardcoding information about books and authors, I wanted to find and display information about books and authors from a Book database API.",
+            "solution": "Built a JavaScript-based Angular app accessing a Book database API. I designed the look and feel of the website, and tested the application.",
+            "lessonsLearned": "Learned how to find and access information from a database API.",
+            "extraInfo": ""
+        },
+        "technologies": ["HTML", "CSS", "Javascript", "Angular", "SoapUI", "Swagger"],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+            ],
+        "codeUrl": "https://github.com/ace-d-baugh/in-n-out-books",
+        "liveUrl": "https://ace-d-baugh.github.io/in-n-out-books/",
+        "type": "Front-End"
+    },
+    {
+        "id": 12,
+        "title": "Pets-R-Us",
+        "shortDescription": "",
+        "longDescription": {
+            "issue": "",
+            "solution": "",
+            "lessonsLearned": "",
+            "extraInfo": ""
+        },
+        "technologies": ["HTML", "CSS", "Javascript", "Angular"],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+            ],
+        "codeUrl": "",
+        "liveUrl": "",
+        "type": "Front-End"
+    },
+    {
+        "id": 13,
+        "title": "GPA Calculator App",
+        "shortDescription": "",
+        "longDescription": {
+            "issue": "",
+            "solution": "",
+            "lessonsLearned": "",
+            "extraInfo": ""
+        },
+        "technologies": ["HTML", "CSS", "Javascript", "Angular"],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+            ],
+        "codeUrl": "https://github.com/ace-d-baugh/gpa-calculator-app",
+        "liveUrl": "https://ace-d-baugh.github.io/gpa-calculator-app/",
+        "type": "Front-End"
+    },
+    {
+        "id": 14,
+        "title": "Composer App",
+        "shortDescription": "",
+        "longDescription": {
+            "issue": "",
+            "solution": "",
+            "lessonsLearned": "",
+            "extraInfo": ""
+        },
+        "technologies": ["HTML", "CSS", "Javascript", "Angular"],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+            ],
+        "codeUrl": "https://github.com/ace-d-baugh/enterprise-composer-app",
+        "liveUrl": "https://ace-d-baugh.github.io/enterprise-composer-app/",
+        "type": "Front-End"
+    },
+    {
+        "id": 15,
+        "title": "Mark's Bio Site",
+        "shortDescription": "",
+        "longDescription": {
+            "issue": "",
+            "solution": "",
+            "lessonsLearned": "",
+            "extraInfo": ""
+        },
+        "technologies": [""],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+            ],
+        "codeUrl": "https://github.com/ace-d-baugh/biosite/",
+        "liveUrl": "https://ace-d-baugh.github.io/biosite/",
+        "type": "Front-End"
+    },
+    {
+        "id": 16,
+        "title": "Flight of Passage Grouper App",
+        "shortDescription": "",
+        "longDescription": {
+            "issue": "The old app was built mainly for the employees and lacked crucial features",
+            "solution": "This was my first attempt at a large javascript app. I built this version with more variations in colors and sizes for marking the screen. I also made it easier to show customers how the attraction was set up and made it easier for the employees to designate an inoperable seat. I designed the look and feel to match that of the attraction. ",
+            "lessonsLearned": "Humility! This was also one of my first rejected projects. I learned javascript to make this app, and I learned how to use the HTML5 canvas element to create a large canvas for the screen.",
+            "extraInfo": "This was built for a Surface Pro 7 Tablet in landscape view. You may use a desktop browser if you can simulate a tablet."
+        },
+        "technologies": [""],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+            ],
+        "codeUrl": "https://github.com/acieffe/FlightGrouperApp",
+        "liveUrl": "https://acieffe.github.io/FlightGrouperApp/",
+        "type": "Front-End"
+    },
+    {
+        "id": 17,
+        "title": "Penalty Kick Game",
+        "shortDescription": "",
+        "longDescription": {
+            "issue": "",
+            "solution": "",
+            "lessonsLearned": "",
+            "extraInfo": ""
+        },
+        "technologies": [""],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+            ],
+        "codeUrl": "https://github.com/ace-d-baugh/PenaltyKickGame/",
+        "liveUrl": "https://ace-d-baugh.github.io/PenaltyKickGame/",
+        "type": "Front-End"
+    },
+    {
+        "id": 18,
+        "title": "",
+        "shortDescription": "",
+        "longDescription": {
+            "issue": "",
+            "solution": "",
+            "lessonsLearned": "",
+            "extraInfo": ""
+        },
+        "technologies": [""],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+            ],
+        "codeUrl": "",
+        "liveUrl": "",
+        "type": "Front-End"
+    },
+    {
+        "id": 19,
+        "title": "",
+        "shortDescription": "",
+        "longDescription": {
+            "issue": "",
+            "solution": "",
+            "lessonsLearned": "",
+            "extraInfo": ""
+        },
+        "technologies": [""],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+            ],
+        "codeUrl": "",
+        "liveUrl": "",
+        "type": "Front-End"
+    },
+    {
+        "id": 20,
+        "title": "",
+        "shortDescription": "",
+        "longDescription": {
+            "issue": "",
+            "solution": "",
+            "lessonsLearned": "",
+            "extraInfo": ""
+        },
+        "technologies": [""],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+            ],
+        "codeUrl": "",
+        "liveUrl": "",
+        "type": "Front-End"
+    },
+    {
+        "id": 21,
+        "title": "",
+        "shortDescription": "",
+        "longDescription": {
+            "issue": "",
+            "solution": "",
+            "lessonsLearned": "",
+            "extraInfo": ""
+        },
+        "technologies": [""],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+            ],
+        "codeUrl": "",
+        "liveUrl": "",
+        "type": "Front-End"
+    },
+    {
+        "id": 22,
+        "title": "",
+        "shortDescription": "",
+        "longDescription": {
+            "issue": "",
+            "solution": "",
+            "lessonsLearned": "",
+            "extraInfo": ""
+        },
+        "technologies": [""],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+            ],
+        "codeUrl": "",
+        "liveUrl": "",
+        "type": "Front-End"
+    },
+    {
+        "id": 23,
+        "title": "",
+        "shortDescription": "",
+        "longDescription": {
+            "issue": "",
+            "solution": "",
+            "lessonsLearned": "",
+            "extraInfo": ""
+        },
+        "technologies": [""],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+            ],
+        "codeUrl": "",
+        "liveUrl": "",
+        "type": "Front-End"
+    },
+    {
+        "id": 24,
+        "title": "",
+        "shortDescription": "",
+        "longDescription": {
+            "issue": "",
+            "solution": "",
+            "lessonsLearned": "",
+            "extraInfo": ""
+        },
+        "technologies": [""],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+            ],
+        "codeUrl": "",
+        "liveUrl": "",
+        "type": "Front-End"
+    },
+    {
+        "id": 25,
+        "title": "",
+        "shortDescription": "",
+        "longDescription": {
+            "issue": "",
+            "solution": "",
+            "lessonsLearned": "",
+            "extraInfo": ""
+        },
+        "technologies": [""],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+            ],
+        "codeUrl": "",
+        "liveUrl": "",
+        "type": "Front-End"
+    },
+    {
+        "id": 26,
+        "title": "Pets-R-Us",
+        "shortDescription": "",
+        "longDescription": {
+            "issue": "",
+            "solution": "",
+            "lessonsLearned": "",
+            "extraInfo": ""
+        },
+        "technologies": [""],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+            ],
+        "codeUrl": "",
+        "liveUrl": "",
         "type": "Front-End"
     }
 ]

@@ -5,6 +5,8 @@ import Showcase from '../components/layout/Showcase/Showcase';
 import Solutions from '../components/layout/Solutions/Solutions';
 import Testimonials from '../components/layout/Testimonials/Testimonials';
 import Frame from "../components/common/Frame/Frame";
+import Skills from '../components/layout/Resume/Skills/Skills';
+import Contact from './Contact';
 
 function Home() {
     return (
@@ -14,9 +16,11 @@ function Home() {
                     <Hero />
                     <ShortBio />
                     <Showcase />
-                    <Solutions />
-                    <Benefits />
+                    {/* <Solutions />
+                    <Benefits /> */}
+                    <Skills />
                     <Testimonials />
+                    <Contact />
                 </div>
             </Frame>
         </div>
