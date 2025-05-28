@@ -1,4 +1,4 @@
-import Frame from "../components/Frame/Frame";
+import Frame from "../components/common/Frame/Frame";
 
 function About() {
     return (

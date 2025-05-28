@@ -1,14 +1,14 @@
 // pages/Resume.tsx
 
-import Frame from "../components/Frame/Frame";
+import Frame from "../components/common/Frame/Frame";
 
-import Education from "../components/Resume/Education/Education";
-import Experience from "../components/Resume/Experience/Experience";
-import Header from "../components/Resume/Header/Header";
-import Recognition from "../components/Resume/Recognition/Recognition";
-import Skills from "../components/Resume/Skills/Skills";
-import Summary from "../components/Resume/Summary/Summary";
-import Work from "../components/Resume/Work/Work";
+import Education from "../components/layout/Resume/Education/Education";
+import Experience from "../components/layout/Resume/Experience/Experience";
+import Header from "../components/layout/Resume/Header/Header";
+import Recognition from "../components/layout/Resume/Recognition/Recognition";
+import Skills from "../components/layout/Resume/Skills/Skills";
+import Summary from "../components/layout/Resume/Summary/Summary";
+import Work from "../components/layout/Resume/Work/Work";
 
 function Resume() {
     return (
@@ -20,7 +20,6 @@ function Resume() {
                     <Skills />
                     <Work />
                     <Education />
-                    
                     <Experience />
                     <Recognition />
                 </div>

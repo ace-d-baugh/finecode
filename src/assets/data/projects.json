@@ -1,0 +1,173 @@
+[
+    {
+        "id": 1,
+        "title": "Drag n Drop Selector",
+        "shortDescription": "Allow users to select and save elements from a list of options by dragging and dropping.",
+        "longDescription": {
+            "issue": "Previous versions of this component was a list of dropdowns, which was not user-friendly.",
+            "solution": "Built an Angular-based frontend with a Node.js/Express backend, and used SQL for data storage. Created a custom drag and drop component to display a list of options allowing users to filter and choose options by highlighting multiple lines and drag them to another list to save them. A version of this is used by thousands of employees at a large top 100 company for schedule preferences.",
+            "lessonsLearned": "Learned the importance of optimizing API calls for performance and building a custom component that needed to be added to a larger, previously built project.",
+            "extraInfo": ""
+        },
+        "technologies": ["Angular", "Node.js", "Express", "SQL", "Bootstrap", "CSS"],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/TA-Projects",
+        "liveUrl": "https://ace-d-baugh.github.io/TA-Projects/",
+        "type": "Full-Stack"
+    },
+    {
+        "id": 2,
+        "title": "YelpCamp",
+        "shortDescription": "MERN Full-stack web application for saving and reviewing camp sites.",
+        "longDescription": {
+            "issue": "Yelp is very popular for finding and reviewing businesses, but it is difficult to find and review them.",
+            "solution": "Built a React-based frontend with a Node.js/Express backend, and used MongoDB for data storage. ",
+            "lessonsLearned": "Learned React, Node.js, Express, MongoDB, and Bootstrap CSS.",
+            "extraInfo": "You may create a free account on the website to test the application."
+        },
+        "technologies": ["React", "Node.js", "Express", "MongoDB", "Bootstrap", "CSS"],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+        ],
+        "codeUrl": "https://github.com/acieffe/Udemy-YelpCamp",
+        "liveUrl": "https://acieffe-yelp-camp.onrender.com/",
+        "type": "Full-Stack"
+    },
+    {
+        "id": 3,
+        "title": "Bob's Computer Repair",
+        "shortDescription": "MEAN Full-Stack web application for computer repair shop.",
+        "longDescription": {
+            "issue": "Bob's Computer Repair needed an affordable, scalable online store with a shopping cart and the possibility of secure payments.",
+            "solution": "Built a React-based frontend with a Node.js/Express backend, and used MongoDB for data storage. Lead a team of 3 developers to build a full-stack shopping cart for a made-up company. I designed the look and feel of the website, helped build the backend, and tested the application.",
+            "lessonsLearned": "Learned Angular stack, waterfall development, and the importance of testing.",
+            "extraInfo": "Demo credentials: Standard User > username: [mozart], password: [Password01] | Admin User > username: [bach], password: [Password01]"
+        },
+        "technologies": ["React", "Node.js", "Express", "MongoDB", "Stripe", "Bootstrap", "CSS"],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+            ],
+        "codeUrl": "https://github.com/ace-d-baugh/ecommerce-platform",
+        "liveUrl": "https://ecommerce-platform-demo.netlify.app",
+        "type": "Full-Stack"
+    },
+    {
+        "id": 4,
+        "title": "Contact Pro",
+        "shortDescription": ".NET Full-stack web application for collecting contacts.",
+        "longDescription": {
+            "issue": "Needed a full-stack web application that allows users to create, edit, and delete contacts.",
+            "solution": "Built a .NET ... ... ... ... ... ... ... ... ... ... ... ...",
+            "lessonsLearned": "Learned ... ... ... ... ... ... ... ... ... ... ... ...",
+            "extraInfo": "... ... ... ... ... ... ... ... ... ... ... ..."
+        },
+        "technologies": ["C#", "Bootstrap", "CSS"],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/ContactPro",
+        "liveUrl": "https://contact-pro-demo.netlify.app/",
+        "type": "Full-Stack"
+    },
+    {
+        "id": 5,
+        "title": "NodeBucket",
+        "shortDescription": "MEAN Full-Stack ToDo web application.",
+        "longDescription": {
+            "issue": "Needed a simple ToDo web application that allows users to create, edit, and delete tasks to keep track of class assignments.",
+            "solution": "Built a React-based frontend with a Node.js/Express backend, and used MongoDB for data storage. I designed the look and feel of the website, utilized AI to generate images for the ToDo list, and tested the application.",
+            "lessonsLearned": "Learned Angular stack, AI image generation, and the importance of testing.",
+            "extraInfo": "Demo credentials: Usernames: 1007, 1008, 1009, 1010, 1011, 1012"
+        },
+        "technologies": ["React", "Node.js", "Express", "MongoDB", "Bootstrap", "CSS"],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/nodebucket",
+        "liveUrl": "https://baugh-nodebucket.onrender.com/",
+        "type": "Full-Stack"
+    },
+    {
+        "id": 6,
+        "title": "Teams Tracker",
+        "shortDescription": "Angular Front-end web application for tracking Teams members.",
+        "longDescription": {
+            "issue": "Zoom calls have the ability to move participants around, Microsoft Teams does not.",
+            "solution": "Built a Angular-based frontend web app that allows users to track Teams members and move them around by dragging and dropping them. I designed the look and feel of the website, and tested the application. This is still be used by a large top 100 company for daily stand-up meetings",
+            "lessonsLearned": "Learned Drag and Drop, Angular, and CSS.",
+            "extraInfo": ""
+        },
+        "technologies": ["Angular", "Node.js", "Express", "SQL", "Bootstrap", "CSS"],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/teams-stand-up-tracker",
+        "liveUrl": "https://ace-d-baugh.github.io/teams-stand-up-tracker/",
+        "type": "Front-End"
+    },
+    {
+        "id": 7,
+        "title": "CSS Animations",
+        "shortDescription": "CSS animations that create cool effects.",
+        "longDescription": {
+            "issue": "Practicing cool effects with CSS animations.",
+            "solution": "Built a collection of CSS animations that create cool effects. I designed the look and feel of the website, and tested the application.",
+            "lessonsLearned": "Learned new CSS and javascript animations",
+            "extraInfo": ""
+        },
+        "technologies": ["CSS", "Javascript"],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/Animations",
+        "liveUrl": "https://ace-d-baugh.github.io/Animations/",
+        "type": "Front-End"
+    },
+    {
+        "id": 8,
+        "title": "Digital Elegance",
+        "shortDescription": "Personal portfolio website for Digital Elegance.",
+        "longDescription": {
+            "issue": "Needed a new personal portfolio website for Digital Elegance.",
+            "solution": "Built a React-based frontend to show off my skills and projects. I designed the look and feel of the website and created all the projects featured. Also, created a Wordpress portion to showcase and sell my photographic art work.",
+            "lessonsLearned": "Learned React, Bootstrap, CSS, and Wordpress.",
+            "extraInfo": ""
+        },
+        "technologies": ["React", "Bootstrap", "CSS", "Wordpress, woocommerce"],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/DigitalElegance",
+        "liveUrl": "https://digitalelegance.com",
+        "type": "Front-End"
+    },
+    {
+        "id": 9,
+        "title": "Lizvitation",
+        "shortDescription": "My Daughter's Harry Potter Themed Wedding Invitation.",
+        "longDescription": {
+            "issue": "Needed a Harry Potter Themed Wedding Invitation that was personalized to each invitee.",
+            "solution": "Built a javascript-based frontend website that pulls information from a url and customizes the invitation based on the information. I designed the look and feel of the invitation and utilized Adobe Photoshop to create the background images and javascript for moving svg footprints.",
+            "lessonsLearned": "Learned new skills in javascript, css, and photoshop.",
+            "extraInfo": ""
+        },
+        "technologies": ["Javascript", "CSS", "Photoshop"],
+        "imageUrls": [
+            "/src/assets/images/projects/bcrs.png",
+            "/src/assets/images/projects/bcrs.png"
+        ],
+        "codeUrl": "https://github.com/ace-d-baugh/lizvitation",
+        "liveUrl": "https://ace-d-baugh.github.io/lizvitation/?n=Demo%20User&g=m",
+        "type": "Front-End"
+    }
+]

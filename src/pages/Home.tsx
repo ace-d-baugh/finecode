@@ -1,10 +1,10 @@
-import Benefits from '../components/Benefits/Benefits';
-import Hero from '../components/Hero/Hero'
-import ShortBio from '../components/ShortBio/ShortBio';
-import Showcase from '../components/Showcase/Showcase';
-import Solutions from '../components/Solutions/Solutions';
-import Testimonials from '../components/Testimonials/Testimonials';
-import Frame from "../components/Frame/Frame";
+import Benefits from '../components/layout/Benefits/Benefits';
+import Hero from '../components/layout/Hero/Hero'
+import ShortBio from '../components/layout/ShortBio/ShortBio';
+import Showcase from '../components/layout/Showcase/Showcase';
+import Solutions from '../components/layout/Solutions/Solutions';
+import Testimonials from '../components/layout/Testimonials/Testimonials';
+import Frame from "../components/common/Frame/Frame";
 
 function Home() {
     return (

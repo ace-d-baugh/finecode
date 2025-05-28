@@ -1,8 +1,8 @@
 // pages/Project.tsx
 
-import Frame from "../components/Frame/Frame";
+import Frame from "../components/common/Frame/Frame";
 import { useParams } from "react-router-dom";
-import Projects from '../data/projects.json';
+import Projects from '../assets/data/projects.json';
 import { Link } from "react-router-dom";
 
 interface LongDescription {

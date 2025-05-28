@@ -1,11 +1,11 @@
 // App.tsx
 
 import { Route, Routes } from 'react-router-dom'
-import Header from './components/Header/Header'
+import Header from './components/layout/Header/Header'
 import About from './pages/About'
 import './App.css'
 import Contact from './pages/Contact'
-import Footer from './components/Footer/Footer'
+import Footer from './components/layout/Footer/Footer'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 import Portfolio from './pages/Portfolio'

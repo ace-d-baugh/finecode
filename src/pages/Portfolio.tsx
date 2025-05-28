@@ -1,9 +1,9 @@
 // pages/Portfolio.tsx
 
-import Button from "../components/Button/Button";
-import Frame from "../components/Frame/Frame";
-import Projects from '../data/projects.json';
-import Photo from "../components/Photo/Photo";
+import Button from "../components/common/Button/Button";
+import Frame from "../components/common/Frame/Frame";
+import Projects from '../assets/data/projects.json';
+import Photo from "../components/common/Photo/Photo";
 import { Link } from "react-router-dom";
 
 interface LongDescription {
