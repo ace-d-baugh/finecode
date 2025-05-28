@@ -1,16 +1,9 @@
 // App.tsx
 
 import { Route, Routes } from 'react-router-dom'
-import Header from './components/layout/Header/Header'
-import About from './pages/About'
+import { Header, Footer } from '../src/components/layout'
+import { Home, About, Contact, Portfolio, Project, Resume, NotFound } from '../src/pages'
 import './App.css'
-import Contact from './pages/Contact'
-import Footer from './components/layout/Footer/Footer'
-import Home from './pages/Home'
-import NotFound from './pages/NotFound'
-import Portfolio from './pages/Portfolio'
-import Project from './pages/Project'
-import Resume from './pages/Resume'
 
 function App({companyName}: {companyName: string}) {
 
