@@ -324,7 +324,7 @@
     },
     {
         "id": 18,
-        "title": "",
+        "title": "Dice Game",
         "shortDescription": "",
         "longDescription": {
             "issue": "",
@@ -337,13 +337,13 @@
             "/src/assets/images/projects/bcrs.png",
             "/src/assets/images/projects/bcrs.png"
             ],
-        "codeUrl": "",
-        "liveUrl": "",
+        "codeUrl": "https://github.com/acieffe/dice-game/",
+        "liveUrl": "https://acieffe.github.io/dice-game/",
         "type": "Front-End"
     },
     {
         "id": 19,
-        "title": "",
+        "title": "Grouper Training App",
         "shortDescription": "",
         "longDescription": {
             "issue": "",
@@ -356,13 +356,13 @@
             "/src/assets/images/projects/bcrs.png",
             "/src/assets/images/projects/bcrs.png"
             ],
-        "codeUrl": "",
-        "liveUrl": "",
+        "codeUrl": "https://github.com/acieffe/Mobile-Training/",
+        "liveUrl": "https://acieffe.github.io/Mobile-Training/",
         "type": "Front-End"
     },
     {
         "id": 20,
-        "title": "",
+        "title": "Wedding Countdown App",
         "shortDescription": "",
         "longDescription": {
             "issue": "",
@@ -375,13 +375,13 @@
             "/src/assets/images/projects/bcrs.png",
             "/src/assets/images/projects/bcrs.png"
             ],
-        "codeUrl": "",
-        "liveUrl": "",
+        "codeUrl": "https://github.com/acieffe/Mobile-Countdown",
+        "liveUrl": "https://acieffe.github.io/Mobile-Countdown/",
         "type": "Front-End"
     },
     {
         "id": 21,
-        "title": "",
+        "title": "Sound Spinner",
         "shortDescription": "",
         "longDescription": {
             "issue": "",
@@ -400,89 +400,13 @@
     },
     {
         "id": 22,
-        "title": "",
+        "title": "BB's Toys",
         "shortDescription": "",
         "longDescription": {
             "issue": "",
             "solution": "",
             "lessonsLearned": "",
-            "extraInfo": ""
-        },
-        "technologies": [""],
-        "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
-            ],
-        "codeUrl": "",
-        "liveUrl": "",
-        "type": "Front-End"
-    },
-    {
-        "id": 23,
-        "title": "",
-        "shortDescription": "",
-        "longDescription": {
-            "issue": "",
-            "solution": "",
-            "lessonsLearned": "",
-            "extraInfo": ""
-        },
-        "technologies": [""],
-        "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
-            ],
-        "codeUrl": "",
-        "liveUrl": "",
-        "type": "Front-End"
-    },
-    {
-        "id": 24,
-        "title": "",
-        "shortDescription": "",
-        "longDescription": {
-            "issue": "",
-            "solution": "",
-            "lessonsLearned": "",
-            "extraInfo": ""
-        },
-        "technologies": [""],
-        "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
-            ],
-        "codeUrl": "",
-        "liveUrl": "",
-        "type": "Front-End"
-    },
-    {
-        "id": 25,
-        "title": "",
-        "shortDescription": "",
-        "longDescription": {
-            "issue": "",
-            "solution": "",
-            "lessonsLearned": "",
-            "extraInfo": ""
-        },
-        "technologies": [""],
-        "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
-            ],
-        "codeUrl": "",
-        "liveUrl": "",
-        "type": "Front-End"
-    },
-    {
-        "id": 26,
-        "title": "Pets-R-Us",
-        "shortDescription": "",
-        "longDescription": {
-            "issue": "",
-            "solution": "",
-            "lessonsLearned": "",
-            "extraInfo": ""
+            "extraInfo": "This was built to be viewed on a mobile device. You may use a desktop browser if you can simulate a mobile device."
         },
         "technologies": [""],
         "imageUrls": [
