@@ -12,11 +12,11 @@ function Home() {
             <Frame className="all">
                 <div>
                     <Hero />
+                    <ShortBio />
+                    <Showcase />
                     <Solutions />
                     <Benefits />
                     <Testimonials />
-                    <Showcase />
-                    <ShortBio />
                 </div>
             </Frame>
         </div>
