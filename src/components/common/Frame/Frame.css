@@ -114,3 +114,39 @@
     --bottom-left-radius: 0 0 0 100%;
     --bottom-right-radius: 0 0 100% 0;
 }
+
+
+.box {
+    display: grid;
+    grid-template-columns: 30px 1fr 30px; /* First and third columns 30px, center column ??/auto */
+    grid-template-rows: 30px 1fr 30px; /* First and third rows 30px, center row ??/auto */
+  }
+  
+  /* All elements design */
+  .ul-c, .ur-c, .ll-c, .lr-c,
+  .uc, .lc, .cl, .cr {
+    background-image: url("https://lh3.googleusercontent.com/ogw/AF2bZyhiFDDrK0TPGkBlsmPDCCSOgh9r1abRBVszmKw7xhrbPSk=s32-c-mo"); /* Image */
+    background-position: center; /* this takes the background image and centers it while it repeats */
+    position: relative; /* This helps for seudo elements */
+  }
+  
+  /* Testing center center sizing */
+  .content {
+    width: 500px;
+    height: 200px;
+  }
+  
+  /* Adding Seudo Elements: All the same for now*/
+  .uc::before,
+  .lc::before, 
+  .cl::before,
+  .cr::before {
+    content: ""; /* no text inside */
+    background: blue; /* color/placeholder for graphic */
+    height: 40px; /* Square */
+    width: 40px; /* Square */
+    position: absolute; /* helps position item */
+    top: 50%; /* center from the top of parent */
+    left: 50%; /* center from left of parent */
+    transform: translate(-50%, -50%); /* uses the center/center of seudo element for positioning */
+  }
