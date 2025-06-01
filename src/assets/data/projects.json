@@ -131,8 +131,10 @@
         },
         "technologies": ["CSS", "Javascript"],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/animate-02.png",
+            "/src/assets/images/projects/animate-03.png",
+            "/src/assets/images/projects/animate-04.png",
+            "/src/assets/images/projects/animate-05.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/Animations",
         "liveUrl": "https://ace-d-baugh.github.io/Animations/",
@@ -302,8 +304,9 @@
         },
         "technologies": [""],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/fop-01.png",
+            "/src/assets/images/projects/fop-02.png",
+            "/src/assets/images/projects/fop-03.png"
             ],
         "codeUrl": "https://github.com/acieffe/FlightGrouperApp",
         "liveUrl": "https://acieffe.github.io/FlightGrouperApp/",
@@ -340,8 +343,10 @@
         },
         "technologies": [""],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/dice-01.png",
+            "/src/assets/images/projects/dice-02.png",
+            "/src/assets/images/projects/dice-03.png",
+            "/src/assets/images/projects/dice-04.png"
             ],
         "codeUrl": "https://github.com/acieffe/dice-game/",
         "liveUrl": "https://acieffe.github.io/dice-game/",
@@ -378,8 +383,8 @@
         },
         "technologies": [""],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/wed-count-01.png",
+            "/src/assets/images/projects/wed-count-02.png"
             ],
         "codeUrl": "https://github.com/acieffe/Mobile-Countdown",
         "liveUrl": "https://acieffe.github.io/Mobile-Countdown/",
@@ -397,8 +402,9 @@
         },
         "technologies": [""],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/sound-01.png",
+            "/src/assets/images/projects/sound-02.png",
+            "/src/assets/images/projects/sound-03.png"
             ],
         "codeUrl": "",
         "liveUrl": "",
@@ -407,17 +413,18 @@
     {
         "id": 22,
         "title": "BB's Toys",
-        "shortDescription": "",
+        "shortDescription": "A count down app for young children to practice counting backwards.",
         "longDescription": {
-            "issue": "",
-            "solution": "",
-            "lessonsLearned": "",
+            "issue": "A friend's young child got easily bored with adult coversation.",
+            "solution": "My school project became the inspiration to pass the time so I built many versions of the countdown to entertain him and others.",
+            "lessonsLearned": "Learned new CSS and javascript animations. Set timer was used to change numbers, and for-loops for animation positioning.",
             "extraInfo": "This was built to be viewed on a mobile device. You may use a desktop browser if you can simulate a mobile device."
         },
-        "technologies": [""],
+        "technologies": ["HTML", "CSS", "Javascript"],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/bb-01.png",
+            "/src/assets/images/projects/bb-02.png",
+            "/src/assets/images/projects/bb-03.png"
             ],
         "codeUrl": "",
         "liveUrl": "",
