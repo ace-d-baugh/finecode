@@ -463,13 +463,12 @@
             "issue": "A friend's young child got easily bored with adult conversation.",
             "solution": "",
             "lessonsLearned": "Learned new CSS and javascript animations. Set timer was used to change numbers. Also accessing pokemon data from a large API.",
-            "extraInfo": "This was built to be viewed on a mobile device. You may use a desktop browser if you can simulate a mobile device."
+            "extraInfo": "This was built to be viewed on a mobile device. You may use a desktop browser if you can simulate a mobile device. **API was not working at last testing**"
         },
         "technologies": ["HTML", "CSS", "Javascript"],
         "imageUrls": [
-            "/src/assets/images/projects/bb-01.png",
-            "/src/assets/images/projects/bb-02.png",
-            "/src/assets/images/projects/bb-03.png"
+            "/src/assets/images/projects/hatch-01.png",
+            "/src/assets/images/projects/hatch-02.png"
             ],
         "codeUrl": "",
         "liveUrl": "",
