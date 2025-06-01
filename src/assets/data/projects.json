@@ -11,8 +11,12 @@
         },
         "technologies": ["Angular", "Node.js", "Express", "SQL", "Bootstrap", "CSS"],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/ta-01.png",
+            "/src/assets/images/projects/ta-02.png",
+            "/src/assets/images/projects/ta-03.png",
+            "/src/assets/images/projects/ta-04.png",
+            "/src/assets/images/projects/ta-05.png",
+            "/src/assets/images/projects/ta-06.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/TA-Projects",
         "liveUrl": "https://ace-d-baugh.github.io/TA-Projects/",
@@ -74,8 +78,10 @@
         },
         "technologies": ["C#", "Bootstrap", "CSS"],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/missing.png",
+            "/src/assets/images/projects/missing.png",
+            "/src/assets/images/projects/missing.png",
+            "/src/assets/images/projects/missing.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/ContactPro",
         "liveUrl": "https://contact-pro-demo.netlify.app/",
@@ -93,8 +99,10 @@
         },
         "technologies": ["React", "Node.js", "Express", "MongoDB", "Bootstrap", "CSS"],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/node-01.png",
+            "/src/assets/images/projects/node-02.png",
+            "/src/assets/images/projects/node-03.png",
+            "/src/assets/images/projects/node-04.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/nodebucket",
         "liveUrl": "https://baugh-nodebucket.onrender.com/",
@@ -112,8 +120,11 @@
         },
         "technologies": ["Angular", "Node.js", "Express", "SQL", "Bootstrap", "CSS"],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/team-01.png",
+            "/src/assets/images/projects/team-02.png",
+            "/src/assets/images/projects/team-03.png",
+            "/src/assets/images/projects/team-04.png",
+            "/src/assets/images/projects/team-05.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/teams-stand-up-tracker",
         "liveUrl": "https://ace-d-baugh.github.io/teams-stand-up-tracker/",
@@ -152,8 +163,10 @@
         },
         "technologies": ["React", "Bootstrap", "CSS", "Wordpress, woocommerce"],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/missing.png",
+            "/src/assets/images/projects/missing.png",
+            "/src/assets/images/projects/missing.png",
+            "/src/assets/images/projects/missing.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/DigitalElegance",
         "liveUrl": "https://digitalelegance.com",
@@ -171,8 +184,10 @@
         },
         "technologies": ["Javascript", "CSS", "Photoshop"],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/liz-01.png",
+            "/src/assets/images/projects/liz-02.png",
+            "/src/assets/images/projects/liz-03.png",
+            "/src/assets/images/projects/liz-04.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/lizvitation",
         "liveUrl": "https://ace-d-baugh.github.io/lizvitation/?n=Demo%20User&g=m",
@@ -190,8 +205,10 @@
         },
         "technologies": ["TypeScript", "Angular", "CSS"],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/loan-01.png",
+            "/src/assets/images/projects/loan-02.png",
+            "/src/assets/images/projects/loan-03.png",
+            "/src/assets/images/projects/loan-04.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/loan-app",
         "liveUrl": "https://ace-d-baugh.github.io/loan-app",
@@ -209,8 +226,9 @@
         },
         "technologies": ["HTML", "CSS", "Javascript", "Angular", "SoapUI", "Swagger"],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/book-01.png",
+            "/src/assets/images/projects/book-02.png",
+            "/src/assets/images/projects/book-03.png"
             ],
         "codeUrl": "https://github.com/ace-d-baugh/in-n-out-books",
         "liveUrl": "https://ace-d-baugh.github.io/in-n-out-books/",
@@ -228,8 +246,11 @@
         },
         "technologies": ["HTML", "CSS", "Javascript", "Angular"],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/pets-01.png",
+            "/src/assets/images/projects/pets-02.png",
+            "/src/assets/images/projects/pets-03.png",
+            "/src/assets/images/projects/pets-04.png",
+            "/src/assets/images/projects/pets-05.png"
             ],
         "codeUrl": "",
         "liveUrl": "",
@@ -247,8 +268,8 @@
         },
         "technologies": ["HTML", "CSS", "Javascript", "Angular"],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/missing.png",
+            "/src/assets/images/projects/missing.png"
             ],
         "codeUrl": "https://github.com/ace-d-baugh/gpa-calculator-app",
         "liveUrl": "https://ace-d-baugh.github.io/gpa-calculator-app/",
@@ -266,8 +287,8 @@
         },
         "technologies": ["HTML", "CSS", "Javascript", "Angular"],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/missing.png",
+            "/src/assets/images/projects/missing.png"
             ],
         "codeUrl": "https://github.com/ace-d-baugh/enterprise-composer-app",
         "liveUrl": "https://ace-d-baugh.github.io/enterprise-composer-app/",
@@ -285,8 +306,9 @@
         },
         "technologies": [""],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/mark-01.png",
+            "/src/assets/images/projects/mark-02.png",
+            "/src/assets/images/projects/mark-03.png"
             ],
         "codeUrl": "https://github.com/ace-d-baugh/biosite/",
         "liveUrl": "https://ace-d-baugh.github.io/biosite/",
@@ -310,7 +332,7 @@
             ],
         "codeUrl": "https://github.com/acieffe/FlightGrouperApp",
         "liveUrl": "https://acieffe.github.io/FlightGrouperApp/",
-        "type": "Front-End"
+        "type": "Mobile Front-End"
     },
     {
         "id": 17,
@@ -324,12 +346,14 @@
         },
         "technologies": [""],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/kick-01.png",
+            "/src/assets/images/projects/kick-02.png",
+            "/src/assets/images/projects/kick-03.png",
+            "/src/assets/images/projects/kick-04.png"
             ],
         "codeUrl": "https://github.com/ace-d-baugh/PenaltyKickGame/",
         "liveUrl": "https://ace-d-baugh.github.io/PenaltyKickGame/",
-        "type": "Front-End"
+        "type": "Mobile Front-End"
     },
     {
         "id": 18,
@@ -350,7 +374,7 @@
             ],
         "codeUrl": "https://github.com/acieffe/dice-game/",
         "liveUrl": "https://acieffe.github.io/dice-game/",
-        "type": "Front-End"
+        "type": "Mobile Front-End"
     },
     {
         "id": 19,
@@ -364,12 +388,13 @@
         },
         "technologies": [""],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/group-01.png",
+            "/src/assets/images/projects/group-02.png",
+            "/src/assets/images/projects/group-03.png"
             ],
         "codeUrl": "https://github.com/acieffe/Mobile-Training/",
         "liveUrl": "https://acieffe.github.io/Mobile-Training/",
-        "type": "Front-End"
+        "type": "Mobile Front-End"
     },
     {
         "id": 20,
@@ -388,7 +413,7 @@
             ],
         "codeUrl": "https://github.com/acieffe/Mobile-Countdown",
         "liveUrl": "https://acieffe.github.io/Mobile-Countdown/",
-        "type": "Front-End"
+        "type": "Mobile Front-End"
     },
     {
         "id": 21,
@@ -408,14 +433,14 @@
             ],
         "codeUrl": "",
         "liveUrl": "",
-        "type": "Front-End"
+        "type": "Mobile Front-End"
     },
     {
         "id": 22,
         "title": "BB's Toys",
         "shortDescription": "A count down app for young children to practice counting backwards.",
         "longDescription": {
-            "issue": "A friend's young child got easily bored with adult coversation.",
+            "issue": "A friend's young child got easily bored with adult conversation.",
             "solution": "My school project became the inspiration to pass the time so I built many versions of the countdown to entertain him and others.",
             "lessonsLearned": "Learned new CSS and javascript animations. Set timer was used to change numbers, and for-loops for animation positioning.",
             "extraInfo": "This was built to be viewed on a mobile device. You may use a desktop browser if you can simulate a mobile device."
@@ -428,6 +453,27 @@
             ],
         "codeUrl": "",
         "liveUrl": "",
-        "type": "Front-End"
+        "type": "Mobile Front-End"
+    },
+    {
+        "id": 23,
+        "title": "Pokemon Hatch",
+        "shortDescription": "",
+        "longDescription": {
+            "issue": "A friend's young child got easily bored with adult conversation.",
+            "solution": "",
+            "lessonsLearned": "Learned new CSS and javascript animations. Set timer was used to change numbers. Also accessing pokemon data from a large API.",
+            "extraInfo": "This was built to be viewed on a mobile device. You may use a desktop browser if you can simulate a mobile device."
+        },
+        "technologies": ["HTML", "CSS", "Javascript"],
+        "imageUrls": [
+            "/src/assets/images/projects/bb-01.png",
+            "/src/assets/images/projects/bb-02.png",
+            "/src/assets/images/projects/bb-03.png"
+            ],
+        "codeUrl": "",
+        "liveUrl": "",
+        "type": "Mobile Front-End"
     }
+
 ]
