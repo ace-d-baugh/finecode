@@ -78,10 +78,10 @@
         },
         "technologies": ["C#", ".NET Core", "Bootstrap", "CSS"],
         "imageUrls": [
-            "/src/assets/images/projects/contact-01.png",
-            "/src/assets/images/projects/contact-02.png",
-            "/src/assets/images/projects/contact-03.png",
-            "/src/assets/images/projects/contact-04.png"
+            "/src/assets/images/projects/missing.png",
+            "/src/assets/images/projects/missing.png",
+            "/src/assets/images/projects/missing.png",
+            "/src/assets/images/projects/missing.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/ContactPro",
         "liveUrl": "https://contact-pro-demo.netlify.app/",
@@ -163,10 +163,10 @@
         },
         "technologies": ["React", "Bootstrap", "CSS", "WordPress", "WooCommerce"],
         "imageUrls": [
-            "/src/assets/images/projects/portfolio-01.png",
-            "/src/assets/images/projects/portfolio-02.png",
-            "/src/assets/images/projects/portfolio-03.png",
-            "/src/assets/images/projects/portfolio-04.png"
+            "/src/assets/images/projects/missing.png",
+            "/src/assets/images/projects/missing.png",
+            "/src/assets/images/projects/missing.png",
+            "/src/assets/images/projects/missing.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/DigitalElegance",
         "liveUrl": "https://digitalelegance.com",
@@ -264,12 +264,14 @@
             "issue": "Students needed a reliable, user-friendly application to calculate their GPA accurately without manual errors.",
             "solution": "Developed an Angular-based frontend application using JavaScript, HTML, and CSS, featuring an intuitive interface for inputting grades and computing GPAs with real-time feedback.",
             "lessonsLearned": "Strengthened skills in Angular for interactive applications, improved JavaScript logic for calculations, and applied UX principles for a seamless user experience.",
-            "extraInfo": "The application supports multiple grading scales for flexibility."
+            "extraInfo": "Demo credentials: Usernames: 1007, 1008, 1009, 1010, 1011, 1012"
         },
         "technologies": ["HTML", "CSS", "JavaScript", "Angular"],
         "imageUrls": [
             "/src/assets/images/projects/gpa-01.png",
-            "/src/assets/images/projects/gpa-02.png"
+            "/src/assets/images/projects/gpa-02.png",
+            "/src/assets/images/projects/gpa-03.png",
+            "/src/assets/images/projects/gpa-04.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/gpa-calculator-app",
         "liveUrl": "https://ace-d-baugh.github.io/gpa-calculator-app/",
@@ -288,7 +290,8 @@
         "technologies": ["HTML", "CSS", "JavaScript", "Angular"],
         "imageUrls": [
             "/src/assets/images/projects/composer-01.png",
-            "/src/assets/images/projects/composer-02.png"
+            "/src/assets/images/projects/composer-02.png",
+            "/src/assets/images/projects/composer-03.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/enterprise-composer-app",
         "liveUrl": "https://ace-d-baugh.github.io/enterprise-composer-app/",
