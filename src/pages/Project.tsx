@@ -4,6 +4,7 @@ import Frame from "../components/common/Frame/Frame";
 import { useParams } from "react-router-dom";
 import Projects from '../assets/data/projects.json';
 import { Link } from "react-router-dom";
+import Carousel from "../components/common/Carousel/Carousel";
 
 interface LongDescription {
     issue: string;
@@ -36,7 +37,7 @@ function Project() {
         <div>
             <h1>{project.title}</h1>
             <p>{project.shortDescription}</p>
-            <img src={project.imageUrls[0]} alt={project.title} />
+            <Carousel imageUrls={project.imageUrls} title={project.title} />
             <h2>Long Description</h2>
             <p>Issue: {project.longDescription.issue}</p>
             <p>Solution: {project.longDescription.solution}</p>

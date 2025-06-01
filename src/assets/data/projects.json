@@ -30,8 +30,10 @@
         },
         "technologies": ["React", "Node.js", "Express", "MongoDB", "Bootstrap", "CSS"],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/yelp-01.png",
+            "/src/assets/images/projects/yelp-02.png",
+            "/src/assets/images/projects/yelp-03.png",
+            "/src/assets/images/projects/yelp-04.png"
         ],
         "codeUrl": "https://github.com/acieffe/Udemy-YelpCamp",
         "liveUrl": "https://acieffe-yelp-camp.onrender.com/",
@@ -49,8 +51,12 @@
         },
         "technologies": ["React", "Node.js", "Express", "MongoDB", "Stripe", "Bootstrap", "CSS"],
         "imageUrls": [
-            "/src/assets/images/projects/bcrs.png",
-            "/src/assets/images/projects/bcrs.png"
+            "/src/assets/images/projects/bcrs-01.png",
+            "/src/assets/images/projects/bcrs-02.png",
+            "/src/assets/images/projects/bcrs-03.png",
+            "/src/assets/images/projects/bcrs-04.png",
+            "/src/assets/images/projects/bcrs-05.png",
+            "/src/assets/images/projects/bcrs-06.png"
             ],
         "codeUrl": "https://github.com/ace-d-baugh/gryffindor-bcrs",
         "liveUrl": "https://ecommerce-platform-demo.netlify.app",
