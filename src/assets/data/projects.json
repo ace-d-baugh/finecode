@@ -63,7 +63,7 @@
             "/src/assets/images/projects/bcrs-06.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/gryffindor-bcrs",
-        "liveUrl": "https://ecommerce-platform-demo.netlify.app",
+        "liveUrl": "https://gryffindor-bcrs.onrender.com/#/",
         "type": "Full-Stack"
     },
     {
@@ -253,7 +253,7 @@
             "/src/assets/images/projects/pets-05.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/pets-r-us",
-        "liveUrl": "https://ace-d-baugh.github.io/pets-r-us/",
+        "liveUrl": "https://ace-d-baugh-pets-r-us.onrender.com/",
         "type": "Front-End"
     },
     {
@@ -435,7 +435,7 @@
             "/src/assets/images/projects/sound-03.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/SoundSpinner",
-        "liveUrl": "",
+        "liveUrl": "https://ace-d-baugh.github.io/SoundSpinner/",
         "type": "Mobile Front-End"
     },
     {
