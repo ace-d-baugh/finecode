@@ -74,7 +74,7 @@
             "issue": "Users needed an efficient, secure platform to organize and manage contact information with full CRUD capabilities.",
             "solution": "Developed a full-stack application using .NET Core for the backend, paired with a responsive frontend built with Bootstrap and CSS, enabling seamless contact management with a focus on scalability and user experience.",
             "lessonsLearned": "Acquired expertise in .NET Core for robust backend development, enhanced skills in responsive design with Bootstrap, and deepened understanding of secure data handling practices.",
-            "extraInfo": "The application is designed for easy integration with existing systems and supports user authentication for secure access."
+            "extraInfo": "This application is currently being updated and is not available for public use."
         },
         "technologies": ["C#", ".NET Core", "Bootstrap", "CSS"],
         "imageUrls": [
@@ -84,7 +84,7 @@
             "/src/assets/images/projects/missing.png"
         ],
         "codeUrl": "https://github.com/ace-d-baugh/ContactPro",
-        "liveUrl": "https://contact-pro-demo.netlify.app/",
+        "liveUrl": "#",
         "type": "Full-Stack"
     },
     {
