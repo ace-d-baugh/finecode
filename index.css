@@ -48,4 +48,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: var(--background);
+    background-image: url("/public/assets/images/deco-diamonds.svg");
+    background-repeat: repeat;
+    background-size: 50px;
 }

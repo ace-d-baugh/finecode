@@ -1,15 +1,15 @@
 /* App.css or global.css */
 .App {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Full viewport height */
-    max-width: 1600px; /* Max viewport width */
-    margin: 0 auto; /* Center the content horizontally */
-    padding: 0 20px; /* Add some padding */
-  }
-  
-  .Routes {
-    flex: 1; /* Take up remaining space */
-  }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+  max-width: 1600px; /* Max viewport width */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 0 20px; /* Add some padding */
+}
+
+.Routes {
+  flex: 1; /* Take up remaining space */
+}
 
 
