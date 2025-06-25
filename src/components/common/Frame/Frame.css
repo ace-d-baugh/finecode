@@ -8,6 +8,58 @@
 }
 
 .top-left {
+    background-image: url("/src/assets/images/frames/top-start-photo.svg");
+    background-size: cover;
+}
+
+.top-center {
+    background-image: url("/src/assets/images/frames/top-photo.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+.top-right {
+    background-image: url("/src/assets/images/frames/top-end-photo.svg");
+    background-size: cover;
+}
+
+.left-center {
+    background-image: url("/src/assets/images/frames/start-photo.svg");
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+
+.center {
+    padding: .25rem;
+}
+
+.right-center {
+    background-image: url("/src/assets/images/frames/end-photo.svg");
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+
+.bottom-left {
+    background-image: url("/src/assets/images/frames/bottom-start-photo.svg");
+    background-size: cover;
+}
+
+.bottom-center {
+    background-image: url("/src/assets/images/frames/bottom-photo.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+.bottom-right {
+    background-image: url("/src/assets/images/frames/bottom-end-photo.svg");
+    background-size: cover;
+}
+
+/* OLD FRAME CSS
+
+
+
+.top-left {
     background-color: var(--color-primary);
     border-radius: var(--top-left-radius);
 }
@@ -54,6 +106,8 @@
     background-color: var(--color-primary);
     border-radius: var(--bottom-right-radius);
 }
+
+/* Grid */
 
 .top-left, .top-center, .top-right {
     grid-row: 1;
@@ -108,7 +162,7 @@
 }
 
 .button, .all {
-    --border-width: 5px;
+    --border-width: 25px;
     --top-left-radius: 100% 0 0 0;
     --top-right-radius: 0 100% 0 0;
     --bottom-left-radius: 0 0 0 100%;
