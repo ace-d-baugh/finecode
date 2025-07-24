@@ -8,7 +8,9 @@ function Logo({ logoText }: { logoText: string }) {
 	return (
 		<div className="Logo">
 			<Frame className="all">
-				<Link to="/"><h1>{logoText}</h1></Link>
+				<Link to="/">
+					<h1>{logoText}</h1>
+				</Link>
 			</Frame>
 		</div>
 	);
