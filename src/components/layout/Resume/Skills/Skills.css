@@ -1,1 +1,26 @@
 /* components/Resume/Skills/Skills.css */
+
+.Home .Skills {
+
+}
+
+.Home .Skills li {
+    list-style: none;
+}
+
+.Home .Skills .left {
+    text-align: right;
+}
+
+.Home .Skills .right {
+    text-align: left;
+}
+
+.Home .Skills .skills-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;}
+
+.skills-display ul {
+    padding: 1rem;
+    margin: 0;
+}
