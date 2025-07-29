@@ -10,6 +10,14 @@
     grid-template-columns: var(--border-width) 1fr var(--border-width);
     grid-template-rows: var(--border-width) 1fr var(--border-width);
     gap: 0;
+    transform: translateZ(0); /* Force GPU */
+    backface-visibility: hidden;
+    min-width: calc(3 * var(--border-width));
+    min-height: calc(3 * var(--border-width));
+}
+
+.frame-container > div {
+    background-clip: padding-box;
 }
 
 .top-left {
@@ -19,8 +27,11 @@
 
 .top-center {
     background-image: url("/src/assets/images/frames/top-photo.svg");
-    background-size: contain;
     background-repeat: repeat-x;
+    background-size: auto 100%;
+    background-position: center top;
+    image-rendering: pixelated;
+    transform: translateZ(0);
 }
 
 .top-right {
@@ -30,8 +41,11 @@
 
 .left-center {
     background-image: url("/src/assets/images/frames/start-photo.svg");
-    background-size: contain;
     background-repeat: repeat-y;
+    background-size: 100% auto;
+    background-position: center left;
+    image-rendering: pixelated;
+    transform: translateZ(0);
 }
 
 .center {
@@ -40,8 +54,11 @@
 
 .right-center {
     background-image: url("/src/assets/images/frames/end-photo.svg");
-    background-size: contain;
     background-repeat: repeat-y;
+    background-size: 100% auto;
+    background-position: center right;
+    image-rendering: pixelated;
+    transform: translateZ(0);
 }
 
 .bottom-left {
@@ -51,13 +68,23 @@
 
 .bottom-center {
     background-image: url("/src/assets/images/frames/bottom-photo.svg");
-    background-size: contain;
     background-repeat: repeat-x;
+    background-size: auto 100%;
+    background-position: center bottom;
+    image-rendering: pixelated;
+    transform: translateZ(0);
 }
 
 .bottom-right {
     background-image: url("/src/assets/images/frames/bottom-end-photo.svg");
     background-size: cover;
+}
+
+.top-center,
+.left-center,
+.right-center,
+.bottom-center {
+    background-size: contain;
 }
 
 /* Grid */

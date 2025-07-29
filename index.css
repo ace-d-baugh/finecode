@@ -15,6 +15,11 @@
     text-decoration: none;
 }
 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 /* Root element */
 :root {
     scroll-behavior: smooth;
