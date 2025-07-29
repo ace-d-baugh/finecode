@@ -9,17 +9,24 @@ function Skills() {
 	return (
 		<div className="Skills">
 			<h3>Skills</h3>
-			<div className="skills-display">
+			<div className="skills-display-lg">
 				<ul>
-				{leftArray.map((value: string) => (
-					<li className="left">{value}</li>
-				))}
+					{leftArray.map((value: string) => (
+						<li className="left">{value}</li>
+					))}
 				</ul>
 				<ul>
-				{rightArray.map((value: string) => (
-					<li className="right">{value}</li>
-				))}
+					{rightArray.map((value: string) => (
+						<li className="right">{value}</li>
+					))}
 				</ul>			
+			</div>
+			<div className="skills-display-sm">
+				<ul>
+					{Data.map((value: string) => (
+						<li className="center">{value}</li>
+					))}
+				</ul>
 			</div>
 		</div>
 	);

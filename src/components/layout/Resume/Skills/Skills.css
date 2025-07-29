@@ -16,11 +16,32 @@
     text-align: left;
 }
 
-.Home .Skills .skills-display {
+.Home .Skills .center {
+    text-align: center;
+}
+
+.Home .Skills .skills-display-lg {
     display: grid;
     grid-template-columns: 1fr 1fr;}
 
-.skills-display ul {
+.skills-display-lg ul {
     padding: 1rem;
     margin: 0;
+}
+
+.Home .Skills .skills-display-sm {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .Home .Skills .skills-display-sm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Home .Skills .skills-display-lg {
+        display: none;
+    }
 }

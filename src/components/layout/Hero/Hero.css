@@ -10,6 +10,11 @@
 
 .hero-content {
     min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(250, 45, 95, 0.3);
 }
 
 .hero-content h2 {
