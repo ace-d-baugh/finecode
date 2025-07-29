@@ -1,4 +1,6 @@
-// pages/Contact.tsx
+// pages/Contact/Contact.tsx
+
+import './Contact.css'
 
 function Contact() {
     return (

@@ -1,8 +1,9 @@
-// pages/Project.tsx
+// pages/Project/Project.tsx
 
 import { useParams } from "react-router-dom";
-import Projects from '../assets/data/projects.json';
-import Carousel from "../components/common/Carousel/Carousel";
+import Projects from '../../assets/data/projects.json';
+import Carousel from "../../components/common/Carousel/Carousel";
+import './Project.css'
 
 interface LongDescription {
     issue: string;

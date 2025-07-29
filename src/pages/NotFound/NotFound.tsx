@@ -1,3 +1,6 @@
+// pages/NotFound/NotFound.tsx
+
+import './NotFound.css';
 
 function NotFound() {
     return (

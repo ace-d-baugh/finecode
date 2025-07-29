@@ -1,3 +1,7 @@
+// pages/About/About.tsx
+
+import './About.css'
+
 function About() {
     return (
         <div className="About">
