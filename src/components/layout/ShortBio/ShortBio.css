@@ -1,1 +1,29 @@
 /* components/ShortBio/ShortBio.css */
+
+.ShortBio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    position: relative;
+    padding: 12px;
+}
+
+.ShortBio h2 {
+    text-align: center;
+    font-family: var(--font-emphasis);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.ShortBio p {
+    text-align: center;
+}
+
+.shortBio-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}

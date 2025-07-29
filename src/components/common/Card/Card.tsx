@@ -7,12 +7,10 @@ import './Card.css'
 function Card({ id, title, imageUrl, alt, description }: { id: number, title: string, imageUrl: string, alt: string, description: string }) {
     return (
         <div className="Card">
-            <div>
-                <h3 className='title'>{title}</h3>
-                <Photo src={imageUrl} width={200} height={200} alt={alt} />
-                <p className='description'>{description}</p>
-                <Button text="View Project" link={`/project/${id}`} />
-            </div>
+            <h3 className='title'>{title}</h3>
+            <Photo src={imageUrl} width={200} height={200} alt={alt} />
+            <p className='description'>{description}</p>
+            <Button text="View Project" link={`/project/${id}`} />
         </div>
     );
 }
