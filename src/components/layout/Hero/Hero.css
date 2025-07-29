@@ -1,20 +1,19 @@
 /* components/Hero/Hero.css */
 
 .Hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     min-height: 800px;
+    position: relative;
+    display: flex;
 }
 
 .hero-content {
-    min-height: 800px;
-    display: flex;
+    position: absolute;
+    width: 100%;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(250, 45, 95, 0.3);
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem;
 }
 
 .hero-content h2 {
@@ -32,4 +31,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-content {
+        padding: .5rem;
+    }
 }

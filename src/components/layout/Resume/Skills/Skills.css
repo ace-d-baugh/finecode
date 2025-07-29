@@ -1,26 +1,22 @@
 /* components/Resume/Skills/Skills.css */
 
-.Home .Skills {
-    position: relative;
-}
-
-.Home .Skills li {
+li {
     list-style: none;
 }
 
-.Home .Skills .left {
+.left {
     text-align: right;
 }
 
-.Home .Skills .right {
+.right {
     text-align: left;
 }
 
-.Home .Skills .center {
+.center {
     text-align: center;
 }
 
-.Home .Skills .skills-display-lg {
+.skills-display-lg {
     display: grid;
     grid-template-columns: 1fr 1fr;}
 
@@ -29,19 +25,19 @@
     margin: 0;
 }
 
-.Home .Skills .skills-display-sm {
+.skills-display-sm {
     display: none;
 }
 
 @media screen and (max-width: 768px) {
-    .Home .Skills .skills-display-sm {
+    .skills-display-sm {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    .Home .Skills .skills-display-lg {
+    .skills-display-lg {
         display: none;
     }
 }
