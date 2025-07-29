@@ -1,13 +1,11 @@
-import Frame from "../components/common/Frame/Frame";
+// pages/Contact.tsx
 
 function Contact() {
     return (
         <div className="Contact">
-            <Frame className="all">
-                <div>
-                    <h1>Contact</h1>
-                </div>
-            </Frame>
+            <div>
+                <h1>Contact</h1>
+            </div>
         </div>
     );
 }

@@ -1,9 +1,7 @@
 // pages/Project.tsx
 
-import Frame from "../components/common/Frame/Frame";
 import { useParams } from "react-router-dom";
 import Projects from '../assets/data/projects.json';
-import { Link } from "react-router-dom";
 import Carousel from "../components/common/Carousel/Carousel";
 
 interface LongDescription {

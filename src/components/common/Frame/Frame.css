@@ -1,6 +1,11 @@
 /* components/Frame/Frame.css */
 
 .frame-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: var(--border-width) 1fr var(--border-width);
     grid-template-rows: var(--border-width) 1fr var(--border-width);
@@ -53,58 +58,6 @@
 .bottom-right {
     background-image: url("/src/assets/images/frames/bottom-end-photo.svg");
     background-size: cover;
-}
-
-/* OLD FRAME CSS
-
-
-
-.top-left {
-    background-color: var(--color-primary);
-    border-radius: var(--top-left-radius);
-}
-
-.top-center {
-    background-color: var(--color-primary);
-    background-image: var(--top-center-pattern);
-    background-size: var(--top-center-pattern-size);
-}
-
-.top-right {
-    background-color: var(--color-primary);
-    border-radius: var(--top-right-radius);
-}
-
-.left-center {
-    background-color: var(--color-primary);
-    background-image: var(--left-center-pattern);
-    background-size: var(--left-center-pattern-size);
-}
-
-.center {
-    padding: .25rem;
-}
-
-.right-center {
-    background-color: var(--color-primary);
-    background-image: var(--right-center-pattern);
-    background-size: var(--right-center-pattern-size);
-}
-
-.bottom-left {
-    background-color: var(--color-primary);
-    border-radius: var(--bottom-left-radius);
-}
-
-.bottom-center {
-    background-color: var(--color-primary);
-    background-image: var(--bottom-center-pattern);
-    background-size: var(--bottom-center-pattern-size);
-}
-
-.bottom-right {
-    background-color: var(--color-primary);
-    border-radius: var(--bottom-right-radius);
 }
 
 /* Grid */
@@ -168,39 +121,3 @@
     --bottom-left-radius: 0 0 0 100%;
     --bottom-right-radius: 0 0 100% 0;
 }
-
-
-.box {
-    display: grid;
-    grid-template-columns: 30px 1fr 30px; /* First and third columns 30px, center column ??/auto */
-    grid-template-rows: 30px 1fr 30px; /* First and third rows 30px, center row ??/auto */
-  }
-  
-  /* All elements design */
-  .ul-c, .ur-c, .ll-c, .lr-c,
-  .uc, .lc, .cl, .cr {
-    background-image: url("https://lh3.googleusercontent.com/ogw/AF2bZyhiFDDrK0TPGkBlsmPDCCSOgh9r1abRBVszmKw7xhrbPSk=s32-c-mo"); /* Image */
-    background-position: center; /* this takes the background image and centers it while it repeats */
-    position: relative; /* This helps for seudo elements */
-  }
-  
-  /* Testing center center sizing */
-  .content {
-    width: 500px;
-    height: 200px;
-  }
-  
-  /* Adding Seudo Elements: All the same for now*/
-  .uc::before,
-  .lc::before, 
-  .cl::before,
-  .cr::before {
-    content: ""; /* no text inside */
-    background: blue; /* color/placeholder for graphic */
-    height: 40px; /* Square */
-    width: 40px; /* Square */
-    position: absolute; /* helps position item */
-    top: 50%; /* center from the top of parent */
-    left: 50%; /* center from left of parent */
-    transform: translate(-50%, -50%); /* uses the center/center of seudo element for positioning */
-  }

@@ -1,7 +1,6 @@
 // components/Showcase/Showcase.tsx
 
 // import { useEffect } from "react";
-import Frame from "../../common/Frame/Frame"
 import Card from "../../common/Card/Card"
 import './Showcase.css'
 import Projects from '../../../assets/data/projects.json'
@@ -31,24 +30,22 @@ interface Project {
 function Showcase() {
     return (
         <div className="Showcase">
-            <Frame className="showcase-frame all">
-                <div>
-                    <h1>Showcase</h1>
-                    { /* <LogoScroll /> */ }
-                    <div className="cards">
-                        {Projects.slice(0, 9).map((project: Project) => (
-                            <Card
-                                key={project.id}
-                                id={project.id}
-                                title={project.title}
-                                imageUrl={project.imageUrls[0]}
-                                alt={project.title}
-                                description={project.shortDescription}
-                            />
-                        ))}
-                    </div>
+            <div>
+                <h1>Showcase</h1>
+                { /* <LogoScroll /> */ }
+                <div className="cards">
+                    {Projects.slice(0, 9).map((project: Project) => (
+                        <Card
+                            key={project.id}
+                            id={project.id}
+                            title={project.title}
+                            imageUrl={project.imageUrls[0]}
+                            alt={project.title}
+                            description={project.shortDescription}
+                        />
+                    ))}
                 </div>
-            </Frame>
+            </div>
         </div>
     );
 }

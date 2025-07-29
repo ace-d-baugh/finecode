@@ -1,7 +1,5 @@
 // pages/Resume.tsx
 
-import Frame from "../components/common/Frame/Frame";
-
 import Education from "../components/layout/Resume/Education/Education";
 import Experience from "../components/layout/Resume/Experience/Experience";
 import Header from "../components/layout/Resume/Header/Header";
@@ -13,17 +11,15 @@ import Work from "../components/layout/Resume/Work/Work";
 function Resume() {
     return (
         <div className="Resume">
-            <Frame className="all">
-                <div>
-                    <Header />
-                    <Summary />
-                    <Skills />
-                    <Work />
-                    <Education />
-                    <Experience />
-                    <Recognition />
-                </div>
-            </Frame>
+            <div>
+                <Header />
+                <Summary />
+                <Skills />
+                <Work />
+                <Education />
+                <Experience />
+                <Recognition />
+            </div>
         </div>
     );
 }

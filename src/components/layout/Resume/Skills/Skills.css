@@ -1,7 +1,7 @@
 /* components/Resume/Skills/Skills.css */
 
 .Home .Skills {
-
+    position: relative;
 }
 
 .Home .Skills li {
