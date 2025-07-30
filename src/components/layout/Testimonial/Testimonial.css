@@ -1,13 +1,2 @@
 /* components/Testimonial/Testimonioal.css */
 
-.Testimonial {
-    width: 200px;
-    padding: .25rem;
-    margin: 0 auto;
-}
-
-.Testimonial img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-}

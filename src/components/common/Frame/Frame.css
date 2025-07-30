@@ -43,7 +43,7 @@
     background-image: url("/src/assets/images/frames/start-photo.svg");
     background-repeat: repeat-y;
     background-size: 100% auto;
-    background-position: center left;
+    background-position: left center;
     image-rendering: pixelated;
     transform: translateZ(0);
 }
@@ -56,7 +56,7 @@
     background-image: url("/src/assets/images/frames/end-photo.svg");
     background-repeat: repeat-y;
     background-size: 100% auto;
-    background-position: center right;
+    background-position: right center;
     image-rendering: pixelated;
     transform: translateZ(0);
 }
