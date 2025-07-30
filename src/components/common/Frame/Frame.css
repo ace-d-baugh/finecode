@@ -141,10 +141,6 @@
     --bottom-center-pattern-size: 0;
 }
 
-.button, .all {
-    --border-width: 25px;
-    --top-left-radius: 100% 0 0 0;
-    --top-right-radius: 0 100% 0 0;
-    --bottom-left-radius: 0 0 0 100%;
-    --bottom-right-radius: 0 0 100% 0;
+.all {
+    --border-width: 24px;
 }

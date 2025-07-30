@@ -12,12 +12,13 @@ function Skills() {
 			<div className="skills-display-lg">
 				<ul>
 					{leftArray.map((value: string) => (
-						<li className="left">{value}</li>
+						<li className="right">{value}</li>
 					))}
 				</ul>
+				<div className="divider"></div>
 				<ul>
 					{rightArray.map((value: string) => (
-						<li className="right">{value}</li>
+						<li className="left">{value}</li>
 					))}
 				</ul>			
 			</div>

@@ -36,5 +36,6 @@
 @media screen and (max-width: 768px) {
     .hero-content {
         padding: .5rem;
+        bottom: 5rem;
     }
 }
