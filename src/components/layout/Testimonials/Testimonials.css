@@ -1,11 +1,7 @@
 /* components/Testimonials/Testimonials.css */
 
-.testimonials h2 {
-    text-align: center;
-    font-family: var(--font-emphasis);
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    margin-top: 1rem;
+.Testimonials-container {
+    padding: .5rem 0;
 }
 
 .testimonials-list {

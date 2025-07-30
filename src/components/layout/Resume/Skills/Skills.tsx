@@ -8,7 +8,7 @@ const rightArray = Data.filter((_: string, index: number) => index % 2 !== 0);
 function Skills() {
 	return (
 		<div className="Skills">
-			<h3>Skills</h3>
+			<h2>Skills</h2>
 			<div className="skills-display-lg">
 				<ul>
 					{leftArray.map((value: string) => (

@@ -30,7 +30,7 @@ interface Project {
 function Showcase() {
     return (
         <div className="Showcase">
-            <h1>Showcase</h1>
+            <h2>Showcase</h2>
             { /* <LogoScroll /> */ }
             <div className="cards">
                 {Projects.slice(0, 9).map((project: Project) => (
