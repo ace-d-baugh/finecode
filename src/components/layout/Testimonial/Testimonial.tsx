@@ -8,7 +8,7 @@ function Testimonial({ id }: { id: number }) {
         <div className="Testimonial">
             <div className="testimonial">
                 <p className='testimonial-quote'>{Testimonials[id].quote}</p>
-                <h3 className='testimonial-name'>{Testimonials[id].name}</h3>
+                <h3 className='testimonial-name'>~{Testimonials[id].name}</h3>
                 <img className='testimonial-image' src={Testimonials[id].imageUrl} alt={Testimonials[id].name} />
             </div>
         </div>
