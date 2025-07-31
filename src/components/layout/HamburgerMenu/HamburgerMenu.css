@@ -103,9 +103,6 @@
   display: none;
 }
 
-.hamburger-links li:hover {
-}
-
 .hamburger-links a {
   display: inline-flex;
   gap: .5rem;
