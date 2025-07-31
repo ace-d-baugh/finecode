@@ -104,7 +104,6 @@
 }
 
 .hamburger-links li:hover {
-  color: var(--color-accent);
 }
 
 .hamburger-links a {

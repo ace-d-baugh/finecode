@@ -27,5 +27,17 @@
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
+}
+
+.shortBio-btn a {
+    color: var(--background);
+}
+
+.shortBio-btn a:hover {
+    text-decoration: underline;
+    color: var(--background);
+}
+
+.shortBio-btn .frame-container {
     filter: invert(1);
 }
