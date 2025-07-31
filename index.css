@@ -55,5 +55,6 @@ body {
     background-color: var(--background);
     background-image: url("/src/assets/images/backgrounds/deco-diamonds.svg");
     background-repeat: repeat;
+    background-attachment: fixed;
     background-size: 50px;
 }

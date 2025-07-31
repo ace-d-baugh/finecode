@@ -9,6 +9,7 @@
 
 .Routes {
   flex: 1; /* Take up remaining space */
+  margin-top: 4rem;
 }
 
 h2 {
@@ -16,4 +17,10 @@ h2 {
     font-family: var(--font-emphasis);
     text-transform: uppercase;
     font-size: 1.75rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Routes {
+    margin-top: 6rem;
+  }
 }
