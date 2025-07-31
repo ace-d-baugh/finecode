@@ -64,38 +64,58 @@
   top: 6px;
 }
 
-.hamburger-links {
-  background-color: var(--background);
-  list-style: none;
-  margin: 0;
-  padding: .25rem;
+.hamburger-links-container {
   position: absolute;
-  right: 0;
+  left: 50%;
   top: 40px;
   width: 200px;
-  box-shadow: 0 0 10px 5px var(--color-accent),
-              0 0 20px 5px var(--color-accent),
-              0 0 30px 5px var(--color-accent),
-              0 0 40px 5px var(--color-accent),
-              0 0 50px 5px var(--color-accent);
+  transform: translateX(-50%);
+  background-color: var(--background);
+  background-image: url("/src/assets/images/backgrounds/deco-diamonds.svg");
+  background-repeat: repeat;
+  background-size: 50px;  
+  padding: .25rem;
+}
+
+.hamburger-links {
+  list-style: none;
+  margin: .5rem;
+  padding: .5rem;
+  position: relative;
 }
 
 .hamburger-links li {
-  border-bottom: 1px solid var(--metal-dark);
-  padding: 10px;
+  position: relative;
+  z-index: 999;
 }
 
-.hamburger-links li:last-child {
-  border-bottom: none;
-}
-
-.hamburger-links li:hover,
-.hamburger-links li:hover i,
-.hamburger-links li:hover span {
-  color: var(--color-accent);
+.hamburger-links li::after {
+  content: '';
+  display: block;
+  width: 80%;
+  height: 2px;
   background-color: var(--metal-darker);
+  margin: 10px auto 0;
+
 }
 
+.hamburger-links li:last-child::after {
+  display: none;
+}
+
+.hamburger-links li:hover {
+  color: var(--color-accent);
+}
+
+.hamburger-links a {
+  display: inline-flex;
+  gap: .5rem;
+  margin: .5rem 0 0;
+}
+
+.hamburger-links li:first-child {
+  margin-top: -.5rem;
+}
 
 /* Show the hamburger menu on smaller screens */
 @media (max-width: 768px) {

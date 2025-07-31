@@ -11,7 +11,7 @@
     color: var(--background);
 }
 
-li {
+.Skills li {
     list-style: none;
     color: var(--background);
     font-size: larger;
@@ -62,7 +62,7 @@ li {
         margin-bottom: .5rem;
     }
 
-    li {
+    .Skills li {
         margin: -0.25rem;
     }
 
