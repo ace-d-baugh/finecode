@@ -1,9 +1,11 @@
 /* components/Hero/Hero.css */
 
 .Hero {
-    min-height: 800px;
-    position: relative;
-    display: flex;
+  min-height: 100vh;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  overflow: hidden;
 }
 
 .hero-content {
