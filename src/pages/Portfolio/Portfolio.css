@@ -4,36 +4,277 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem;
     position: relative;
-    padding: 12px;
+    padding: 4rem 1rem;
+    background: var(--background);
+    min-height: 100vh;
+}
+
+/* Deco border top */
+.Portfolio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: repeating-linear-gradient(
+        90deg,
+        var(--color-accent) 0px,
+        var(--color-accent) 20px,
+        transparent 20px,
+        transparent 40px
+    );
 }
 
 .Portfolio h1 {
     text-align: center;
     font-family: var(--font-emphasis);
     text-transform: uppercase;
-    font-size: 1.5rem;
-    margin: 1rem;
-}
-
-.Portfolio .project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem;
+    font-size: clamp(2rem, 5vw, 3rem);
+    letter-spacing: 0.3rem;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
     position: relative;
-    padding: 12px;
+    padding-bottom: 1rem;
 }
 
-.Portfolio .project h2 {
+/* Deco double line underline */
+.Portfolio h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 3px;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        var(--color-accent) 20%,
+        var(--color-accent) 80%,
+        transparent 100%
+    );
+}
+
+.Portfolio h1::before {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 1px;
+    background: var(--color-accent);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.project-card {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--metal-dark) 100%);
+    border: 3px solid var(--color-accent);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(45deg, var(--color-accent), var(--color-primary));
+    z-index: -1;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover::before {
+    transform: scale(1);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+.project-header {
+    padding: 1.5rem;
+    background: linear-gradient(45deg, var(--color-accent), var(--color-primary));
+    position: relative;
+    overflow: hidden;
+}
+
+.project-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.project-card:hover .project-header::after {
+    left: 100%;
+}
+
+.project-header a {
+    text-decoration: none;
+    color: var(--background);
+    transition: color 0.3s ease;
+}
+
+.project-header a:hover {
+    color: var(--color-primary);
+}
+
+.project-header h2 {
     text-align: center;
     font-family: var(--font-emphasis);
     text-transform: uppercase;
-    font-size: 1.5rem;
-    margin: 1rem;
+    font-size: 1.4rem;
+    margin: 0;
+    letter-spacing: 0.1rem;
 }
 
-.Portfolio .project p {
+.project-card .project-type {
     text-align: center;
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    margin: 0.5rem 0;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+
+.project-content {
+    padding: 1.5rem;
+    background: var(--color-primary);
+}
+
+.project-card .description {
+    text-align: center;
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    color: var(--background);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.project-card .issue {
+    text-align: center;
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    color: var(--background);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem;
+    background: rgba(255,255,255,0.1);
+    border-left: 3px solid var(--color-accent);
+    border-radius: 0 4px 4px 0;
+}
+
+.project-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid var(--color-accent);
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.02);
+}
+
+.project-footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+
+.more-details-btn {
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(45deg, var(--color-accent), var(--color-primary));
+    color: var(--background);
+    border: 2px solid var(--background);
+    text-decoration: none;
+    font-family: var(--font-emphasis);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.more-details-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.more-details-btn:hover::before {
+    left: 100%;
+}
+
+.more-details-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+@media screen and (max-width: 768px) {
+    .Portfolio {
+        padding: 3rem 0.5rem;
+    }
+
+    .Portfolio h1 {
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .Portfolio h1::after {
+        width: 120px;
+    }
+
+    .Portfolio h1::before {
+        width: 80px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem 0.5rem;
+    }
+
+    .project-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .project-content {
+        padding: 1rem;
+    }
 }
