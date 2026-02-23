@@ -1,1 +1,112 @@
 /* components/Resume/Summary/Summary.css */
+
+.Summary {
+    background: var(--color-primary);
+    color: var(--background);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid var(--color-accent);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.Summary::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--color-accent), var(--color-primary));
+    z-index: -1;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+}
+
+.Summary:hover::before {
+    transform: scale(1);
+}
+
+.Summary h3 {
+    font-family: var(--font-emphasis);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: var(--background);
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+
+/* Deco underline */
+.Summary h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        var(--color-accent) 0%,
+        var(--color-primary) 100%
+    );
+}
+
+.Summary p {
+    font-family: var(--font-primary);
+    font-size: 1.1rem;
+    color: var(--background);
+    line-height: 1.8;
+    margin: 0;
+    padding: 0.5rem;
+    background: linear-gradient(45deg, transparent 0%, rgba(255,255,255,0.1) 100%);
+    border-left: 3px solid var(--color-accent);
+    border-radius: 0 4px 4px 0;
+}
+
+/* Deco diamond accent */
+.Summary::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 20px;
+    height: 20px;
+    background: var(--color-accent);
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.Summary h3 {
+    position: relative;
+    z-index: 1;
+}
+
+.Summary p {
+    position: relative;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .Summary {
+        padding: 1.5rem;
+    }
+
+    .Summary h3 {
+        font-size: 1.1rem;
+        letter-spacing: 0.05rem;
+    }
+
+    .Summary h3::after {
+        width: 60px;
+    }
+
+    .Summary p {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+}

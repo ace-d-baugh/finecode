@@ -1,1 +1,188 @@
 /* components/Resume/Work/Work.css */
+
+.Work {
+    background: var(--color-primary);
+    color: var(--background);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid var(--color-accent);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.Work::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--color-accent), var(--color-primary));
+    z-index: -1;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+}
+
+.Work:hover::before {
+    transform: scale(1);
+}
+
+.Work h3 {
+    font-family: var(--font-emphasis);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: var(--background);
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+
+/* Deco underline */
+.Work h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        var(--color-accent) 0%,
+        var(--color-primary) 100%
+    );
+}
+
+.job-listing {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: linear-gradient(45deg, transparent 0%, rgba(255,255,255,0.1) 100%);
+    border-left: 3px solid var(--color-accent);
+    border-radius: 0 8px 8px 0;
+    transition: all 0.3s ease;
+}
+
+.job-listing:hover {
+    transform: translateX(5px);
+    background: linear-gradient(45deg, transparent 0%, rgba(255,255,255,0.15) 100%);
+}
+
+.job-listing .dates {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    color: var(--color-accent);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.05rem;
+}
+
+.job-listing .job-title {
+    font-family: var(--font-emphasis);
+    font-size: 1.2rem;
+    color: var(--background);
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.05rem;
+}
+
+.job-listing .job-employer {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    color: var(--background);
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.job-listing .job-location {
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    color: var(--background);
+    opacity: 0.8;
+    margin-bottom: 1rem;
+}
+
+.job-listing .job-responsibilities {
+    margin: 0;
+    padding: 0;
+}
+
+.job-listing .job-responsibilities li {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    color: var(--background);
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.job-listing .job-responsibilities li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+.job-listing .job-responsibilities li:last-child {
+    margin-bottom: 0;
+}
+
+/* Deco diamond accent */
+.Work::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 20px;
+    height: 20px;
+    background: var(--color-accent);
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.Work h3 {
+    position: relative;
+    z-index: 1;
+}
+
+.Work .job-listing {
+    position: relative;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .Work {
+        padding: 1.5rem;
+    }
+
+    .Work h3 {
+        font-size: 1.1rem;
+        letter-spacing: 0.05rem;
+    }
+
+    .Work h3::after {
+        width: 60px;
+    }
+
+    .job-listing {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .job-listing .dates {
+        font-size: 0.9rem;
+    }
+
+    .job-listing .job-title {
+        font-size: 1.1rem;
+    }
+
+    .job-listing .job-responsibilities li {
+        font-size: 0.9rem;
+        padding-left: 1rem;
+    }
+}
