@@ -5,16 +5,109 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding: .5rem 0;
+    padding: 4rem 1rem;
+    background: var(--background);
+}
+
+.Showcase h2 {
+    font-family: var(--font-emphasis);
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+/* Art Deco double line underline */
+.Showcase h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        var(--color-accent) 20%,
+        var(--color-accent) 80%,
+        transparent 100%
+    );
+}
+
+.Showcase h2::before {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 1px;
+    background: var(--color-accent);
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Center diamond accent between title and cards */
+.cards::before {
+    content: '';
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 20px;
+    height: 20px;
+    background: var(--color-accent);
+    animation: diamondPulse 3s ease-in-out infinite;
+}
+
+@keyframes diamondPulse {
+    0%, 100% {
+        transform: translateX(-50%) rotate(45deg) scale(1);
+    }
+    50% {
+        transform: translateX(-50%) rotate(45deg) scale(1.1);
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .Showcase {
+        padding: 3rem 0.5rem;
+    }
+
+    .Showcase h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .Showcase h2::after {
+        width: 60px;
+    }
+
+    .Showcase h2::before {
+        width: 40px;
+    }
+
+    .cards {
+        gap: 1rem;
+    }
+
+    .cards::before {
+        top: 100px;
+        width: 15px;
+        height: 15px;
+    }
+
     .Showcase .Card {
         margin: 0;
     }

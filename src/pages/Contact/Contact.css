@@ -1,5 +1,248 @@
 /* pages/Contact/Contact.css */
 
 .Contact {
-    padding: .5rem 0;
+    padding: 4rem 1rem;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--metal-dark) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Deco border top */
+.Contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: repeating-linear-gradient(
+        90deg,
+        var(--color-accent) 0px,
+        var(--color-accent) 20px,
+        transparent 20px,
+        transparent 40px
+    );
+}
+
+.Contact h2 {
+    font-family: var(--font-emphasis);
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    color: var(--background);
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+/* Deco double line underline */
+.Contact h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        var(--color-accent) 20%,
+        var(--color-accent) 80%,
+        transparent 100%
+    );
+}
+
+.Contact h2::before {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 1px;
+    background: var(--color-accent);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: linear-gradient(45deg, var(--color-primary), var(--metal));
+    border: 2px solid var(--color-accent);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-form::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--color-accent), var(--color-primary));
+    z-index: -1;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+}
+
+.contact-form:hover::before {
+    transform: scale(1);
+}
+
+.contact-form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.contact-form-group label {
+    font-family: var(--font-emphasis);
+    font-size: 1.1rem;
+    color: var(--background);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.contact-form-group input,
+.contact-form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: rgba(255,255,255,0.9);
+    border: 2px solid var(--color-accent);
+    border-radius: 4px;
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    color: var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+.contact-form-group input:focus,
+.contact-form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 0 0 2px var(--color-accent);
+}
+
+.contact-form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.submit-btn button {
+    font-family: var(--font-emphasis);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    background: linear-gradient(45deg, var(--color-accent), var(--color-primary));
+    color: var(--background);
+    border: 2px solid var(--background);
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.submit-btn button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.submit-btn button:hover::before {
+    left: 100%;
+}
+
+.submit-btn button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.submit-btn button:active {
+    transform: translateY(0);
+}
+
+/* Deco diamond accent */
+.contact-form::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 30px;
+    height: 30px;
+    background: var(--color-accent);
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.contact-form h2 {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-form-group {
+    position: relative;
+    z-index: 1;
+}
+
+.submit-btn {
+    position: relative;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .Contact {
+        padding: 3rem 0.5rem;
+    }
+
+    .Contact h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .Contact h2::after {
+        width: 60px;
+    }
+
+    .Contact h2::before {
+        width: 40px;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+        margin: 0 0.5rem;
+    }
+
+    .contact-form-group label {
+        font-size: 1rem;
+    }
+
+    .contact-form-group input,
+    .contact-form-group textarea {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .submit-btn button {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+    }
 }
