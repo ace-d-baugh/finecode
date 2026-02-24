@@ -6,7 +6,6 @@
     position: relative;
     display: flex;
     overflow: hidden;
-    background: linear-gradient(180deg, var(--background) 0%, #1a1a2e 100%);
 }
 
 .hero-content {
@@ -57,7 +56,7 @@
 .searchlight {
     position: absolute;
     height: 100%;
-    width: 100px;
+    width: 80px;
     transform-origin: bottom center;
     background-image: url("/src/assets/images/backgrounds/searchlight.png");
     background-size: cover;
@@ -124,6 +123,10 @@
     box-shadow: 0 8px 25px rgba(50, 221, 208, 0.3);
     background: var(--color-primary);
     color: var(--background);
+}
+
+.hero-btn .btn-container a:hover {
+    background: transparent;
 }
 
 .hero-btn button:active { transform: translateY(0); }
