@@ -23,7 +23,6 @@
     text-transform: uppercase;
     position: relative;
     overflow: hidden;
-    z-index: 1;
     /* Angular clip-path for art deco geometric corner treatment */
     clip-path: polygon(
         10px 0%,

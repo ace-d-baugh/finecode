@@ -1,11 +1,12 @@
 /* components/Hero/Hero.css - Modern with subtle Deco */
 
 .Hero {
-    min-height: 90vh;
-    height: 90vh;
+    min-height: 80vh;
+    height: 80vh;
     position: relative;
     display: flex;
     overflow: hidden;
+    z-index: 999;
 }
 
 .hero-content {
@@ -47,7 +48,7 @@
     opacity: 0;
     animation:
         heroFadeUp 1.2s ease forwards,
-        heroShimmer 5s linear infinite;
+        heroShimmer 15s linear infinite;
 }
 
 .hero-content p {
@@ -74,7 +75,7 @@
 /* 0% → 200% loops cleanly: same gradient at both ends, no visible jump */
 @keyframes heroShimmer {
     0%   { background-position: 0% center; }
-    100% { background-position: 200% center; }
+    100% { background-position: 300% center; }
 }
 
 .searchlights {
