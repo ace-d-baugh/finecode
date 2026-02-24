@@ -12,7 +12,7 @@
   transition: box-shadow 0.3s ease;
 }
 
-/* Pseudo-background layer for deco-diamonds texture */
+/* Background layer — starts hidden above viewport */
 .home-navbar-bg {
   position: absolute;
   inset: 0;
@@ -21,9 +21,30 @@
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: 50px;
-  opacity: 0;
-  transition: opacity 0.35s ease, background-color 0.35s ease;
+  transform: translateY(-100%);
   pointer-events: none;
+  z-index: 0;
+}
+
+/* When NOT sticky — keep background hidden, reset any animation */
+.HomeNavbar:not(.is-sticky) .home-navbar-bg {
+  transform: translateY(-100%);
+  background-color: transparent;
+  animation: none;
+}
+
+/* When sticky — bounce the background layer in from above */
+.HomeNavbar.is-sticky .home-navbar-bg {
+  background-color: var(--background);
+  animation: homeNavBounceDown 0.6s ease forwards;
+}
+
+@keyframes homeNavBounceDown {
+  0%   { transform: translateY(-100%); opacity: 0; }
+  1%   { transform: translateY(-100%); opacity: 1; }
+  60%  { transform: translateY(5%); }
+  80%  { transform: translateY(-10%); }
+  100% { transform: translateY(0); opacity: 1; }
 }
 
 /* Content: Logo + NavLinks + HamburgerMenu stacked vertically, centered */
@@ -39,12 +60,12 @@
   gap: 0.25rem;
 }
 
-/* Logo inside HomeNavbar - inherit normal logo styles */
+/* Logo inside HomeNavbar */
 .HomeNavbar .Logo {
   margin-bottom: 0.25rem;
 }
 
-/* Teal accent bottom border - hidden until sticky */
+/* Teal accent bottom border — appears with opacity when sticky */
 .HomeNavbar::after {
   content: '';
   position: absolute;
@@ -65,12 +86,6 @@
   opacity: 0;
   transition: opacity 0.35s ease;
   pointer-events: none;
-}
-
-/* ── Sticky state: full header appearance ── */
-.HomeNavbar.is-sticky .home-navbar-bg {
-  opacity: 1;
-  background-color: var(--background);
 }
 
 .HomeNavbar.is-sticky::after {
