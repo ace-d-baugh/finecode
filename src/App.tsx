@@ -3,6 +3,7 @@
 import { Route, Routes } from 'react-router-dom'
 import { Header, Footer } from '../src/components/layout'
 import { Home, About, Contact, Portfolio, Project, Resume, NotFound } from '../src/pages'
+import ScrollToTop from './components/common/ScrollToTop/ScrollToTop'
 import './App.css'
 
 function App({companyName}: {companyName: string}) {
@@ -23,6 +24,7 @@ function App({companyName}: {companyName: string}) {
           </Routes>
         </div>
         <Footer company = {companyName} />
+        <ScrollToTop />
       </div>
     </>
   )
@@ -35,4 +37,3 @@ export default App
 // https://www.youtube.com/watch?v=p5LIqg-oNbs
 // https://www.youtube.com/watch?v=bdqSEBSXBPk
 // https://www.youtube.com/watch?v=HHTHyz1FBNM
-
