@@ -13,8 +13,8 @@ function App({companyName}: {companyName: string}) {
   return (
     <>
       <div className="App">
-        <Header logoText={companyName} showNavbar={!isHomepage} />
-        <div className={`Routes${isHomepage ? ' home-route' : ''}`}>
+        {!isHomepage && <Header logoText={companyName} />}
+        <div className={`Routes${isHomepage ? ' home-route' : '' }`}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />}/>

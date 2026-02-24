@@ -11,11 +11,6 @@
     align-items: center;
 }
 
-/* Logo-only mode: more compact */
-.Header.logo-only .header-elements {
-    padding: 0.5rem 0;
-}
-
 .header-background {
     position: absolute;
     width: 100%;
