@@ -1,200 +1,23 @@
-/* components/Resume/Recognition/Recognition.css */
+/* components/Resume/Recognition/Recognition.css - Modern with subtle Deco */
 
 .Recognition {
     background: var(--color-primary);
     color: var(--background);
     padding: 2rem;
     margin-bottom: 2rem;
-    border: 2px solid var(--color-accent);
-    border-radius: 8px;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-
-.Recognition::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(45deg, var(--color-accent), var(--color-primary));
-    z-index: -1;
-    transform: scale(0);
-    transition: transform 0.3s ease;
-}
-
-.Recognition:hover::before {
-    transform: scale(1);
+    border-left: 3px solid var(--color-accent);
+    border-radius: 0 4px 4px 0;
 }
 
 .Recognition h1 {
-    font-family: var(--font-emphasis);
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    color: var(--background);
-    margin-bottom: 2rem;
-    position: relative;
-    padding-bottom: 0.5rem;
-    letter-spacing: 0.1rem;
-    text-align: center;
-}
-
-/* Deco underline */
-.Recognition h1::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 2px;
-    background: linear-gradient(
-        90deg,
-        transparent 0%,
-        var(--color-accent) 20%,
-        var(--color-accent) 80%,
-        transparent 100%
-    );
-}
-
-.Recognition h1::before {
-    content: '';
-    position: absolute;
-    bottom: -6px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 1px;
-    background: var(--color-accent);
-}
-
-.recognition-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.recognition-item {
-    background: linear-gradient(45deg, transparent 0%, rgba(255,255,255,0.1) 100%);
-    border: 2px solid var(--color-accent);
-    border-radius: 8px;
-    padding: 1.5rem;
-    transition: all 0.3s ease;
-}
-
-.recognition-item:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-    background: linear-gradient(45deg, transparent 0%, rgba(255,255,255,0.15) 100%);
-}
-
-.recognition-item h2 {
-    font-family: var(--font-emphasis);
-    font-size: 1.2rem;
-    color: var(--background);
-    margin-bottom: 1rem;
-    position: relative;
-    padding-bottom: 0.5rem;
-    letter-spacing: 0.05rem;
-}
-
-.recognition-item h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50px;
-    height: 2px;
-    background: var(--color-accent);
-}
-
-.recognition-item .award-name {
     font-family: var(--font-primary);
     font-size: 1.1rem;
     color: var(--background);
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-}
-
-.recognition-item .award-date {
-    font-family: var(--font-primary);
-    font-size: 0.9rem;
-    color: var(--color-accent);
-    font-weight: 600;
     margin-bottom: 1rem;
+    font-weight: 600;
     letter-spacing: 0.05rem;
 }
 
-.recognition-item .award-description {
-    font-family: var(--font-primary);
-    font-size: 1rem;
-    color: var(--background);
-    line-height: 1.6;
-    margin: 0;
-}
-
-/* Deco diamond accent */
-.Recognition::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-    width: 20px;
-    height: 20px;
-    background: var(--color-accent);
-    opacity: 0.3;
-    z-index: 0;
-}
-
-.Recognition h1 {
-    position: relative;
-    z-index: 1;
-}
-
-.recognition-item {
-    position: relative;
-    z-index: 1;
-}
-
 @media screen and (max-width: 768px) {
-    .Recognition {
-        padding: 1.5rem;
-    }
-
-    .Recognition h1 {
-        font-size: 1.2rem;
-        letter-spacing: 0.05rem;
-    }
-
-    .Recognition h1::after {
-        width: 80px;
-    }
-
-    .Recognition h1::before {
-        width: 60px;
-    }
-
-    .recognition-item {
-        padding: 1rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .recognition-item h2 {
-        font-size: 1.1rem;
-    }
-
-    .recognition-item .award-name {
-        font-size: 1rem;
-    }
-
-    .recognition-item .award-date {
-        font-size: 0.8rem;
-    }
-
-    .recognition-item .award-description {
-        font-size: 0.9rem;
-    }
+    .Recognition { padding: 1.5rem; }
 }

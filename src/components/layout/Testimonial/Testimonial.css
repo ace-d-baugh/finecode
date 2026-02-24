@@ -1,38 +1,19 @@
-/* components/Testimonial/Testimonial.css */
+/* components/Testimonial/Testimonial.css - Modern with subtle Deco */
 
 .Testimonial {
-    width: 300px;
-    max-width: 100%;
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--metal-dark) 100%);
-    border: 2px solid var(--color-accent);
-    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+    background: var(--color-primary);
+    border: 1px solid var(--color-accent);
+    border-radius: 4px;
     padding: 1.5rem;
-    margin: 1rem;
+    margin: 1rem 0;
     transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.Testimonial::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(45deg, var(--color-accent), var(--color-primary));
-    z-index: -1;
-    transform: scale(0);
-    transition: transform 0.3s ease;
-}
-
-.Testimonial:hover::before {
-    transform: scale(1);
 }
 
 .Testimonial:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
 }
 
 .testimonial {
@@ -43,104 +24,39 @@
 
 .testimonial-quote {
     font-family: var(--font-primary);
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--background);
     text-align: center;
     line-height: 1.6;
     margin-bottom: 1rem;
-    position: relative;
-    padding: 1rem;
-    background: linear-gradient(45deg, transparent 0%, rgba(255,255,255,0.1) 100%);
-    border-radius: 4px;
-}
-
-.testimonial-quote::before {
-    content: '“';
-    position: absolute;
-    top: -10px;
-    left: 10px;
-    font-size: 2rem;
-    color: var(--color-accent);
-    opacity: 0.8;
-}
-
-.testimonial-quote::after {
-    content: '”';
-    position: absolute;
-    bottom: -10px;
-    right: 10px;
-    font-size: 2rem;
-    color: var(--color-accent);
-    opacity: 0.8;
+    font-style: italic;
+    opacity: 0.9;
 }
 
 .testimonial-name {
-    font-family: var(--font-emphasis);
-    font-size: 1.2rem;
+    font-family: var(--font-primary);
+    font-size: 1rem;
     color: var(--color-accent);
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
+    font-weight: 600;
     margin-top: 1rem;
-    text-align: center;
+    letter-spacing: 0.05rem;
 }
 
 .testimonial-image {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    border: 3px solid var(--color-accent);
+    border: 2px solid var(--color-accent);
     margin-top: 1rem;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .testimonial-image:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(255,255,255,0.5);
-}
-
-/* Deco accent lines */
-.testimonial::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1px;
-    height: 100%;
-    background: repeating-linear-gradient(
-        to bottom,
-        var(--color-accent) 0px,
-        var(--color-accent) 5px,
-        transparent 5px,
-        transparent 10px
-    );
+    transform: scale(1.05);
 }
 
 @media screen and (max-width: 768px) {
-    .Testimonial {
-        width: 100%;
-        max-width: 350px;
-        margin: 0.5rem 0;
-        padding: 1rem;
-    }
-
-    .testimonial-quote {
-        font-size: 1rem;
-        padding: 0.5rem;
-    }
-
-    .testimonial-quote::before,
-    .testimonial-quote::after {
-        font-size: 1.5rem;
-    }
-
-    .testimonial-name {
-        font-size: 1rem;
-        letter-spacing: 0.05rem;
-    }
-
-    .testimonial-image {
-        width: 60px;
-        height: 60px;
-    }
+    .Testimonial { max-width: 100%; padding: 1rem; }
+    .testimonial-quote { font-size: 0.95rem; }
+    .testimonial-image { width: 50px; height: 50px; }
 }

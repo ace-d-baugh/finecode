@@ -1,4 +1,4 @@
-/* components/Resume/Header/Header.css */
+/* components/Resume/Header/Header.css - Modern with subtle Deco */
 
 .Resume-Header {
     display: flex;
@@ -7,42 +7,8 @@
     position: relative;
     padding: 2rem;
     background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-primary) 100%);
-    border: 3px solid var(--color-accent);
-    border-radius: 8px;
+    border-radius: 4px;
     margin-bottom: 2rem;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.Resume-Header::before {
-    content: '';
-    position: absolute;
-    top: -3px;
-    left: -3px;
-    right: -3px;
-    bottom: -3px;
-    background: linear-gradient(45deg, var(--color-primary), var(--color-accent));
-    z-index: -1;
-    transform: scale(0);
-    transition: transform 0.3s ease;
-}
-
-.Resume-Header:hover::before {
-    transform: scale(1);
-}
-
-.Resume-Header::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-    width: 30px;
-    height: 30px;
-    background: rgba(255,255,255,0.2);
-    z-index: -1;
 }
 
 .Resume-Header h1 {
@@ -52,80 +18,30 @@
     font-size: clamp(1.8rem, 4vw, 2.5rem);
     margin: 0.5rem;
     color: var(--background);
-    letter-spacing: 0.2rem;
-    position: relative;
-    padding-bottom: 0.5rem;
-}
-
-/* Deco underline */
-.Resume-Header h1::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 2px;
-    background: linear-gradient(
-        90deg,
-        transparent 0%,
-        var(--background) 20%,
-        var(--background) 80%,
-        transparent 100%
-    );
+    letter-spacing: 0.15rem;
 }
 
 .Resume-Header p {
     text-align: center;
     font-family: var(--font-primary);
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--background);
     margin: 0.25rem 0;
-    letter-spacing: 0.05rem;
+    opacity: 0.9;
 }
 
 .Resume-Header p a {
     text-decoration: none;
     color: var(--background);
-    font-weight: 600;
-    position: relative;
-    transition: color 0.3s ease;
-}
-
-.Resume-Header p a::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background: var(--background);
-    transition: width 0.3s ease;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
 }
 
 .Resume-Header p a:hover {
-    color: var(--background);
-}
-
-.Resume-Header p a:hover::after {
-    width: 100%;
+    border-bottom-color: var(--background);
 }
 
 @media screen and (max-width: 768px) {
-    .Resume-Header {
-        padding: 1.5rem;
-    }
-
-    .Resume-Header h1 {
-        font-size: 1.5rem;
-        letter-spacing: 0.1rem;
-    }
-
-    .Resume-Header h1::after {
-        width: 80px;
-    }
-
-    .Resume-Header p {
-        font-size: 0.9rem;
-    }
+    .Resume-Header { padding: 1.5rem; }
+    .Resume-Header h1 { font-size: 1.5rem; letter-spacing: 0.1rem; }
 }
