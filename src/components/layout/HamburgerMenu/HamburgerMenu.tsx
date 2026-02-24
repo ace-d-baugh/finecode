@@ -1,14 +1,21 @@
 // components/HamburgerMenu/HamburgerMenu.tsx
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Frame from '../../common/Frame/Frame';
 import './HamburgerMenu.css';
 
 function HamburgerMenu() {
 const [isOpen, setIsOpen] = useState(false);
+const [dropdownAbove, setDropdownAbove] = useState(false);
+const buttonRef = useRef<HTMLDivElement>(null);
 
 const handleToggle = () => {
+if (buttonRef.current) {
+const rect = buttonRef.current.getBoundingClientRect();
+const isInBottomHalf = rect.top > window.innerHeight / 2;
+setDropdownAbove(isInBottomHalf);
+}
 setIsOpen(!isOpen);
 };
 
@@ -17,7 +24,7 @@ setIsOpen(false);
 };
 
 return (
-<div className="hamburger-menu">
+<div className="hamburger-menu" ref={buttonRef}>
 <button
 className="hamburger-button"
 onClick={handleToggle}
@@ -27,7 +34,7 @@ aria-expanded={isOpen}
 <span className="hamburger-icon"></span>
 </button>
 {isOpen && (
-<div className="hamburger-links-container">
+<div className={`hamburger-links-container ${dropdownAbove ? 'dropdown-above' : 'dropdown-below'}`}>
 <ul className="hamburger-links">
 <li>
 <NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>

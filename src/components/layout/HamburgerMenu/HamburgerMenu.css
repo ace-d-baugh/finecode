@@ -8,7 +8,7 @@
 .hamburger-button {
   background-color: transparent;
   border: 1px solid var(--color-primary);
-  border-radius: 0; /* Art Deco: angular */
+  border-radius: 0;
   cursor: pointer;
   padding: 10px;
   display: flex;
@@ -27,7 +27,6 @@
 }
 
 .hamburger-button:active {
-  box-shadow: 0 0 0 2px var(--background);
   border-color: var(--color-accent);
 }
 
@@ -72,7 +71,6 @@
 .hamburger-links-container {
   position: absolute;
   left: 50%;
-  top: 40px;
   width: 200px;
   transform: translateX(-50%);
   background-color: var(--background);
@@ -80,12 +78,23 @@
   background-repeat: repeat;
   background-size: 50px;
   padding: .25rem;
-  /* Art deco border treatment */
   border: 1px solid var(--metal-darker);
   box-shadow:
     0 4px 20px rgba(0,0,0,0.6),
     0 0 0 1px var(--metal-darker) inset;
   z-index: 1000;
+}
+
+/* Position below button (default) */
+.hamburger-links-container.dropdown-below {
+  top: 40px;
+  bottom: auto;
+}
+
+/* Position above button (when near bottom of viewport) */
+.hamburger-links-container.dropdown-above {
+  bottom: 40px;
+  top: auto;
 }
 
 .hamburger-links {
@@ -142,7 +151,6 @@
   color: var(--color-accent);
 }
 
-/* Active state - current page */
 .hamburger-links a.active,
 .hamburger-links a.active i,
 .hamburger-links a.active span {
@@ -158,7 +166,6 @@
   outline-offset: 2px;
 }
 
-/* Show the hamburger menu on smaller screens */
 @media (max-width: 768px) {
   .hamburger-menu {
     display: block;

@@ -1,6 +1,7 @@
 // pages/Home/Home.tsx
 
 import Hero from '../../components/layout/Hero/Hero'
+import HomeNavbar from '../../components/layout/HomeNavbar/HomeNavbar';
 import ShortBio from '../../components/layout/ShortBio/ShortBio';
 import Showcase from '../../components/layout/Showcase/Showcase';
 import Testimonials from '../../components/layout/Testimonials/Testimonials';
@@ -12,6 +13,7 @@ function Home() {
     return (
         <div className="Home">
             <Hero />
+            <HomeNavbar />
             <ShortBio />
             <Showcase />
             <Skills />

@@ -1,18 +1,20 @@
 // App.tsx
 
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import { Header, Footer } from '../src/components/layout'
 import { Home, About, Contact, Portfolio, Project, Resume, NotFound } from '../src/pages'
 import ScrollToTop from './components/common/ScrollToTop/ScrollToTop'
 import './App.css'
 
 function App({companyName}: {companyName: string}) {
+  const { pathname } = useLocation();
+  const isHomepage = pathname === '/';
 
   return (
     <>
       <div className="App">
-        <Header logoText = {companyName} />
-        <div className="Routes">
+        <Header logoText={companyName} showNavbar={!isHomepage} />
+        <div className={`Routes${isHomepage ? ' home-route' : ''}`}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />}/>
@@ -23,7 +25,7 @@ function App({companyName}: {companyName: string}) {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
-        <Footer company = {companyName} />
+        <Footer company={companyName} />
         <ScrollToTop />
       </div>
     </>
