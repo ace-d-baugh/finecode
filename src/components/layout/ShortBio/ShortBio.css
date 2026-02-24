@@ -34,6 +34,8 @@
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .shortBio-btn a {
@@ -50,6 +52,17 @@
 .shortBio-btn a:hover {
     background: var(--background);
     color: var(--color-primary);
+}
+
+.shortBio-btn a:first-child {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.shortBio-btn a:first-child:hover {
+    background: var(--background);
+    color: var(--color-accent);
+    border-color: var(--background);
 }
 
 @media screen and (max-width: 768px) {
