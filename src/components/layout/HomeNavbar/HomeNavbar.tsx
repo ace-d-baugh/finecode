@@ -7,21 +7,22 @@ import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
 import './HomeNavbar.css';
 
 function HomeNavbar() {
-  const navRef = useRef<HTMLElement>(null);
+  const sentinelRef = useRef<HTMLDivElement>(null); // watches sentinel, NOT the nav
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
-    const sentinel = navRef.current;
+    const sentinel = sentinelRef.current;
     if (!sentinel) return;
 
-    // IntersectionObserver detects when nav reaches top of viewport
     const observer = new IntersectionObserver(
       ([entry]) => {
+        // When sentinel scrolls above the viewport top,
+        // entry.isIntersecting becomes false -> nav has reached the top
         setIsSticky(!entry.isIntersecting);
       },
       {
         threshold: 0,
-        rootMargin: '-1px 0px 0px 0px',
+        rootMargin: '0px 0px 0px 0px',
       }
     );
 
@@ -30,18 +31,22 @@ function HomeNavbar() {
   }, []);
 
   return (
-    <nav
-      ref={navRef}
-      className={`HomeNavbar${isSticky ? ' is-sticky' : '' }`}
-      aria-label="Site navigation"
-    >
-      <div className="home-navbar-bg" />
-      <div className="home-navbar-content">
-        <Logo logoText="Digital Elegance" />
-        <NavLinks />
-        <HamburgerMenu />
-      </div>
-    </nav>
+    <>
+      {/* Sentinel: 1px invisible marker just above the sticky nav.
+          When it scrolls off-screen, the nav has reached the top. */}
+      <div ref={sentinelRef} style={{ height: '1px', width: '100%' }} aria-hidden="true" />
+      <nav
+        className={`HomeNavbar${isSticky ? ' is-sticky' : ''}`}
+        aria-label="Site navigation"
+      >
+        <div className="home-navbar-bg" />
+        <div className="home-navbar-content">
+          <Logo logoText="Digital Elegance" />
+          <NavLinks />
+          <HamburgerMenu />
+        </div>
+      </nav>
+    </>
   );
 }
 
