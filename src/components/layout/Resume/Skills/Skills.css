@@ -1,48 +1,66 @@
-/* components/Resume/Skills/Skills.css - Modern with subtle Deco */
+/* components/Resume/Skills/Skills.css - Modern with better contrast */
 
 .Skills {
-    background: var(--color-primary);
-    color: var(--background);
+    max-width: 1200px;
+    margin: 0 auto 2rem;
     padding: 2rem;
-    margin-bottom: 2rem;
-    border-left: 3px solid var(--color-accent);
-    border-radius: 0 4px 4px 0;
+    color: var(--background);
 }
 
 .Skills h2 {
-    color: var(--background);
-    font-family: var(--font-primary);
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-    letter-spacing: 0.05rem;
-}
-
-.Skills li {
-    list-style: none;
-    color: var(--background);
-    font-size: 1rem;
-    margin: 0.75rem 0;
-    padding: 0.5rem 1rem;
-    background: rgba(255,255,255,0.1);
-    border-radius: 4px;
-}
-
-.divider {
-    width: 1px;
-    height: 85%;
-    background: var(--color-accent);
-    margin: 1rem;
+    font-family: var(--font-emphasis);
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
 }
 
 .skills-display-lg {
-    display: flex;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .skills-display-lg ul {
-    flex: 1;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.skills-display-lg li,
+.skills-display-sm li {
+    list-style: none;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--metal) 100%);
+    color: var(--background);
+    font-size: 1.1rem;
+    border-left: 4px solid var(--color-accent);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.skills-display-lg li:hover,
+.skills-display-sm li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(50, 221, 208, 0.3);
+    border-left-width: 6px;
+}
+
+.skills-display-lg .left {
+    text-align: left;
+}
+
+.skills-display-lg .right {
+    text-align: right;
+}
+
+.divider {
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, var(--color-accent), transparent);
+    align-self: stretch;
 }
 
 .skills-display-sm {
@@ -50,13 +68,25 @@
 }
 
 @media screen and (max-width: 768px) {
-    .Skills { padding: 1.5rem; }
-    .Skills h2 { font-size: 1rem; }
-    .Skills li { font-size: 0.9rem; padding: 0.5rem 0.75rem; }
-    .skills-display-lg { flex-direction: column; }
-}
+    .Skills {
+        padding: 1.5rem;
+    }
 
-@media screen and (max-width: 1024px) {
-    .skills-display-sm { display: block; }
-    .skills-display-lg { display: none; }
+    .Skills h2 {
+        font-size: 1.5rem;
+    }
+
+    .skills-display-lg {
+        display: none;
+    }
+
+    .skills-display-sm {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .skills-display-sm li {
+        text-align: center;
+    }
 }
