@@ -1,4 +1,4 @@
-/* pages/Portfolio/Portfolio.css */
+/* pages/Portfolio/Portfolio.css - Modern with better contrast */
 
 .Portfolio {
     display: flex;
@@ -8,23 +8,6 @@
     padding: 4rem 1rem;
     background: var(--background);
     min-height: 100vh;
-}
-
-/* Deco border top */
-.Portfolio::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: repeating-linear-gradient(
-        90deg,
-        var(--color-accent) 0px,
-        var(--color-accent) 20px,
-        transparent 20px,
-        transparent 40px
-    );
 }
 
 .Portfolio h1 {
@@ -39,7 +22,6 @@
     padding-bottom: 1rem;
 }
 
-/* Deco double line underline */
 .Portfolio h1::after {
     content: '';
     position: absolute;
@@ -47,122 +29,80 @@
     left: 50%;
     transform: translateX(-50%);
     width: 200px;
-    height: 3px;
-    background: linear-gradient(
-        90deg,
-        transparent 0%,
-        var(--color-accent) 20%,
-        var(--color-accent) 80%,
-        transparent 100%
-    );
-}
-
-.Portfolio h1::before {
-    content: '';
-    position: absolute;
-    bottom: -6px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 1px;
+    height: 2px;
     background: var(--color-accent);
 }
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
-    max-width: 1400px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
 }
 
 .project-card {
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--metal-dark) 100%);
-    border: 3px solid var(--color-accent);
+    background: linear-gradient(135deg, var(--color-primary) 0%, #f8faf9 100%);
+    border: 2px solid var(--color-accent);
     border-radius: 8px;
     overflow: hidden;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    position: relative;
-}
-
-.project-card::before {
-    content: '';
-    position: absolute;
-    top: -3px;
-    left: -3px;
-    right: -3px;
-    bottom: -3px;
-    background: linear-gradient(45deg, var(--color-accent), var(--color-primary));
-    z-index: -1;
-    transform: scale(0);
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover::before {
-    transform: scale(1);
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(50, 221, 208, 0.2);
+}
+
+.project-card a {
+    text-decoration: none;
 }
 
 .project-header {
     padding: 1.5rem;
-    background: linear-gradient(45deg, var(--color-accent), var(--color-primary));
-    position: relative;
-    overflow: hidden;
+    background: linear-gradient(135deg, var(--color-accent) 0%, #2ac4b8 100%);
+    transition: background 0.3s ease;
 }
 
-.project-header::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    transition: left 0.5s ease;
-}
-
-.project-card:hover .project-header::after {
-    left: 100%;
-}
-
-.project-header a {
-    text-decoration: none;
-    color: var(--background);
-    transition: color 0.3s ease;
-}
-
-.project-header a:hover {
-    color: var(--color-primary);
+.project-card:hover .project-header {
+    background: linear-gradient(135deg, var(--background) 0%, #1a1a2e 100%);
 }
 
 .project-header h2 {
     text-align: center;
     font-family: var(--font-emphasis);
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin: 0;
     letter-spacing: 0.1rem;
+    color: var(--background);
+}
+
+.project-card:hover .project-header h2 {
+    color: var(--color-accent);
 }
 
 .project-card .project-type {
     text-align: center;
     font-family: var(--font-primary);
     font-size: 0.9rem;
-    color: var(--color-accent);
-    margin: 0.5rem 0;
-    letter-spacing: 0.1rem;
+    color: var(--background);
+    margin: 0;
+    padding: 0.5rem;
+    background: rgba(0, 0, 19, 0.8);
+    letter-spacing: 0.05rem;
     font-weight: 600;
 }
 
 .project-content {
     padding: 1.5rem;
-    background: var(--color-primary);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card .description {
@@ -171,7 +111,7 @@
     font-size: 1rem;
     color: var(--background);
     line-height: 1.6;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .project-card .issue {
@@ -182,9 +122,10 @@
     font-style: italic;
     margin-bottom: 1.5rem;
     padding: 0.75rem;
-    background: rgba(255,255,255,0.1);
+    background: rgba(0, 0, 19, 0.05);
     border-left: 3px solid var(--color-accent);
     border-radius: 0 4px 4px 0;
+    opacity: 0.8;
 }
 
 .project-image {
@@ -208,42 +149,31 @@
 .project-footer {
     display: flex;
     justify-content: center;
-    padding-bottom: 1.5rem;
+    padding: 1.5rem;
+    margin-top: auto;
 }
 
 .more-details-btn {
-    text-align: center;
-    padding: 0.75rem 1.5rem;
-    background: linear-gradient(45deg, var(--color-accent), var(--color-primary));
-    color: var(--background);
-    border: 2px solid var(--background);
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: var(--background);
+    color: var(--color-accent);
+    border: 2px solid var(--color-accent);
     text-decoration: none;
-    font-family: var(--font-emphasis);
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
     transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.more-details-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-    transition: left 0.5s ease;
-}
-
-.more-details-btn:hover::before {
-    left: 100%;
+    border-radius: 4px;
 }
 
 .more-details-btn:hover {
+    background: var(--color-accent);
+    color: var(--background);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 15px rgba(50, 221, 208, 0.4);
 }
 
 @media screen and (max-width: 768px) {
@@ -260,13 +190,9 @@
         width: 120px;
     }
 
-    .Portfolio h1::before {
-        width: 80px;
-    }
-
     .project-grid {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 1.5rem;
         padding: 1rem 0.5rem;
     }
 
@@ -276,5 +202,10 @@
 
     .project-content {
         padding: 1rem;
+    }
+
+    .more-details-btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
     }
 }
