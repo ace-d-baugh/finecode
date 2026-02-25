@@ -11,7 +11,7 @@
     background-color: var(--color-primary);
 }
 
-/* Fade edges on both sides */
+/* Fade edges */
 .LogoScroll::before,
 .LogoScroll::after {
     content: '';
@@ -55,13 +55,17 @@
     margin: 0.5rem auto 0;
 }
 
-/* The scrolling track — must be wide enough to hold both sets */
+/*
+  Single flat track — all logos as direct children.
+  width: max-content lets it grow as wide as needed.
+  -50% = exactly one set of logos → seamless loop with no gap.
+*/
 .logos-track {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: max-content;         /* expand to natural content width */
-    animation: logoScroll 25s linear infinite;
+    width: max-content;
+    animation: logoScroll 28s linear infinite;
     will-change: transform;
 }
 
@@ -69,36 +73,25 @@
     animation-play-state: paused;
 }
 
-/* Each set of logos */
-.logos-set {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 3rem;
-    padding: 0 1.5rem;
-}
-
-.logos-set img {
+/* Every logo gets the same margin so spacing is identical
+   between ALL logos including last→first of each half */
+.logos-item {
     flex-shrink: 0;
     height: 50px;
     width: auto;
     object-fit: contain;
+    margin: 0 2rem;   /* equal on both sides = consistent gap everywhere */
     opacity: 0.7;
     filter: grayscale(30%);
     transition: opacity 0.3s ease, filter 0.3s ease;
 }
 
-.logos-set img:hover {
+.logos-item:hover {
     opacity: 1;
     filter: grayscale(0%);
 }
 
-/*
-  KEY: animate exactly -50% — one full copy of the logo list.
-  Since we duplicate logos, at -50% the second copy is exactly
-  where the first started → perfectly seamless at any screen size.
-*/
+/* -50% = exactly one full set of logos scrolled off left */
 @keyframes logoScroll {
     0%   { transform: translateX(0); }
     100% { transform: translateX(-50%); }
@@ -110,12 +103,8 @@
         width: 60px;
     }
 
-    .logos-set {
-        gap: 2rem;
-        padding: 0 1rem;
-    }
-
-    .logos-set img {
+    .logos-item {
         height: 36px;
+        margin: 0 1.5rem;
     }
 }

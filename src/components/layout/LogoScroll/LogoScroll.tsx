@@ -15,31 +15,23 @@ function LogoScroll() {
         { src: "/src/assets/images/logos/kbtoys.png", alt: "KB Toys" },
     ];
 
+    // Duplicate for seamless loop — all in ONE flat track, same spacing throughout
+    const doubled = [...logos, ...logos];
+
     return (
         <div className="LogoScroll">
             <h2 className="logos-title">Trusted By</h2>
             <div className="logos-track">
-                {/* First set */}
-                <div className="logos-set" aria-hidden="false">
-                    {logos.map((logo, index) => (
-                        <img
-                            key={`logo-a-${index}`}
-                            src={logo.src}
-                            alt={logo.alt}
-                            title={logo.alt}
-                        />
-                    ))}
-                </div>
-                {/* Duplicate set — creates seamless loop */}
-                <div className="logos-set" aria-hidden="true">
-                    {logos.map((logo, index) => (
-                        <img
-                            key={`logo-b-${index}`}
-                            src={logo.src}
-                            alt=""
-                        />
-                    ))}
-                </div>
+                {doubled.map((logo, index) => (
+                    <img
+                        key={`logo-${index}`}
+                        src={logo.src}
+                        alt={index < logos.length ? logo.alt : ''}
+                        aria-hidden={index >= logos.length ? true : undefined}
+                        className="logos-item"
+                        title={index < logos.length ? logo.alt : undefined}
+                    />
+                ))}
             </div>
         </div>
     );
