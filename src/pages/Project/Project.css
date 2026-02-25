@@ -1,218 +1,396 @@
-/* pages/Project/Project.css - Modern with better contrast */
+/* pages/Project/Project.css — Art Deco dark theme */
 
 .Project {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     padding: 4rem 1rem;
     background: var(--background);
     min-height: 100vh;
-}
-
-.Project h1 {
-    text-align: center;
-    font-family: var(--font-emphasis);
-    text-transform: uppercase;
-    font-size: clamp(2rem, 5vw, 3rem);
-    letter-spacing: 0.3rem;
-    color: var(--color-primary);
-    margin-bottom: 2rem;
-    position: relative;
-    padding-bottom: 1rem;
-}
-
-.Project h1::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    height: 2px;
-    background: var(--color-accent);
-}
-
-.project-content {
-    max-width: 1200px;
     width: 100%;
-    margin: 0 auto;
+}
+
+/* ── Not Found ── */
+.project-not-found {
+    justify-content: center;
+}
+
+.not-found-inner {
+    text-align: center;
     padding: 3rem;
-    background: linear-gradient(135deg, var(--color-primary) 0%, #f8faf9 100%);
-    border: 2px solid var(--color-accent);
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(50, 221, 208, 0.1);
+    border: 1px solid var(--metal-darker);
 }
 
-.project-content h2 {
-    font-family: var(--font-emphasis);
+/* ── Page Header ── */
+.project-page-header {
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.project-type-badge {
+    display: inline-block;
+    font-family: var(--font-primary);
+    font-size: 0.65rem;
+    letter-spacing: 0.3rem;
     text-transform: uppercase;
-    font-size: 1.5rem;
-    color: var(--background);
+    color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+    padding: 0.25rem 1.25rem;
     margin-bottom: 1.5rem;
-    letter-spacing: 0.1rem;
-    border-left: 4px solid var(--color-accent);
-    padding-left: 1rem;
 }
 
-.project-content p {
+.project-page-header h1 {
+    font-family: var(--font-emphasis);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    background: linear-gradient(
+        135deg,
+        var(--metal-darker) 0%,
+        var(--metal) 35%,
+        var(--color-accent) 50%,
+        var(--metal) 65%,
+        var(--metal-darker) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% auto;
+    animation: projectTitleShimmer 3s linear infinite;
+}
+
+@keyframes projectTitleShimmer {
+    0%   { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+.project-short-desc {
     font-family: var(--font-primary);
     font-size: 1.1rem;
-    color: var(--background);
+    color: var(--metal-dark);
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+/* ── Carousel ── */
+.project-carousel-wrap {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    border: 1px solid var(--metal-darker);
+    position: relative;
+}
+
+/* Teal corner accents on carousel */
+.project-carousel-wrap::before,
+.project-carousel-wrap::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-color: var(--color-accent);
+    border-style: solid;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.project-carousel-wrap::before {
+    top: -2px;
+    left: -2px;
+    border-width: 2px 0 0 2px;
+}
+
+.project-carousel-wrap::after {
+    bottom: -2px;
+    right: -2px;
+    border-width: 0 2px 2px 0;
+}
+
+/* ── Case Study Sections ── */
+.project-case-study {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.case-section {
+    padding: 2rem 2.5rem;
+    border-left: 2px solid var(--metal-darker);
+    margin-left: 1rem;
+    position: relative;
+    transition: border-color 0.3s ease;
+}
+
+.case-section + .case-section {
+    margin-top: 0.25rem;
+}
+
+.case-section:hover {
+    border-color: var(--color-accent);
+}
+
+/* Small diamond connector on the timeline line */
+.case-section::before {
+    content: '◆';
+    position: absolute;
+    left: -0.65rem;
+    top: 2rem;
+    font-size: 0.6rem;
+    color: var(--metal-darker);
+    transition: color 0.3s ease;
+    line-height: 1;
+}
+
+.case-section:hover::before {
+    color: var(--color-accent);
+}
+
+.case-section h2 {
+    font-family: var(--font-emphasis);
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.case-icon {
+    color: var(--color-accent);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    opacity: 0.8;
+}
+
+.case-section p {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    color: var(--metal);
     line-height: 1.8;
+}
+
+.case-extra {
+    background: rgba(50, 221, 208, 0.03);
+    border-color: var(--color-accent) !important;
+}
+
+.case-extra p {
+    color: var(--metal-dark);
+    font-style: italic;
+}
+
+/* ── Technologies ── */
+.project-technologies {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.project-technologies h2 {
+    font-family: var(--font-emphasis);
+    font-size: 1.4rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    color: var(--color-primary);
     margin-bottom: 1.5rem;
 }
 
-.project-content p.issue {
-    font-style: italic;
-    font-size: 1rem;
-    background: rgba(0, 0, 19, 0.05);
-    border-left: 4px solid var(--color-accent);
-    padding: 1rem 1.5rem;
-    border-radius: 0 4px 4px 0;
-}
-
-.project-content p.solution,
-.project-content p.lessonsLearned,
-.project-content p.extraInfo {
-    margin-top: 1.5rem;
-}
-
-.project-content ul {
+.tech-list {
     list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.tech-badge {
+    display: flex;
+    align-items: center;
     gap: 0.5rem;
-    margin: 1rem 0;
-}
-
-.project-content li {
+    padding: 0.5rem 1.25rem;
+    border: 1px solid var(--metal-darker);
     font-family: var(--font-primary);
-    font-size: 1rem;
-    color: var(--background);
-    padding: 0.5rem 1rem;
-    background: linear-gradient(135deg, var(--color-primary) 0%, #e8ebe9 100%);
-    border: 2px solid var(--color-accent);
-    border-radius: 4px;
-    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.08rem;
+    color: var(--metal);
+    text-transform: uppercase;
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: default;
 }
 
-.project-content li:hover {
-    background: var(--color-accent);
-    color: var(--background);
-    transform: translateY(-2px);
+.tech-badge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(50, 221, 208, 0.08),
+        transparent
+    );
+    transition: left 0.45s ease;
 }
 
-.project-content .links {
+.tech-badge:hover::before { left: 100%; }
+
+.tech-badge:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+.tech-icon {
+    color: var(--color-accent);
+    font-size: 1rem;
+    line-height: 1;
+    opacity: 0.85;
+}
+
+.tech-name {
+    color: inherit;
+}
+
+/* ── Links ── */
+.project-links {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    padding: 0 1rem 2rem;
+}
+
+.links-row {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
+    align-items: center;
     flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
 }
 
-.project-content .links a {
+/* External link button — art deco clip-path style */
+.project-link-btn {
     display: inline-block;
-    padding: 0.75rem 2rem;
-    background: var(--background);
-    color: var(--color-accent);
-    border: 2px solid var(--color-accent);
-    text-decoration: none;
-    font-family: var(--font-primary);
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05rem;
-    transition: all 0.3s ease;
-    border-radius: 4px;
-}
-
-.project-content .links a:hover {
+    padding: 1rem 2rem;
     background: var(--color-accent);
     color: var(--background);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(50, 221, 208, 0.4);
-}
-
-.project-content .carousel-container {
-    margin: 2rem auto;
-    max-width: 600px;
-    border: 2px solid var(--color-accent);
-    border-radius: 8px;
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+    clip-path: polygon(
+        10px 0%,
+        calc(100% - 10px) 0%,
+        100% 10px,
+        100% calc(100% - 10px),
+        calc(100% - 10px) 100%,
+        10px 100%,
+        0% calc(100% - 10px),
+        0% 10px
+    );
+    transition: all 0.3s ease;
+    position: relative;
     overflow: hidden;
 }
 
-.project-content .carousel-container .carousel-image {
-    transition: transform 0.3s ease;
+.project-link-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    transition: left 0.5s ease;
 }
 
-.project-content .carousel-container:hover .carousel-image {
-    transform: scale(1.02);
+.project-link-btn:hover::before { left: 100%; }
+
+.project-link-btn:hover {
+    background: var(--background);
+    color: var(--color-accent);
+    box-shadow: 0 4px 20px rgba(50, 221, 208, 0.35);
 }
 
-.project-content .carousel-indicators .indicator {
-    background: var(--metal-dark);
-    border: 2px solid var(--background);
+.project-link-btn:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
 }
 
-.project-content .carousel-indicators .indicator.active {
-    background: var(--color-accent);
-    border-color: var(--background);
+/* Back button — minimal ghost style */
+.btn-back {
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    letter-spacing: 0.18rem;
+    text-transform: uppercase;
+    color: var(--metal-dark);
+    background: transparent;
+    border: 1px solid var(--metal-darker);
+    padding: 0.65rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
+.btn-back:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.btn-back:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+/* ── Responsive ── */
 @media screen and (max-width: 768px) {
     .Project {
         padding: 3rem 0.5rem;
     }
 
-    .Project h1 {
-        font-size: 1.5rem;
-        letter-spacing: 0.2rem;
+    .project-page-header h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0.15rem;
     }
 
-    .Project h1::after {
-        width: 120px;
+    .case-section {
+        padding: 1.5rem 1.25rem;
+        margin-left: 0.5rem;
     }
 
-    .project-content {
-        padding: 2rem;
-        margin: 0 0.5rem;
+    .project-technologies {
+        padding: 0 0.5rem;
     }
 
-    .project-content h2 {
-        font-size: 1.3rem;
-    }
-
-    .project-content p {
-        font-size: 1rem;
-    }
-
-    .project-content p.issue {
-        padding: 0.75rem;
-        font-size: 0.95rem;
-    }
-
-    .project-content li {
-        font-size: 0.9rem;
-        padding: 0.4rem 0.8rem;
-    }
-
-    .project-content .links {
+    .links-row {
         flex-direction: column;
         align-items: center;
     }
 
-    .project-content .links a {
-        padding: 0.6rem 1.5rem;
-        font-size: 0.9rem;
+    .project-link-btn {
         width: 100%;
-        max-width: 200px;
+        max-width: 240px;
         text-align: center;
-    }
-
-    .project-content .carousel-container {
-        max-width: 100%;
     }
 }
