@@ -1,5 +1,6 @@
 // components/Resume/Recognition/Recognition.tsx
 import './Recognition.css';
+import Awards from '../../../../assets/data/awards.json';
 
 function Recognition() {
   return (

@@ -2,6 +2,7 @@
 
 .Work {
     position: relative;
+    max-width: 800px;
 }
 
 .Work .resume-section-heading {
