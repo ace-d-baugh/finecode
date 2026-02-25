@@ -62,7 +62,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     background-color: var(--background);
     background-image: url("/src/assets/images/backgrounds/deco-diamonds.svg");
     background-repeat: repeat;
