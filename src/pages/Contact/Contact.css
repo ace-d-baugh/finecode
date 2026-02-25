@@ -92,14 +92,33 @@
 }
 
 /* Frame SVG scoping for contact form card — light SVGs (form card is dark bg, so light frames) */
-.contact-form-card .top-left     { background-image: url("/src/assets/images/frames/top-start-photo.svg"); }
-.contact-form-card .top-center   { background-image: url("/src/assets/images/frames/top-photo.svg"); }
-.contact-form-card .top-right    { background-image: url("/src/assets/images/frames/top-end-photo.svg"); }
-.contact-form-card .left-center  { background-image: url("/src/assets/images/frames/start-photo.svg"); }
-.contact-form-card .right-center { background-image: url("/src/assets/images/frames/end-photo.svg"); }
-.contact-form-card .bottom-left  { background-image: url("/src/assets/images/frames/bottom-start-photo.svg"); }
-.contact-form-card .bottom-center{ background-image: url("/src/assets/images/frames/bottom-photo.svg"); }
-.contact-form-card .bottom-right { background-image: url("/src/assets/images/frames/bottom-end-photo.svg"); }
+.contact-form-card > .frame-container .top-left     { background-image: url("/src/assets/images/frames/top-start-photo.svg"); }
+.contact-form-card > .frame-container .top-center   { background-image: url("/src/assets/images/frames/top-photo.svg"); }
+.contact-form-card > .frame-container .top-right    { background-image: url("/src/assets/images/frames/top-end-photo.svg"); }
+.contact-form-card > .frame-container .left-center  { background-image: url("/src/assets/images/frames/start-photo.svg"); }
+.contact-form-card > .frame-container .right-center { background-image: url("/src/assets/images/frames/end-photo.svg"); }
+.contact-form-card > .frame-container .bottom-left  { background-image: url("/src/assets/images/frames/bottom-start-photo.svg"); }
+.contact-form-card > .frame-container .bottom-center{ background-image: url("/src/assets/images/frames/bottom-photo.svg"); }
+.contact-form-card > .frame-container .bottom-right { background-image: url("/src/assets/images/frames/bottom-end-photo.svg"); }
+/* ── Contact Submit Button Frame SVGs — default -bk, hover regular ── */
+.contact-submit-btn .top-left     { background-image: url("/src/assets/images/frames/top-start-photo-bk.svg"); }
+.contact-submit-btn .top-center   { background-image: url("/src/assets/images/frames/top-photo-bk.svg"); }
+.contact-submit-btn .top-right    { background-image: url("/src/assets/images/frames/top-end-photo-bk.svg"); }
+.contact-submit-btn .left-center  { background-image: url("/src/assets/images/frames/start-photo-bk.svg"); }
+.contact-submit-btn .right-center { background-image: url("/src/assets/images/frames/end-photo-bk.svg"); }
+.contact-submit-btn .bottom-left  { background-image: url("/src/assets/images/frames/bottom-start-photo-bk.svg"); }
+.contact-submit-btn .bottom-center{ background-image: url("/src/assets/images/frames/bottom-photo-bk.svg"); }
+.contact-submit-btn .bottom-right { background-image: url("/src/assets/images/frames/bottom-end-photo-bk.svg"); }
+
+.contact-submit-btn:hover .top-left     { background-image: url("/src/assets/images/frames/top-start-photo.svg"); }
+.contact-submit-btn:hover .top-center   { background-image: url("/src/assets/images/frames/top-photo.svg"); }
+.contact-submit-btn:hover .top-right    { background-image: url("/src/assets/images/frames/top-end-photo.svg"); }
+.contact-submit-btn:hover .left-center  { background-image: url("/src/assets/images/frames/start-photo.svg"); }
+.contact-submit-btn:hover .right-center { background-image: url("/src/assets/images/frames/end-photo.svg"); }
+.contact-submit-btn:hover .bottom-left  { background-image: url("/src/assets/images/frames/bottom-start-photo.svg"); }
+.contact-submit-btn:hover .bottom-center{ background-image: url("/src/assets/images/frames/bottom-photo.svg"); }
+.contact-submit-btn:hover .bottom-right { background-image: url("/src/assets/images/frames/bottom-end-photo.svg"); }
+
 
 /* The actual form inside the frame card */
 .contact-form {
