@@ -80,7 +80,7 @@
 /* ── Carousel with Frame ── */
 .project-carousel-wrap {
     width: 100%;
-    max-width: 800px;
+    max-width: 400px;
     margin: 0 auto 3rem;
     position: relative;     /* Frame is absolutely positioned inside */
     padding: 24px;          /* matches --border-width so content clears the frame */
