@@ -1,34 +1,39 @@
-/* components/Resume/Summary/Summary.css - Modern with subtle Deco */
+/* components/Resume/Summary/Summary.css - Dark Art Deco */
 
-.Summary {
-    background: var(--color-primary);
-    color: var(--background);
+.Resume-Summary {
     padding: 2rem;
-    margin-bottom: 2rem;
+    background: rgba(50, 221, 208, 0.04);
     border-left: 3px solid var(--color-accent);
-    border-radius: 0 4px 4px 0;
+    position: relative;
 }
 
-.Summary h3 {
+.Resume-Summary p {
     font-family: var(--font-primary);
-    font-size: 1.1rem;
-    color: var(--background);
-    margin-bottom: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.05rem;
-}
-
-.Summary p {
-    font-family: var(--font-primary);
-    font-size: 1rem;
-    color: var(--background);
-    line-height: 1.8;
+    font-size: 1.05rem;
+    color: var(--color-primary);
+    line-height: 1.9;
     margin: 0;
     opacity: 0.9;
 }
 
+.resume-section-heading {
+    font-family: var(--font-emphasis);
+    font-size: 1.1rem;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.section-icon {
+    color: var(--color-accent);
+    font-size: 1rem;
+}
+
 @media screen and (max-width: 768px) {
-    .Summary { padding: 1.5rem; }
-    .Summary h3 { font-size: 1rem; }
-    .Summary p { font-size: 0.95rem; }
+    .Resume-Summary { padding: 1.5rem; }
+    .Resume-Summary p { font-size: 0.95rem; }
 }
