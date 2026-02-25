@@ -132,10 +132,10 @@
     box-shadow: 0 0 20px var(--color-accent);
 }
 
-.searchlight.sl-01 { bottom: 0; left: 15%; animation-delay: 0s;    animation-duration: 12s;   }
-.searchlight.sl-02 { bottom: 0; left: 35%; animation-delay: 1s;    animation-duration: 11s;   }
-.searchlight.sl-03 { bottom: 0; left: 55%; animation-delay: 0.5s;  animation-duration: 11.5s; }
-.searchlight.sl-04 { bottom: 0; left: 75%; animation-delay: 0.8s;  animation-duration: 10.8s; }
+.searchlight.sl-01 { bottom: 0; left: 20%; animation-delay: 0s;    animation-duration: 12s;   }
+.searchlight.sl-02 { bottom: 0; left: 40%; animation-delay: 1s;    animation-duration: 11s;   }
+.searchlight.sl-03 { bottom: 0; left: 60%; animation-delay: 0.5s;  animation-duration: 11.5s; }
+.searchlight.sl-04 { bottom: 0; left: 80%; animation-delay: 0.8s;  animation-duration: 10.8s; }
 
 .hero-btn {
     margin-top: 2rem;
