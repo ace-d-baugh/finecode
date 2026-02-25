@@ -90,3 +90,43 @@
         text-align: center;
     }
 }
+
+/* ─────────────────────────────────────────────
+   Scroll-triggered fly-in animations
+   ───────────────────────────────────────────── */
+
+/* Base (pre-visible) states: off-screen, invisible */
+.fly-from-left {
+  opacity: 0;
+  transform: translateX(-120px);
+  transition:
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity   0.6s ease;
+}
+
+.fly-from-right {
+  opacity: 0;
+  transform: translateX(120px);
+  transition:
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity   0.6s ease;
+}
+
+/* Visible state: fly into position */
+.fly-from-left.is-visible,
+.fly-from-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+  /* Reset to fast transition so hover stays snappy after fly-in completes */
+  transition: all 0.3s ease;
+  /* Clear stagger delay once item has landed */
+  transition-delay: 0s;
+}
+
+/* Hover on visible items — override any lingering transform */
+.skills-display-lg li.is-visible:hover,
+.skills-display-sm li.is-visible:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(50, 221, 208, 0.3);
+  border-left-width: 6px;
+}
