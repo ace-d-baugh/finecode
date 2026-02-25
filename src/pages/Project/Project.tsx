@@ -3,6 +3,7 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import Projects from '../../assets/data/projects.json';
 import Carousel from '../../components/common/Carousel/Carousel';
+import Frame from '../../components/common/Frame/Frame';
 import './Project.css';
 
 interface LongDescription {
@@ -24,34 +25,30 @@ interface Project {
     type: string;
 }
 
-// Unicode symbols that render reliably in all browsers
+// Devicon CSS class strings — 'plain' variants for single-color theming
 const techIconMap: Record<string, string> = {
-    'React':        '⚛',
-    'Angular':      '∠',
-    'Node.js':      '⬡',
-    'Express':      '▸',
-    'MongoDB':      '◉',
-    'SQL':          '▦',
-    'CSS':          '◈',
-    'HTML':         '◇',
-    'JavaScript':   'ƒ',
-    'TypeScript':   'ʦ',
-    'Bootstrap':    '⊞',
-    'PHP':          'φ',
-    'C#':           '♯',
-    '.NET Core':    '⬢',
-    'Stripe':       '§',
-    'WordPress':    'Ψ',
-    'WooCommerce':  'Ω',
-    'Photoshop':    '✦',
-    'SoapUI':       '⬡',
-    'Swagger':      '◎',
-    'Git':          '⑂',
+    'React':        'devicon-react-original',
+    'Angular':      'devicon-angularjs-plain',
+    'Node.js':      'devicon-nodejs-plain',
+    'Express':      'devicon-express-original',
+    'MongoDB':      'devicon-mongodb-plain',
+    'SQL':          'devicon-azuresqldatabase-plain',
+    'CSS':          'devicon-css3-plain',
+    'HTML':         'devicon-html5-plain',
+    'JavaScript':   'devicon-javascript-plain',
+    'TypeScript':   'devicon-typescript-plain',
+    'Bootstrap':    'devicon-bootstrap-plain',
+    'PHP':          'devicon-php-plain',
+    'C#':           'devicon-csharp-plain',
+    '.NET Core':    'devicon-dotnetcore-plain',
+    'Stripe':       'devicon-stripe-plain',
+    'WordPress':    'devicon-wordpress-plain',
+    'WooCommerce':  'devicon-woocommerce-plain',
+    'Photoshop':    'devicon-photoshop-plain',
+    'Git':          'devicon-git-plain',
+    'SoapUI':       '',   // no devicon — use fallback
+    'Swagger':      'devicon-swagger-plain',
 };
-
-function getTechIcon(tech: string): string {
-    return techIconMap[tech] || '◆';
-}
 
 function Project() {
     const { projectId } = useParams();
@@ -85,33 +82,46 @@ function Project() {
                 <div className="deco-divider"><span className="deco-divider-inner">◆ ◆ ◆</span></div>
             </div>
 
-            {/* ── Carousel ── */}
+            {/* ── Carousel with Frame border ── */}
             <div className="project-carousel-wrap">
+                <Frame className="carousel-frame" />
                 <Carousel imageUrls={project.imageUrls} title={project.title} />
             </div>
 
-            {/* ── Case Study ── */}
+            {/* ── Case Study — Card Panel Design ── */}
             <div className="project-case-study">
 
-                <div className="case-section">
-                    <h2><span className="case-icon">◈</span> The Challenge</h2>
-                    <p>{project.longDescription.issue}</p>
+                <div className="case-card">
+                    <div className="case-card-number">I</div>
+                    <div className="case-card-body">
+                        <h2><span className="case-icon">◈</span> The Challenge</h2>
+                        <p>{project.longDescription.issue}</p>
+                    </div>
                 </div>
 
-                <div className="case-section">
-                    <h2><span className="case-icon">◉</span> The Solution</h2>
-                    <p>{project.longDescription.solution}</p>
+                <div className="case-card">
+                    <div className="case-card-number">II</div>
+                    <div className="case-card-body">
+                        <h2><span className="case-icon">◉</span> The Solution</h2>
+                        <p>{project.longDescription.solution}</p>
+                    </div>
                 </div>
 
-                <div className="case-section">
-                    <h2><span className="case-icon">◎</span> Lessons Learned</h2>
-                    <p>{project.longDescription.lessonsLearned}</p>
+                <div className="case-card">
+                    <div className="case-card-number">III</div>
+                    <div className="case-card-body">
+                        <h2><span className="case-icon">◎</span> Lessons Learned</h2>
+                        <p>{project.longDescription.lessonsLearned}</p>
+                    </div>
                 </div>
 
-                {project.longDescription.extraInfo && project.longDescription.extraInfo.trim() && (
-                    <div className="case-section case-extra">
-                        <h2><span className="case-icon">◇</span> Notes</h2>
-                        <p>{project.longDescription.extraInfo}</p>
+                {project.longDescription.extraInfo?.trim() && (
+                    <div className="case-card case-card-extra">
+                        <div className="case-card-number">✦</div>
+                        <div className="case-card-body">
+                            <h2><span className="case-icon">◇</span> Notes</h2>
+                            <p>{project.longDescription.extraInfo}</p>
+                        </div>
                     </div>
                 )}
 
@@ -124,7 +134,10 @@ function Project() {
                 <ul className="tech-list">
                     {project.technologies.map((tech: string) => (
                         <li key={tech} className="tech-badge">
-                            <span className="tech-icon">{getTechIcon(tech)}</span>
+                            {techIconMap[tech]
+                                ? <i className={`tech-icon ${techIconMap[tech]}`}></i>
+                                : <span className="tech-icon tech-icon-fallback">◆</span>
+                            }
                             <span className="tech-name">{tech}</span>
                         </li>
                     ))}

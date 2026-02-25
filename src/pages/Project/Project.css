@@ -77,115 +77,130 @@
     margin: 0 auto 2rem;
 }
 
-/* ── Carousel ── */
+/* ── Carousel with Frame ── */
 .project-carousel-wrap {
     width: 100%;
     max-width: 800px;
     margin: 0 auto 3rem;
-    border: 1px solid var(--metal-darker);
-    position: relative;
+    position: relative;     /* Frame is absolutely positioned inside */
+    padding: 24px;          /* matches --border-width so content clears the frame */
 }
 
-/* Teal corner accents on carousel */
-.project-carousel-wrap::before,
-.project-carousel-wrap::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-color: var(--color-accent);
-    border-style: solid;
+/* Frame override for carousel context */
+.carousel-frame {
+    --border-width: 24px;
+    pointer-events: none;   /* don't block carousel swipe/click interactions */
     z-index: 2;
-    pointer-events: none;
 }
 
-.project-carousel-wrap::before {
-    top: -2px;
-    left: -2px;
-    border-width: 2px 0 0 2px;
-}
-
-.project-carousel-wrap::after {
-    bottom: -2px;
-    right: -2px;
-    border-width: 0 2px 2px 0;
-}
-
-/* ── Case Study Sections ── */
+/* ── Case Study — Card Panel Design ── */
 .project-case-study {
     width: 100%;
     max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
 }
 
-.case-section {
-    padding: 2rem 2.5rem;
-    border-left: 2px solid var(--metal-darker);
-    margin-left: 1rem;
+.case-card {
     position: relative;
-    transition: border-color 0.3s ease;
+    display: flex;
+    background: linear-gradient(160deg, rgba(255,255,255,0.02) 0%, rgba(50,221,208,0.03) 100%);
+    border: 1px solid var(--metal-darker);
+    overflow: hidden;
+    transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
-.case-section + .case-section {
-    margin-top: 0.25rem;
-}
-
-.case-section:hover {
-    border-color: var(--color-accent);
-}
-
-/* Small diamond connector on the timeline line */
-.case-section::before {
-    content: '◆';
+/* Teal top accent line — reveals on hover */
+.case-card::before {
+    content: '';
     position: absolute;
-    left: -0.65rem;
-    top: 2rem;
-    font-size: 0.6rem;
-    color: var(--metal-darker);
-    transition: color 0.3s ease;
-    line-height: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.case-section:hover::before {
-    color: var(--color-accent);
+.case-card:hover {
+    border-color: rgba(50, 221, 208, 0.4);
+    transform: translateY(-2px);
 }
 
-.case-section h2 {
+.case-card:hover::before {
+    opacity: 1;
+}
+
+/* Roman numeral sidebar */
+.case-card-number {
     font-family: var(--font-emphasis);
-    font-size: 1.1rem;
+    font-size: 4rem;
+    line-height: 1;
+    color: rgba(50, 221, 208, 0.08);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    padding: 1.5rem 0.75rem;
+    letter-spacing: 0.1rem;
+    flex-shrink: 0;
+    border-right: 1px solid var(--metal-darker);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    transition: color 0.3s ease;
+    user-select: none;
+}
+
+.case-card:hover .case-card-number {
+    color: rgba(50, 221, 208, 0.2);
+}
+
+.case-card-body {
+    padding: 1.75rem;
+    flex: 1;
+}
+
+.case-card-body h2 {
+    font-family: var(--font-emphasis);
+    font-size: 1rem;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     color: var(--color-accent);
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.5rem;
 }
 
 .case-icon {
     color: var(--color-accent);
-    font-size: 1.1rem;
-    flex-shrink: 0;
+    font-size: 1rem;
     opacity: 0.8;
+    flex-shrink: 0;
 }
 
-.case-section p {
+.case-card-body p {
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: var(--metal);
     line-height: 1.8;
+    margin: 0;
 }
 
-.case-extra {
-    background: rgba(50, 221, 208, 0.03);
-    border-color: var(--color-accent) !important;
+/* Notes card — spans full width */
+.case-card-extra {
+    grid-column: 1 / -1;
+    background: linear-gradient(160deg, rgba(50,221,208,0.02) 0%, rgba(50,221,208,0.05) 100%);
+    border-color: rgba(50, 221, 208, 0.25);
 }
 
-.case-extra p {
-    color: var(--metal-dark);
+.case-card-extra .case-card-body p {
     font-style: italic;
+    color: var(--metal-dark);
 }
 
 /* ── Technologies ── */
@@ -255,11 +270,21 @@
     color: var(--color-accent);
 }
 
+/* Devicon i element + fallback span */
 .tech-icon {
+    font-size: 1.2rem;
     color: var(--color-accent);
-    font-size: 1rem;
     line-height: 1;
-    opacity: 0.85;
+    flex-shrink: 0;
+    opacity: 0.9;
+}
+
+.tech-icon-fallback {
+    font-size: 0.6rem;
+}
+
+.tech-badge:hover .tech-icon {
+    opacity: 1;
 }
 
 .tech-name {
@@ -374,9 +399,18 @@
         letter-spacing: 0.15rem;
     }
 
-    .case-section {
-        padding: 1.5rem 1.25rem;
-        margin-left: 0.5rem;
+    .project-case-study {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .case-card-number {
+        font-size: 2.5rem;
+        min-width: 48px;
+    }
+
+    .case-card-body {
+        padding: 1.25rem;
     }
 
     .project-technologies {
