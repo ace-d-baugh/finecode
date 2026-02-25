@@ -1,4 +1,4 @@
-/* pages/Portfolio/Portfolio.css - Modern Deco styling */
+/* pages/Portfolio/Portfolio.css - Modern Deco styling with landing page consistency */
 
 .Portfolio {
     display: flex;
@@ -151,6 +151,7 @@
     justify-content: center;
     padding: 1.5rem;
     margin-top: auto;
+    background: rgba(0, 0, 19, 0.03);
 }
 
 .more-details-btn {
