@@ -108,3 +108,28 @@
     background: var(--color-accent);
     color: var(--background);
 }
+
+/* ── Button Frame: transition hint (browsers that support bg-image crossfade) ── */
+.btn-container .frame-container > div {
+    transition: background-image 0.3s ease;
+}
+
+/* ── Button Frame: dark (-bk) SVGs in normal/default state ── */
+.btn-container .top-left     { background-image: url("/src/assets/images/frames/top-start-photo-bk.svg"); }
+.btn-container .top-center   { background-image: url("/src/assets/images/frames/top-photo-bk.svg"); }
+.btn-container .top-right    { background-image: url("/src/assets/images/frames/top-end-photo-bk.svg"); }
+.btn-container .left-center  { background-image: url("/src/assets/images/frames/start-photo-bk.svg"); }
+.btn-container .right-center { background-image: url("/src/assets/images/frames/end-photo-bk.svg"); }
+.btn-container .bottom-left  { background-image: url("/src/assets/images/frames/bottom-start-photo-bk.svg"); }
+.btn-container .bottom-center{ background-image: url("/src/assets/images/frames/bottom-photo-bk.svg"); }
+.btn-container .bottom-right { background-image: url("/src/assets/images/frames/bottom-end-photo-bk.svg"); }
+
+/* ── Button Frame: revert to regular (light) SVGs on hover ── */
+.btn-container:hover .top-left     { background-image: url("/src/assets/images/frames/top-start-photo.svg"); }
+.btn-container:hover .top-center   { background-image: url("/src/assets/images/frames/top-photo.svg"); }
+.btn-container:hover .top-right    { background-image: url("/src/assets/images/frames/top-end-photo.svg"); }
+.btn-container:hover .left-center  { background-image: url("/src/assets/images/frames/start-photo.svg"); }
+.btn-container:hover .right-center { background-image: url("/src/assets/images/frames/end-photo.svg"); }
+.btn-container:hover .bottom-left  { background-image: url("/src/assets/images/frames/bottom-start-photo.svg"); }
+.btn-container:hover .bottom-center{ background-image: url("/src/assets/images/frames/bottom-photo.svg"); }
+.btn-container:hover .bottom-right { background-image: url("/src/assets/images/frames/bottom-end-photo.svg"); }
