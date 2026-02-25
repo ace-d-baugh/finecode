@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* pages/Portfolio/Portfolio.css - Modern Deco styling with landing page consistency */
+=======
+/* pages/Portfolio/Portfolio.css */
+>>>>>>> 9e74bf61ffc8144aa02338c563d068f945826f3b
 
 .Portfolio {
     display: flex;
@@ -43,6 +47,7 @@
     padding: 2rem 1rem;
 }
 
+<<<<<<< HEAD
 .project-card {
     background: linear-gradient(135deg, var(--color-primary) 0%, #f8faf9 100%);
     border: 2px solid var(--color-accent);
@@ -194,6 +199,8 @@
     box-shadow: 0 4px 15px rgba(50, 221, 208, 0.4);
 }
 
+=======
+>>>>>>> 9e74bf61ffc8144aa02338c563d068f945826f3b
 @media screen and (max-width: 768px) {
     .Portfolio {
         padding: 3rem 0.5rem;
@@ -212,18 +219,5 @@
         grid-template-columns: 1fr;
         gap: 1.5rem;
         padding: 1rem 0.5rem;
-    }
-
-    .project-header h2 {
-        font-size: 1.2rem;
-    }
-
-    .project-content {
-        padding: 1rem;
-    }
-
-    .more-details-btn {
-        padding: 0.6rem 1.5rem;
-        font-size: 0.9rem;
     }
 }

@@ -74,10 +74,12 @@
     margin-top: 1rem;
     opacity: 0.7;
     transition: opacity 0.3s ease;
+    filter: grayscale(1);
 }
 
 .Testimonial:hover .testimonial-image {
     opacity: 1;
+    filter: grayscale(0);
 }
 
 @media screen and (max-width: 768px) {
