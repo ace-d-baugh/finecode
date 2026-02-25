@@ -8,6 +8,7 @@ import Testimonials from '../../components/layout/Testimonials/Testimonials';
 import Skills from '../../components/layout/Resume/Skills/Skills';
 import Contact from '../Contact/Contact';
 import './Home.css'
+import LogoScroll from '../../components/layout/LogoScroll/LogoScroll';
 
 function Home() {
     return (
@@ -18,6 +19,7 @@ function Home() {
             <Showcase />
             <Skills />
             <Testimonials />
+            <LogoScroll />
             <Contact />
         </div>
     );

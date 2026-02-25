@@ -18,6 +18,7 @@ function LogoScroll() {
 
     return (
         <div className="LogoScroll">
+            <h2 className="logos-title">Trusted By</h2>
             <div className="logos">
                 {/* First set of logos */}
                 {logos.map((logo, index) => (
