@@ -56,16 +56,19 @@
 }
 
 /*
-  Single flat track — all logos as direct children.
-  width: max-content lets it grow as wide as needed.
-  -50% = exactly one set of logos → seamless loop with no gap.
+  The track contains 4 identical sets.
+  JS measures --one-set-width (width of one set in px).
+  We animate by exactly that distance → at the end,
+  set 2 is where set 1 started = perfect seamless loop.
+  4 sets ensures the screen is always fully covered.
 */
 .logos-track {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     width: max-content;
-    animation: logoScroll 28s linear infinite;
+    --one-set-width: 9999px; /* safe fallback until JS measures */
+    animation: logoScroll 30s linear infinite;
     will-change: transform;
 }
 
@@ -73,14 +76,21 @@
     animation-play-state: paused;
 }
 
-/* Every logo gets the same margin so spacing is identical
-   between ALL logos including last→first of each half */
+/* Each set is a flex row with consistent gap */
+.logos-set {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 1.5rem; /* equal padding left AND right on every set */
+}
+
 .logos-item {
     flex-shrink: 0;
     height: 50px;
     width: auto;
     object-fit: contain;
-    margin: 0 2rem;   /* equal on both sides = consistent gap everywhere */
     opacity: 0.7;
     filter: grayscale(30%);
     transition: opacity 0.3s ease, filter 0.3s ease;
@@ -91,20 +101,24 @@
     filter: grayscale(0%);
 }
 
-/* -50% = exactly one full set of logos scrolled off left */
+/*
+  Animate by exactly ONE set width in pixels.
+  --one-set-width is set by JS after measuring setRef.
+  This works at ANY screen size with NO hardcoded values.
+*/
 @keyframes logoScroll {
     0%   { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    100% { transform: translateX(calc(-1 * var(--one-set-width))); }
 }
 
 @media screen and (max-width: 768px) {
     .LogoScroll::before,
-    .LogoScroll::after {
-        width: 60px;
+    .LogoScroll::after { width: 60px; }
+
+    .logos-set {
+        gap: 2rem;
+        padding: 0 1rem;
     }
 
-    .logos-item {
-        height: 36px;
-        margin: 0 1.5rem;
-    }
+    .logos-item { height: 36px; }
 }
