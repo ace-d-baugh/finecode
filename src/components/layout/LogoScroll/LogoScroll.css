@@ -2,53 +2,120 @@
 
 .LogoScroll {
     position: relative;
-    max-width: 1600px;
     width: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem 0;
     background-color: var(--color-primary);
-    margin: 0 auto;
+}
+
+/* Fade edges on both sides */
+.LogoScroll::before,
+.LogoScroll::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 120px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.LogoScroll::before {
+    left: 0;
+    background: linear-gradient(to right, var(--color-primary) 0%, transparent 100%);
+}
+
+.LogoScroll::after {
+    right: 0;
+    background: linear-gradient(to left, var(--color-primary) 0%, transparent 100%);
 }
 
 .logos-title {
     width: 100%;
     font-family: var(--font-emphasis);
-    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
     color: var(--background);
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
 }
 
+.logos-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: var(--color-accent);
+    margin: 0.5rem auto 0;
+}
 
-.logos {
+/* The scrolling track — must be wide enough to hold both sets */
+.logos-track {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 100%;
-    animation: scroll 10s linear infinite;
-    will-change: transform; /* Optimize animation performance */
+    width: max-content;         /* expand to natural content width */
+    animation: logoScroll 25s linear infinite;
+    will-change: transform;
 }
 
-.logos:hover {
+.logos-track:hover {
     animation-play-state: paused;
 }
 
-.logos img {
-    margin: 0 20px;
-    flex-shrink: 0;
-    height: 50px;
+/* Each set of logos */
+.logos-set {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 1.5rem;
 }
 
-/* Seamless scroll animation */
-@keyframes scroll {
-    0% {
-        transform: translateX(0%);
+.logos-set img {
+    flex-shrink: 0;
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.7;
+    filter: grayscale(30%);
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.logos-set img:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+/*
+  KEY: animate exactly -50% — one full copy of the logo list.
+  Since we duplicate logos, at -50% the second copy is exactly
+  where the first started → perfectly seamless at any screen size.
+*/
+@keyframes logoScroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@media screen and (max-width: 768px) {
+    .LogoScroll::before,
+    .LogoScroll::after {
+        width: 60px;
     }
-    100% {
-        transform: translateX(calc(-100% + 335px));
+
+    .logos-set {
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .logos-set img {
+        height: 36px;
     }
 }
