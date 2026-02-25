@@ -19,7 +19,7 @@
 
 .contact-overline {
     font-family: var(--font-emphasis);
-    font-size: 0.75rem;
+    font-size: 1rem;
     letter-spacing: 0.4rem;
     color: var(--color-accent);
     text-transform: uppercase;
@@ -107,7 +107,6 @@
     flex-direction: column;
     gap: 0;
     padding: 2.5rem;
-    background: linear-gradient(160deg, rgba(255,255,255,0.02) 0%, rgba(50,221,208,0.03) 100%);
     position: relative;
 }
 
@@ -138,7 +137,7 @@
 .contact-form-group textarea {
     width: 100%;
     padding: 0.85rem 1rem;
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.14);
     border: none;
     border-bottom: 1px solid var(--metal-darker);
     font-family: var(--font-primary);

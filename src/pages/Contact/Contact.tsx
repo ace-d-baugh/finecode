@@ -10,20 +10,17 @@ function Contact() {
             {/* ── Dramatic Header ── */}
             <div className="contact-header">
                 <p className="contact-overline">◆ Let's Connect ◆</p>
-                <h2>Start a Conversation</h2>
+                <h2 className="contact-headline">Start a Conversation</h2>
                 <div className="contact-meta-row">
                     <span className="contact-meta-item">
-                        <span className="contact-meta-icon">◈</span>
                         <span>Orlando, FL</span>
                     </span>
                     <span className="contact-meta-sep">◆</span>
                     <span className="contact-meta-item">
-                        <span className="contact-meta-icon">◉</span>
                         <span>Open to Opportunities</span>
                     </span>
                     <span className="contact-meta-sep">◆</span>
                     <span className="contact-meta-item">
-                        <span className="contact-meta-icon">◎</span>
                         <span>Full-Stack &amp; Front-End</span>
                     </span>
                 </div>
