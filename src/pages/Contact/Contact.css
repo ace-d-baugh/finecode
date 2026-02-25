@@ -1,28 +1,122 @@
-/* pages/Contact/Contact.css - Modern with subtle Deco */
+/* pages/Contact/Contact.css */
 
 .Contact {
     padding: 4rem 1rem;
     background: var(--background);
-    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.Contact h2 {
-    font-family: var(--font-emphasis);
-    font-size: clamp(2rem, 4vw, 2.5rem);
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    color: var(--color-primary);
+/* ── Header ── */
+.contact-header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    max-width: 700px;
+    width: 100%;
+}
+
+.contact-header h2 {
+    font-family: var(--font-emphasis);
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.contact-subtitle {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    color: var(--metal-dark);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+/* ── Two-column layout ── */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    max-width: 1000px;
+    width: 100%;
+    align-items: start;
+}
+
+/* ── Info Panel ── */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 0.5rem;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--metal-darker);
+}
+
+.contact-info-item:last-child {
+    border-bottom: none;
+}
+
+.contact-info-icon {
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+.contact-info-item h3 {
+    font-family: var(--font-emphasis);
+    font-size: 0.75rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 0.35rem;
+}
+
+.contact-info-item p {
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    color: var(--metal);
+    line-height: 1.5;
+}
+
+/* ── Form Wrapper ── */
+.contact-form-wrap {
+    position: relative;
 }
 
 .contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 2rem;
-    background: var(--color-primary);
-    border: 1px solid var(--color-accent);
-    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 2.5rem;
+    background: linear-gradient(160deg, rgba(255,255,255,0.02) 0%, rgba(50,221,208,0.03) 100%);
+    border: 1px solid var(--metal-darker);
+    clip-path: polygon(
+        12px 0%, calc(100% - 12px) 0%,
+        100% 12px, 100% calc(100% - 12px),
+        calc(100% - 12px) 100%, 12px 100%,
+        0% calc(100% - 12px), 0% 12px
+    );
+    position: relative;
+}
+
+/* Teal top accent line */
+.contact-form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15%;
+    right: 15%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
 }
 
 .contact-form-group {
@@ -31,74 +125,131 @@
 
 .contact-form-group label {
     font-family: var(--font-primary);
-    font-size: 1rem;
-    color: var(--background);
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: var(--color-accent);
     margin-bottom: 0.5rem;
     display: block;
-    font-weight: 500;
 }
 
 .contact-form-group input,
 .contact-form-group textarea {
     width: 100%;
     padding: 0.75rem 1rem;
-    background: rgba(255,255,255,0.9);
-    border: 1px solid var(--color-accent);
-    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--metal-darker);
+    border-radius: 0;
     font-family: var(--font-primary);
-    font-size: 1rem;
-    color: var(--background);
+    font-size: 0.95rem;
+    color: var(--color-primary);
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form-group input::placeholder,
+.contact-form-group textarea::placeholder {
+    color: var(--metal-darker);
 }
 
 .contact-form-group input:focus,
 .contact-form-group textarea:focus {
     outline: none;
-    border-color: var(--color-primary);
-    box-shadow: 0 0 0 2px rgba(50, 221, 208, 0.3);
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 1px rgba(50, 221, 208, 0.2),
+                inset 0 0 20px rgba(50, 221, 208, 0.03);
 }
 
 .contact-form-group textarea {
     resize: vertical;
-    min-height: 120px;
+    min-height: 130px;
 }
 
+/* ── Submit Button — art deco clip-path style ── */
 .submit-btn {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
-.submit-btn button {
-    font-family: var(--font-primary);
-    font-size: 1rem;
+.contact-submit-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contact-submit-btn button {
+    display: inline-block;
+    padding: 1.5rem 3rem;
     background: var(--color-accent);
     color: var(--background);
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 600;
     border: none;
-    padding: 0.75rem 2rem;
     cursor: pointer;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
     transition: all 0.3s ease;
-    letter-spacing: 0.05rem;
+    clip-path: polygon(
+        10px 0%,
+        calc(100% - 10px) 0%,
+        100% 10px,
+        100% calc(100% - 10px),
+        calc(100% - 10px) 100%,
+        10px 100%,
+        0% calc(100% - 10px),
+        0% 10px
+    );
 }
 
-.submit-btn button:hover {
-    background: var(--color-primary);
-    color: var(--background);
+/* Shimmer sweep */
+.contact-submit-btn button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.35),
+        transparent
+    );
+    transition: left 0.5s ease;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.contact-submit-btn button:hover::before {
+    left: 100%;
+}
+
+.contact-submit-btn button:hover {
+    background: var(--background);
+    color: var(--color-accent);
     transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(50, 221, 208, 0.4),
+                0 0 30px rgba(50, 221, 208, 0.1);
 }
 
-@media screen and (max-width: 768px) {
-    .Contact { padding: 3rem 1rem; }
-    .Contact h2 { font-size: 1.5rem; letter-spacing: 0.1rem; }
-    .contact-form { padding: 1.5rem; margin: 0 0.5rem; }
+.contact-submit-btn button:active {
+    transform: translateY(0);
 }
 
-/* ======================================
-   Form Validation States - Art Deco
-   ====================================== */
+.contact-submit-btn button:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+}
 
+/* ── Validation States ── */
 .contact-form-group input.input-error,
 .contact-form-group textarea.input-error {
-    border-color: var(--error) !important;
-    box-shadow: 0 0 0 1px var(--error), 0 0 8px rgba(221, 0, 50, 0.2);
+    border-color: #dd0032 !important;
+    box-shadow: 0 0 0 1px #dd0032, 0 0 8px rgba(221, 0, 50, 0.2);
 }
 
 .contact-form-group input.input-success,
@@ -109,7 +260,7 @@
 
 .error-text {
     display: block;
-    color: var(--error);
+    color: #dd0032;
     font-family: var(--font-primary);
     font-size: 0.65rem;
     letter-spacing: 0.08rem;
@@ -124,63 +275,45 @@
     font-size: 0.7rem;
     letter-spacing: 0.1rem;
     text-align: center;
-    position: relative;
 }
 
 .form-message.error {
     background: rgba(221, 0, 50, 0.08);
-    border: 1px solid var(--error);
-    color: var(--error);
-    clip-path: polygon(
-        6px 0%, calc(100% - 6px) 0%,
-        100% 6px, 100% calc(100% - 6px),
-        calc(100% - 6px) 100%, 6px 100%,
-        0% calc(100% - 6px), 0% 6px
-    );
+    border: 1px solid #dd0032;
+    color: #dd0032;
+    clip-path: polygon(6px 0%, calc(100% - 6px) 0%, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0% calc(100% - 6px), 0% 6px);
 }
 
 .form-message.success {
     background: rgba(50, 221, 208, 0.08);
     border: 1px solid var(--color-accent);
     color: var(--color-accent);
-    clip-path: polygon(
-        6px 0%, calc(100% - 6px) 0%,
-        100% 6px, 100% calc(100% - 6px),
-        calc(100% - 6px) 100%, 6px 100%,
-        0% calc(100% - 6px), 0% 6px
-    );
+    clip-path: polygon(6px 0%, calc(100% - 6px) 0%, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0% calc(100% - 6px), 0% 6px);
 }
 
-/* Also fix the contact form to remove border-radius */
-.contact-form {
-    border-radius: 0;
-    clip-path: polygon(
-        12px 0%, calc(100% - 12px) 0%,
-        100% 12px, 100% calc(100% - 12px),
-        calc(100% - 12px) 100%, 12px 100%,
-        0% calc(100% - 12px), 0% 12px
-    );
+/* ── Responsive ── */
+@media screen and (max-width: 900px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-info {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .contact-info-item {
+        flex: 1 1 200px;
+        padding-bottom: 1rem;
+    }
 }
 
-.contact-form-group input,
-.contact-form-group textarea {
-    border-radius: 0;
-}
-
-.submit-btn button {
-    border-radius: 0;
-    clip-path: polygon(
-        8px 0%, calc(100% - 8px) 0%,
-        100% 8px, 100% calc(100% - 8px),
-        calc(100% - 8px) 100%, 8px 100%,
-        0% calc(100% - 8px), 0% 8px
-    );
-    letter-spacing: 0.15rem;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-}
-
-.submit-btn button:focus-visible {
-    outline: 2px solid var(--color-accent);
-    outline-offset: 4px;
+@media screen and (max-width: 600px) {
+    .Contact { padding: 3rem 1rem; }
+    .contact-header h2 { font-size: 1.8rem; letter-spacing: 0.15rem; }
+    .contact-form { padding: 1.5rem; }
+    .contact-info { flex-direction: column; }
+    .contact-submit-btn button { padding: 1.25rem 2rem; }
 }
