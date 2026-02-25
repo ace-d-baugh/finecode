@@ -54,7 +54,7 @@ function Resume() {
           className="resume-download-btn"
         >
           <Frame className="button-frame all" />
-          <span>⬇ Download PDF Resume</span>
+          <span>⬇ Download Resume</span>
         </a>
       </div>
     </div>
